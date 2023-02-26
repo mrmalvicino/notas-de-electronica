@@ -1,5 +1,4 @@
 \documentclass[a5paper,12pt,twoside]{book}
-%\setlength{\headheight}{15pt} % Sirve para corregir un error asociado a fancyhdr
 
 \input{my-book-packages}
 \input{my-book-commands}
@@ -30,12 +29,11 @@
     \end{Huge}
 
     \vspace{1cm}
-    \textbf{Primera edición}
+    \textbf{Primera edición (v20230226)}
     \vspace{2cm}
 
     \begin{Large}
         Malvicino, Maximiliano R.
-        % \\ Apellido, Nombre de otros autores
     \end{Large}
 \end{center}
 
@@ -43,7 +41,9 @@
 \noindent
 \textbf{Prefacio}
 
-Resumen de contenidos de la materia. Cursadas 2020 1C y 2020 2C con el profesor Jorge Petrosino. La versión digital más reciente de este texto puede ser descargada gratuitamente de \url{https://bit.ly/malvicinoEyM}.
+Resumen de contenidos de la materia electricidad y magnetismo para ingeniería de sonido de la Universidad Nacional de Tres de Febrero.
+
+La versión digital más reciente de este texto puede ser descargada gratuitamente de \url{https://github.com/mrmalvicino/notas-de-electronica}.
 
 \renewcommand{\spanishappendixname}{Anexo}
 \tableofcontents
@@ -295,7 +295,8 @@ Lo cual implica $\Vec{E} = - \grad V$ que en una dimensión es:
 Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye. Así mismo, como la gráfica de $V(r)$ es decreciente, tiene pendiente negativa si la distancia es $r>R$. La pendiente de $V(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{PotEleConductor.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/pot-ele-esfera-cond.pdf_tex}
 \end{center}
 
 El signo negativo se deduce por ser el campo eléctrico positivo si $r>R$ y negativo si $r<-R$ y la pendiente de $V(r)$ negativa y positiva respectivamente. Además, se puede observar que si la distancia es $-R<r<R$, el potencial eléctrico $V(r)$ es constante con lo cual el campo es nulo ya que es la derivada con respecto de la distancia.
@@ -515,7 +516,8 @@ Una configuración de capacitores en paralelo, equivale a aumentar el área tota
 En un circuito formado por una fuente de tensión y dos resistores conectados en serie, la misma cantidad de cargas que genere la fuente va a pasar por cada resistor.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Rserie.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/dc-resist-serie.pdf_tex}
 \end{center}
 
 Por lo tanto, la corriente que pase por cada resistor es la misma que genera la fuente. Como la diferencia de voltaje abarca ambos resistores, la tensión de la fuente es la suma de la caida de tensión de los resistores.
@@ -545,7 +547,8 @@ Por lo tanto, para $\nth$ resistores, se tiene:
 En un circuito formado por una fuente de tensión y dos resistores conectados en paralelo, las cargas generadas por la fuente se van a dividir entre ambos resistores.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{Rparallel.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/dc-resist-paral.pdf_tex}
 \end{center}
 
 Por lo tanto, la corriente generada por la fuente va a ser la suma de la corriente que pase por cada resistor. La tensión generada, en cambio, es la misma para ambos resistores.
@@ -590,7 +593,8 @@ Hay conexiones que no son ni en paralelo ni en serie, porque tienen puntos o nod
 Una fuente de corriente impone cierta corriente a la rama en la que esté conectada:
 
 \begin{center}
-    \includegraphics[width=0.4\linewidth]{I1.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/fuente-de-corriente-1.pdf_tex}
 \end{center}
 
 Si se tiene un circuito con una fuente de corriente antes o después de una rama, va a haber cierta corriente a la entrada de la rama y la misma a la salida de esta:
@@ -600,9 +604,16 @@ Si se tiene un circuito con una fuente de corriente antes o después de una rama
 
 \item No importa si los resistores que haya en la rama están en serie o en paralelo. La resistencia equivalente va a tener la corriente impuesta por la fuente.
 
-\begin{center}
-    \includegraphics[width=0.8\linewidth]{I2.png}
-\end{center}
+\begin{multicols}{2}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-corriente-2.pdf_tex}
+    \end{center}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-corriente-3.pdf_tex}
+    \end{center}
+\end{multicols}
 
 \item No importa si hay fuentes de tensión u otros elementos antes o después de la rama. Si entre el punto $b$ y la fuente de corriente hubiese, por ejemplo, una fuente de tensión esta no sería parte de la rama.
 \end{itemize}
@@ -619,10 +630,16 @@ Para simular el efecto de disminución del potencial que generaría conectar un 
 
 La resistencia de fuente va a depender del resistor de carga, ya que queremos que al conectarla, la fuente real tenga un valor que se aproxime al de la fuente ideal. Los esquemas se muestran a continuación:
 
-\begin{center}
-    \includegraphics[width=0.4\linewidth]{FakeV.png}
-    \includegraphics[width=0.4\linewidth]{SourceV.png}
-\end{center}
+\begin{multicols}{2}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-1.pdf_tex}
+    \end{center}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-2.pdf_tex}
+    \end{center}
+\end{multicols}
 
 Nótese que la corriente $(I)$ no va a variar cuando se analiza el circuito para la fuente ideal con respecto del circuito para la fuente real, por tratarse de conexiones en serie:
 \begin{equation*}
@@ -643,7 +660,8 @@ Al comparar la tensión de salida $(V_S)$ con la tensión $(V_F)$ que tendría l
 Por lo tanto, $V_S \to V_F$ cuando $R_S / R_L \to 0$. Entonces, para que el modelo de fuente real sea una buena aproximación, se tiene que cumplir que $R_L >> R_S$.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{VsRc.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/fuente-de-tension-modelo-5.pdf_tex}
 \end{center}
 
 
@@ -651,12 +669,20 @@ Por lo tanto, $V_S \to V_F$ cuando $R_S / R_L \to 0$. Entonces, para que el mode
 
 Una fuente de corriente es un elemento teórico que no existe en la realidad de manera natural. Pero como la tensión es proporcional a la corriente existen fuentes de tensión que funcionan como fuentes de corrientes, bajo ciertas consideraciones.
 
-En la situación anterior, la disminución de tensión en una fuente real va a ser proporcional a una disminución de corriente. Con este criterio, para simular una fuente de corriente real se puede usar el circuito anterior. Los esquemas se muestran a continuación:
+En la situación anterior, la disminución de tensión en una fuente real va a ser proporcional a una disminución de corriente.
+Con este criterio, para simular una fuente de corriente real se puede usar el circuito anterior.
+Los esquemas se muestran a continuación:
 
-\begin{center}
-    \includegraphics[width=0.4\linewidth]{FakeV.png}
-    \includegraphics[width=0.4\linewidth]{SourceI.png}
-\end{center}
+\begin{multicols}{2}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-1.pdf_tex}
+    \end{center}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-4.pdf_tex}
+    \end{center}
+\end{multicols}
 
 Nótese que, si bien se trata de conexiones en serie, estamos suponiendo que la corriente va a variar porque justamente cómo se comporta el modelo $I_S$ con y sin carga:
 \begin{equation*}
@@ -677,7 +703,8 @@ Con el fin de usar este circuito como fuente de corriente, al comparar la corrie
 Es decir, que $I_S \to I_F$ cuando $R_L/R_S \to 0$. Por lo tanto, para que el modelo de fuente de corriente real sea una buena aproximación, se tiene que cumplir que $R_L<<R_S$.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{IsRc.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/fuente-de-tension-modelo-6.pdf_tex}
 \end{center}
 
 
@@ -689,10 +716,16 @@ La notación con el tilde es simplemente para diferenciar los elementos de este 
 
 El esquema se muestra a continuación:
 
-\begin{center}
-    \includegraphics[width=0.4\linewidth]{FakeI.png}
-    \includegraphics[width=0.4\linewidth]{SourceI.png}
-\end{center}
+\begin{multicols}{2}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-3.pdf_tex}
+    \end{center}
+    \begin{center}
+        \def\svgwidth{0.9\linewidth}
+        \input{./images/fuente-de-tension-modelo-4.pdf_tex}
+    \end{center}
+\end{multicols}
 
 En este caso, ambos resistores tendrían la tensión $V_F$ de la fuente ideal. La corriente de salida $I_S'$ ahora incluiría el recorrido en paralelo, pero como se ve a continuación, se sigue cumpliendo que $R_L$ tiene que ser chica con respecto de $R_F$, ya que la corriente de salida $I_S'$ tiene que coincidir con la corriente $I_S$ de la fuente del modelo anterior:
 \begin{gather*}
@@ -722,7 +755,8 @@ De esta manera, concluimos que teóricamente es posible reemplazar una fuente de
 Al conectar $(\nth)$ resistores en serie a una fuente de tensión, se tiene lo que se conoce como divisor de tensión. Esta configuración permite vizualizar la caida de tensión de algún resistor mediante una fórmula.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{DividerV.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/divisor-de-tension.pdf_tex}
 \end{center}
 
 La corriente para cualquier elemento de un circuto en serie y perticulamente para la fuente de tensión está dada por:
@@ -752,7 +786,8 @@ O bien, si $\nth=2$ se tiene:
 Al conectar $(\nth)$ resistores en paralelo a una fuente de corriente, se tiene lo que se conoce como divisor de corriente. Esta configuración permite vizualizar la corriente que pasa por algún resistor mediante una fórmula.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{DividerI.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/divisor-de-corriente.pdf_tex}
 \end{center}
 
 La resistencia equivalente $(R_e)$ en paralelo es:
@@ -787,7 +822,7 @@ O bien, si $\nth=2$ se tiene:
 
 \section{Superposición}
 
-El método de superposición calcula la corriente $I_\kth$ que pasa por cada uno de los $\Kth$ resistores de un circuito con $\Nth$ fuentes, ya sean de tensión o de corriente.
+El método de superposición calcula la corriente $I_\kth$ que pasa por cada uno de los $\kth$ resistores de un circuito con $\Nth$ fuentes, ya sean de tensión o de corriente.
 
 Primero, hay que plantear tantos circuitos como fuentes haya en el circuito original, pasivando $\Nth-1$ Fuentes en cada una de las $\Nth$ situaciones.
 
@@ -805,7 +840,7 @@ Cada uno de los $\Nth$ circuitos planteados va a tener una sola fuente activa y 
     \end{equation*}
 \end{itemize}
 
-Para cada uno de los $\Kth$ resistores, se calcula la corriente $I_{\kth_\nth}$ que pasa en cada uno de los $\Nth$ circuitos. Sumando las $\Nth$ corrientes de los diferentes circuitos que pasan para cierto resistor, se obtiene la corriente neta que pasa por el resistor $\kth$-ésimo:
+Para cada uno de los $\kth$ resistores, se calcula la corriente $I_{\kth_\nth}$ que pasa en cada uno de los $\Nth$ circuitos. Sumando las $\Nth$ corrientes de los diferentes circuitos que pasan para cierto resistor, se obtiene la corriente neta que pasa por el resistor $\kth$-ésimo:
 \begin{equation*}
     I_\kth = \sum_\nth^\Nth I_{\kth_\nth} = I_{\kth_3} + I_{\kth_2} + \dots + I_{\kth_\Nth}
 \end{equation*}
@@ -901,15 +936,18 @@ Dado que $P = I \, V$ tanto para la resistencia interna $R_S$ de un modelo de fu
 \subsection*{Sistema trifásico}
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{TriphasicDiagram.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/trifasica-diag.pdf_tex}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{TriphasicCircuit.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/trifasica-circuito.pdf_tex}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{TriphasicGraph.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/trifasica-graph.pdf_tex}
 \end{center}
 
 
@@ -918,13 +956,18 @@ Dado que $P = I \, V$ tanto para la resistencia interna $R_S$ de un modelo de fu
 
 \subsection*{Transitorios R-C}
 
-Los circuitos R-C son aquellos formados solamente por resistencias y capacitores. La etapa en que un circuito R-C se estabiliza hasta tener una corriente contínua y constante se llama transitoria.
+Los circuitos R-C son aquellos formados solamente por resistencias y capacitores.
+La etapa en que un circuito R-C se estabiliza hasta tener una corriente contínua y constante se llama transitoria.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{ChargeDischarge1.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/transitorios-capacitor-circuito.pdf_tex}
 \end{center}
 
-Ni bien se cierre el interruptor, el capacitor comienza a cargarce. Mientras no haya tanto amontonamiento de cargas, una placa del capacitor puede recibir electrones y la otra puede sederlos. Por esto, el circuito se comporta como si hubiese corriente contínua. Al principio, la corriente es máxima y luego va decayendo.
+Inicialmente, el capacitor comienza a cargarce.
+Mientras no haya tanto amontonamiento de cargas, una placa del capacitor puede recibir electrones y la otra puede sederlos.
+Por esto, el circuito se comporta como si hubiese corriente contínua.
+Al principio, la corriente es máxima y luego va decayendo.
 
 Se obtiene así la ecuación diferencial
 \begin{equation*}
@@ -942,7 +985,8 @@ Donde:
 \end{equation*}
 
 \begin{center}
-    \includegraphics[width=0.75\linewidth]{ChargeDischargeI.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/transitorios-capacitor-graph-1.pdf_tex}
 \end{center}
 
 La tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
@@ -956,7 +1000,8 @@ v_C(t) = V_S - V_S \, e^{-\tfrac{t}{\tau}}
 \end{equation*}
 
 \begin{center}
-    \includegraphics[width=0.75\linewidth]{ChargeDischargeV.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/transitorios-capacitor-graph-2.pdf_tex}
 \end{center}
 
 De manera general, si el capacitor tiene una tensión inicial $(V_0)$, la expresión que modela la tensión es:
@@ -977,16 +1022,13 @@ Si la resistencia $(R)$ o la capacidad $(C)$ son grandes, el tiempo $(\tau)$ de 
     \end{equation*}
 \end{mdframed}
 
-Si el interruptor del circuito RC es doble, el capacitor está obligado a estar o bien cargandose conectado a la fuente o bien descargandose:
+En el circuito dado, el capacitor está obligado a estar o bien cargandose conectado a la fuente o bien descargandose.
+La llave del interruptor cambia con una frecuencia constante.
+Si $\tau$ es lo suficientemente chico, dará tiempo al capacitor de cargarse y descargarse mucho antes que la llave se vuelva a cambiar, y el gráfico de la tensión tendrá forma cuadrada, de lo contrario triangular.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{ChargeDischarge2.png}
-\end{center}
-
-La llave del interruptor cambia con una frecuencia constante. Si $\tau$ es lo suficientemente chico, dará tiempo al capacitor de cargarse y descargarse mucho antes que la llave se vuelva a cambiar, y el gráfico de la tensión tendrá forma cuadrada, de lo contrario triangular.
-
-\begin{center}
-    \includegraphics[width=\linewidth]{ChargeDischarge.png}
+    \def\svgwidth{\linewidth}
+    \input{./images/transitorios-capacitor.pdf_tex}
 \end{center}
 
 
@@ -1003,7 +1045,7 @@ La tensión en una bobina se comporta como la corriente en un capacitor. La func
 \end{equation*}
 
 
-\section{Valor pico y RMS}
+\section{Potencia: valor pico y RMS}
 
 Dado que la corriente alterna se genera alejando y acercando un imán a una bobina, la corriente producida no es constante.
 La intensidad fluctúa dependiendo de la distancia entre el imán y la bobina.
@@ -1011,7 +1053,8 @@ La corriente alterna es menos ``eficiente'' que la corriente contínua.
 Una fuente AC que tenga cierta corriente máxima es menos \emph{eficaz} que una fuente DC con ese mismo valor de corriente contínua.
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{PeakRMS.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/potencia.pdf_tex}
 \end{center}
 
 Como la potencia de una fuente AC fluctúa, si bien por momentos tiene cierta potencia máxima o potencia pico, a lo largo del tiempo tiene en promedio la mitad de ese máximo. Esta potencia promedio se llama potencia eficaz o Potencia RMS.
@@ -1110,7 +1153,8 @@ En un resistor no hay defasaje para los fasores de la tensión y la corriente, p
 A continuación vemos esta variación de la tensión y la corriente en el tiempo, representada con fasores complejos.
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{Phase.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/ac-fase.pdf_tex}
 \end{center}
 
 
@@ -1119,13 +1163,15 @@ A continuación vemos esta variación de la tensión y la corriente en el tiempo
 Es posible dar una demostración gráfica de la situación anterior para el capacitor. Entiéndase el ``capacitor'' como un tanque de agua con capacidad para almacenar volumen de agua, que tiene una válvula que puede suministrar un flujo de agua. Conforme pasa el tiempo, se dan las siguientes etapas:
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{Tank.png}
+    \def\svgwidth{\linewidth}
+    \input{./images/ac-capacitor-tanque.pdf_tex}
 \end{center}
 
 Graficando las etapas de carga y descarga, si se toma un intervalo de tiempo infinitesimal, las gráficas discretas aproximan a funciones senoidales:
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{PhaseC.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/ac-capacitor-fase.pdf_tex}
 \end{center}
 
 La analogía infiere que, si la corriente es el flujo de agua que entra o sale, y la tensión es el volumen de agua que se acumula, entonces la corriente es la tasa de cambio de la tensión:
@@ -1218,7 +1264,8 @@ Al aumentar la frecuencia de la corriente en un circuito R-C, el capacitor tiene
 Un filtro es un divisor de tensión que tiene una rama \emph{en serie} y otra \emph{en paralelo} o \emph{en derivación}. En cada rama puede tener uno o más componentes, que pueden ser resistores, capacitores o inductores dependiendo la aplicación:
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Filter.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/filter.pdf_tex}
 \end{center}
 
 La frecuencia de corte o frecuencia de cruce $f_c$ es el aquella para la que ambas ramas tienen igual impedancia.
@@ -1226,7 +1273,8 @@ La frecuencia de corte o frecuencia de cruce $f_c$ es el aquella para la que amb
 El siguiente gráfico muestra las curvas de impedancia de un resistor $(R)$, un capacitor $(C)$ y una bobina $(B)$ para diferentes frecuencias:
 
 \begin{center}
-    \includegraphics[width=0.6\linewidth]{Filter-fc.png}
+    \def\svgwidth{0.7\linewidth}
+    \input{./images/filter-fc.pdf_tex}
 \end{center}
 
 
@@ -1235,7 +1283,8 @@ El siguiente gráfico muestra las curvas de impedancia de un resistor $(R)$, un 
 El siguiente es un filtro R-C pasa altos. Invirtiendo la disposición de los componentes, se tiene un filtro R-C pasa bajos.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Filter-HighPass.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/filter-rc.pdf_tex}
 \end{center}
 
 La frecuencia central es aquella que verifica $R = X_C$ ye está dada por:
@@ -1259,7 +1308,8 @@ El siguiente es un filtro R-L pasa bajos. Invirtiendo la disposición de los com
 \end{equation*}
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Filter-BassPass.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/filter-rl.pdf_tex}
 \end{center}
 
 
@@ -1271,7 +1321,8 @@ El siguiente es un filtro L-C pasa bajos. Invirtiendo la disposición de los com
 \end{equation*}
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Filter-BassPassLC.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/filter-lc.pdf_tex}
 \end{center}
 
 
@@ -1289,7 +1340,8 @@ El siguiente es un filtro pasa banda. Invirtiendo la disposición de los compone
 \end{align*}
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Filter-BandPass.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/filter-rlc.pdf_tex}
 \end{center}
 
 La pendiente es proporcional a la resistencia:
@@ -1305,7 +1357,8 @@ El transformador sirve para aumentar o disminuir la tensión y la corriente de u
 Está formado por dos bobinas, a lo largo de las cuales hay un material que permite el flujo magnético. Cuando circula corriente por una de las bobinas, se genera un campo magnético que es detectado por la segunda bobina, y genera un campo independiente del anterior. Este va a generar una corriente análoga a la de entrada, pero cuya tensión $(V)$ e intensidad $(I)$ va a depender de la cantidad de vueltas que ambas bobinas tengan.
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{Transformer.png}
+    \def\svgwidth{\linewidth}
+    \input{./images/transformador.pdf_tex}
 \end{center}
 
 La función del transformador es, como se mencionó anteriormente, modificar la tensión, lo cual va a afectar la corriente. Por la ley del transformador ideal, lo que permanece constante es la potencia:
@@ -1350,7 +1403,8 @@ Supongamos que se tiene un tanque al que, con una frecuencia constante, por mome
 \end{itemize}
 
 \begin{center}
-    \includegraphics[width=0.8\linewidth]{ACDC.png}
+    \def\svgwidth{\linewidth}
+    \input{./images/fuente-simple.pdf_tex}
 \end{center}
 
 \concept{Puente de diodos}
@@ -1358,17 +1412,20 @@ Supongamos que se tiene un tanque al que, con una frecuencia constante, por mome
 Para hacer la etapa de rectificación más eficiente, se necesitaría aprovechar cuando la corriente cambia de sentido. Es decir, en vez de solo dejar pasar la corriente cuando es positiva, de alguna forma ``cambiar los extremos de los cables'' cuando la fuente alterna cambie de polaridad de manera que la polaridad resultante siempre sea la misma.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Diode1.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/puente-de-diodos-1.pdf_tex}
 \end{center}
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Diode2.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/puente-de-diodos-2.pdf_tex}
 \end{center}
 
 Claro está que realizar este cambio manualmente es imposible. Pero la siguiente configuración, llamada Puente de Diodos cumple la función de hacer la corriente siempre positiva.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{Diode3.png}
+    \def\svgwidth{0.6\linewidth}
+    \input{./images/puente-de-diodos-3.pdf_tex}
 \end{center}
 
 
@@ -1380,7 +1437,8 @@ Claro está que realizar este cambio manualmente es imposible. Pero la siguiente
 La fuerza magnética $\Vec{F}_B$ se ejerce sobre una carga eléctrica $q$ positiva con velocidad $\Vec{v}$ inmersa en un campo magnético $\Vec{B}$ como se muestra a continuación.
 
 \begin{center}
-    \includegraphics[width=0.5\linewidth]{BvF.png}
+    \def\svgwidth{0.5\linewidth}
+    \input{./images/magnetismo-fuerza.pdf_tex}
 \end{center}
 
 \begin{mdframed}[style=MyFrame1]
@@ -1436,7 +1494,8 @@ Un movimiento circular uniforme está dado por
 Una corriente $I$ circula por un conductor de grosor $L$ y ancho $D$ está inmerso en un campo magnético $B$. Dado que los electrones con velocidad $\Vec{v}$ se ven afectados por la fuerza magnética $\Vec{F}_B$ del campo, estos van a tender a acumularse en el extremo a lo largo del conductor. Como el otro extremo queda con un exceso de cargas positivas, se genera un potencial eléctrico $\Delta V$ que ejerce una fuerza eléctrica $\Vec{F}_E$ sobre los electrones.
 
 \begin{center}
-    \includegraphics[width=\linewidth]{Hall.png}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/hall.pdf_tex}
 \end{center}
 
 Este potencial $\Delta V = E \, D$ va a incrementar hasta que ambas fuerzas queden en equilibrio:
