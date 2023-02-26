@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="50mm"
+   viewBox="0 0 100 50"
+   version="1.1"
+   id="svg17988"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="transitorios-capacitor-graph-2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17990"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3416246"
+     inkscape:cx="191.93149"
+     inkscape:cy="77.890642"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs17985" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       inkscape:connector-curvature="0"
+       id="path7816-3"
+       d="M 17.754799,2.950262 V 47.049738"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeV.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path7818-0"
+       d="M 6.958639,40.828228 H 93.041361"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeV.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 84.760473,14.501808 c 0,0 -29.961324,-1.13403 -43.886824,3.49685 -4.70212,1.56367 -8.97887,4.51954 -12.57483,7.92894 -4.4155,4.18642 -8.65487,10.01229 -10.54402,14.90063"
+       id="path8215-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caac"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeV.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 84.76048,13.060268 H 17.754809"
+       id="path8482"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeV.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.85639px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.6545639"
+       y="7.997951"
+       id="text1716"><tspan
+         sodipodi:role="line"
+         id="tspan1714"
+         style="stroke-width:0.264583"
+         x="7.6545639"
+         y="7.997951">$v_c(t)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.85639px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="7.6545639"
+       y="15.228694"
+       id="text2458"><tspan
+         sodipodi:role="line"
+         id="tspan2456"
+         style="stroke-width:0.264583"
+         x="7.6545639"
+         y="15.228694">$V_s$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.85639px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="85.136337"
+       y="38.418461"
+       id="text2458-3"><tspan
+         sodipodi:role="line"
+         id="tspan2456-6"
+         style="stroke-width:0.264583"
+         x="85.136337"
+         y="38.418461">$t$</tspan></text>
+  </g>
+</svg>

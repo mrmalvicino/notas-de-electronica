@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="50mm"
+   viewBox="0 0 90 50"
+   version="1.1"
+   id="svg4360"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="puente-de-diodos-3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4362"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3416246"
+     inkscape:cx="191.93149"
+     inkscape:cy="109.19597"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4357" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       r="4.7247024"
+       cy="24.999985"
+       cx="12.235569"
+       id="circle4664"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       sodipodi:nodetypes="ccscc"
+       inkscape:connector-curvature="0"
+       id="path4670"
+       d="m 14.873529,24.999985 c -0.19427,1.21852 -0.59053,2.21669 -1.31897,2.21668 -0.72845,10e-6 -0.9888,-1.25557 -1.31898,-2.21668 -0.31088,-0.90496 -0.59052,-2.21669 -1.31897,-2.21668 -0.72844,-10e-6 -1.13256,1.04751 -1.31897,2.21668"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       transform="rotate(90,55.524837,44.431512)"
+       id="g4686"
+       style="stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 31.288344,20.450783 0.800829,-2.983568"
+         id="path4672"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 32.089173,17.467215 1.601658,5.967136"
+         id="path4674"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4676"
+         d="m 35.29249,17.467215 -1.601659,5.967136"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 35.29249,17.467215 1.601658,5.967136"
+         id="path4678"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 38.495807,17.467215 -1.601659,5.967136"
+         id="path4680"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4682"
+         d="m 38.495807,17.467215 1.601658,5.967136"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 40.097465,23.434351 0.800829,-2.983568"
+         id="path4684"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="rotate(-135,150.41334,111.92498)"
+       id="g4528-3"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4472-8"
+         d="M 300.6865,96.213764 V 102.7209"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4489-6"
+         d="m 297.43293,96.213764 3.25357,3.253568 -3.25357,3.253568 z"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       transform="rotate(-45,89.204198,383.86404)"
+       id="g4528-3-7"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4472-8-0"
+         d="M 300.6865,96.213764 V 102.7209"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4489-6-9"
+         d="m 297.43293,96.213764 3.25357,3.253568 -3.25357,3.253568 z"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 44.335049,23.464465 c 0.84805,-0.84804 2.22301,-0.84804 3.07106,0 0.84804,0.84805 0.84804,2.22301 0,3.07106"
+       id="path4765"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       transform="translate(-253.18915,-93.217268)"
+       id="g4528-9"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4472-5"
+         d="M 300.6865,96.213764 V 102.7209"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4489-1"
+         d="m 297.43293,96.213764 3.25357,3.253568 -3.25357,3.253568 z"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4815"
+       transform="matrix(-1,0,0,1,344.99241,-55.717396)"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         d="M 300.6865,96.213764 V 102.7209"
+         id="path4811"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 297.43293,96.213764 3.25357,3.253568 -3.25357,3.253568 z"
+         id="path4813"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.235569,20.275285 V 6.250055 h 14.88472 l 8.22465,8.22465"
+       id="path4817"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4819"
+       d="m 12.235569,29.724315 v 14.02523 h 14.88472 l 8.22465,-8.22465"
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 37.751969,16.881385 6.58307,6.58308"
+       id="path4821"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 27.120289,6.250055 h 17.12349"
+       id="path4840"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 27.120289,43.749545 h 17.12349"
+       id="path4840-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.497339,6.250065 h 32.00823 v 13.94494"
+       id="path4859"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.559459,43.749935 h 31.94611 v -13.94497"
+       id="path4863"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 37.645919,33.224635 64.620479,6.250065"
+       id="path4865"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 47.406109,26.535515 17.2144,17.21442"
+       id="path4867"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\Diode3.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.95347px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="70.340157"
+       y="20.730476"
+       id="text1524"><tspan
+         sodipodi:role="line"
+         id="tspan1522"
+         style="stroke-width:0.264583"
+         x="70.340157"
+         y="20.730476">$+$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.95347px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="70.340157"
+       y="33.483128"
+       id="text1786"><tspan
+         sodipodi:role="line"
+         id="tspan1784"
+         style="stroke-width:0.264583"
+         x="70.340157"
+         y="33.483128">$-$</tspan></text>
+  </g>
+</svg>

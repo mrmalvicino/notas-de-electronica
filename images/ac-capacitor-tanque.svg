@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="40mm"
+   viewBox="0 0 100 40"
+   version="1.1"
+   id="svg22064"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="ac-capacitor-tanque.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview22066"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.94867184"
+     inkscape:cx="131.23611"
+     inkscape:cy="60.611054"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs22061">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2320"
+       id="linearGradient3248"
+       gradientUnits="userSpaceOnUse"
+       x1="18.963804"
+       y1="241.49628"
+       x2="23.953808"
+       y2="241.49628"
+       gradientTransform="translate(-14.759874,-212.3816)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2320">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2316" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop2318" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2320"
+       id="linearGradient1325"
+       gradientUnits="userSpaceOnUse"
+       x1="31.724436"
+       y1="241.49628"
+       x2="36.91444"
+       y2="241.49628"
+       gradientTransform="translate(-3.3774745,-212.3816)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2320"
+       id="linearGradient1352"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,1,113.74746,-212.3816)"
+       x1="31.724436"
+       y1="241.49628"
+       x2="36.91444"
+       y2="241.49628" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2320"
+       id="linearGradient22277"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-14.759874,-212.3816)"
+       x1="18.963804"
+       y1="241.49628"
+       x2="23.953808"
+       y2="241.49628" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 4.2039255,31.618549 v -5.00775 h 4.99001 V 6.770509 H 24.044236 v 24.84804 z"
+       id="path1308"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:url(#linearGradient22277);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 4.2039255,26.610799 h 4.99001 v 5.00775 h -4.99001 z"
+       id="path1311"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 28.446956,31.618549 v -5.00775 h 4.990009 V 6.770509 h 14.850301 v 24.84804 z"
+       id="path1321"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.5;fill:url(#linearGradient1325);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 28.446956,26.610799 h 4.990009 v 5.00775 h -4.990009 z"
+       id="path1323"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 52.689986,31.618549 v -5.00775 h 4.989999 V 6.770509 h 14.850311 v 24.84804 z"
+       id="path1344"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 76.933016,31.618549 v -5.00775 h 4.99 V 6.770509 h 14.850309 v 24.84804 z"
+       id="path1348"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.5;fill:url(#linearGradient1352);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 81.923016,26.610799 h -4.99 v 5.00775 h 4.99 z"
+       id="path1350"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:url(#linearGradient3248);fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 4.2039255,26.610799 h 4.99001 v 5.00775 h -4.99001 z"
+       id="path1372"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.436955,31.618549 v -11.32622 h 14.850311 v 11.32622 z"
+       id="path1384"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.7;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 57.679985,31.618549 v -20.49127 h 14.85031 v 20.49127 z"
+       id="path1386"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 81.923026,31.618549 v -11.32622 h 14.8503 v 11.32622 z"
+       id="path1388"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Tank.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="12.697651"
+       y="5.1373153"
+       id="text2526"><tspan
+         sodipodi:role="line"
+         id="tspan2524"
+         style="stroke-width:0.264584"
+         x="12.697651"
+         y="5.1373153"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{v}{min}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="2.066715"
+       y="35.120647"
+       id="text2526-5"><tspan
+         sodipodi:role="line"
+         id="tspan2524-8"
+         style="stroke-width:0.264584"
+         x="2.066715"
+         y="35.120647"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{i}{max}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="37.90094"
+       y="5.1373153"
+       id="text3109"><tspan
+         sodipodi:role="line"
+         id="tspan3107"
+         style="stroke-width:0.264584"
+         x="37.90094"
+         y="5.1373153"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{v}{aum}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="62.135494"
+       y="5.1373153"
+       id="text3441"><tspan
+         sodipodi:role="line"
+         id="tspan3439"
+         style="stroke-width:0.264584"
+         x="62.135494"
+         y="5.1373153"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{v}{max}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="86.230591"
+       y="5.1373153"
+       id="text3825"><tspan
+         sodipodi:role="line"
+         id="tspan3823"
+         style="stroke-width:0.264584"
+         x="86.230591"
+         y="5.1373153"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{v}{dis}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="28.525047"
+       y="35.120647"
+       id="text5060"><tspan
+         sodipodi:role="line"
+         id="tspan5058"
+         style="stroke-width:0.264584"
+         x="28.525047"
+         y="35.120647"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{i}{pos}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="51.636604"
+       y="35.120647"
+       id="text5064"><tspan
+         sodipodi:role="line"
+         id="tspan5062"
+         style="stroke-width:0.264584"
+         x="51.636604"
+         y="35.120647"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{i}{min}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.03727px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+       x="77.25824"
+       y="35.120647"
+       id="text5068"><tspan
+         sodipodi:role="line"
+         id="tspan5066"
+         style="stroke-width:0.264584"
+         x="77.25824"
+         y="35.120647"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0.13421956">$\sub{i}{neg}$</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="70mm"
+   height="60mm"
+   viewBox="0 0 70 60"
+   version="1.1"
+   id="svg2236"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="filter-rlc.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2238"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3416246"
+     inkscape:cx="144.22813"
+     inkscape:cy="74.909182"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2233" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2047"
+       transform="matrix(0,0.85527093,-1,0,257.02647,-239.75437)"
+       style="stroke-width:1.0813"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:connector-curvature="0"
+         id="path2043"
+         d="m 288.98765,213.24498 h 11.52827"
+         style="fill:none;stroke:#000000;stroke-width:0.324391;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\ChargeDischarge.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.324391;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 288.98765,214.86563 h 11.52827"
+         id="path2045"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\ChargeDischarge.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+    </g>
+    <rect
+       style="fill:#000000;fill-opacity:0.0980392;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect2053"
+       width="39.993362"
+       height="50"
+       x="16.751862"
+       y="5"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       transform="rotate(90,38.295841,33.209485)"
+       id="g2069"
+       style="stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 31.288344,20.450783 0.800829,-2.983568"
+         id="path2055"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 32.089173,17.467215 1.601658,5.967136"
+         id="path2057"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2059"
+         d="m 35.29249,17.467215 -1.601659,5.967136"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 35.29249,17.467215 1.601658,5.967136"
+         id="path2061"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 38.495807,17.467215 -1.601659,5.967136"
+         id="path2063"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2065"
+         d="m 38.495807,17.467215 1.601658,5.967136"
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 40.097465,23.434351 0.800829,-2.983568"
+         id="path2067"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 34.887796,12.338263 c -0.06,-0.6813 -0.1562,-1.33741 -0.2813,-1.87361 -0.1252,-0.5361898 -0.279,-0.9502098 -0.4455,-1.1829498 -0.1664,-0.23274 -0.3451,-0.28246 -0.5166,-0.14302 -0.1715,0.13941 -0.3352,0.46865 -0.4739,0.9390398 -0.1387,0.47043 -0.252,1.08142 -0.3298,1.74397 -0.078,0.66253 -0.1201,1.37493 -0.1269,2.03399 -0.01,0.65909 0.022,1.26255 0.075,1.72361 0.053,0.46103 0.1311,0.77744 0.216,0.90436 0.085,0.12685 0.1763,0.0628 0.2548,-0.18187 0.079,-0.24471 0.1436,-0.67033 0.1798,-1.21439 0.036,-0.54407 0.043,-1.2056 0.013,-1.8884 -0.03,-0.68282 -0.096,-1.38499 -0.1959,-2.00498 -0.1,-0.61997 -0.2326,-1.15546 -0.3857,-1.5295898 -0.1531,-0.37414 -0.3261,-0.58486 -0.5003,-0.60269 -0.1741,-0.0178 -0.3489,0.15847 -0.5056,0.50215 -0.1566,0.34374 -0.2946,0.8548898 -0.4003,1.4587198 -0.1058,0.60384 -0.1789,1.29903 -0.2154,1.9847 -0.037,0.68567 -0.036,1.35966 0,1.92475 0.031,0.56505 0.091,1.01889 0.1675,1.29657 0.076,0.27767 0.1666,0.37734 0.2525,0.28564 0.086,-0.0917 0.1667,-0.3756 0.2244,-0.8096 0.058,-0.434 0.092,-1.01767 0.091,-1.66587 -4e-4,-0.64818 -0.036,-1.3593 -0.1071,-2.03032 -0.071,-0.671 -0.1786,-1.29965 -0.3125,-1.7954 -0.1339,-0.4957398 -0.2944,-0.8563398 -0.4643,-1.0304598 -0.1699,-0.17413 -0.349,-0.16029 -0.5175,0.0388 -0.1686,0.19891 -0.3263,0.58321 -0.4566,1.0964198 -0.1303,0.51321 -0.2329,1.15447 -0.2994,1.83047 -0.066,0.676 -0.096,1.3849 -0.092,2.02414 0,0.63923 0.043,1.2065 0.1033,1.62025 0.061,0.41378 0.1435,0.67193 0.2299,0.73806 0.087,0.0661 0.1763,-0.061 0.2502,-0.36201 0.074,-0.30103 0.1314,-0.77596 0.1579,-1.35525 0.027,-0.57931 0.022,-1.26181 -0.019,-1.94838 -0.041,-0.68656 -0.1196,-1.37516 -0.2297,-1.96631 -0.11,-0.59113 -0.2517,-1.0825298 -0.4106,-1.4037498 -0.159,-0.32124 -0.3351,-0.47037 -0.509,-0.42683 -0.174,0.0435 -0.3453,0.2807 -0.4956,0.67614 -0.1504,0.3954398 -0.2793,0.9488798 -0.3745,1.5794898 -0.095,0.63061 -0.1565,1.33694 -0.1814,2.01654 -0.025,0.67961 -0.013,1.33033 0.027,1.85831 0.04,0.52798 0.1082,0.93096 0.1884,1.15145 0.08,0.22048 0.172,0.25679 0.2558,0.10473 0.084,-0.15206 0.1593,-0.4932 0.2092,-0.97299 0.05,-0.47978 0.074,-1.09758 0.062,-1.76343 -0.012,-0.66583 -0.059,-1.37796 -0.1416,-2.03327 -0.083,-0.65532 -0.2003,-1.25153 -0.3423,-1.7028698 -0.142,-0.45134 -0.3081,-0.75564 -0.4805,-0.86976 -0.1723,-0.11408 -0.3506,-0.0367 -0.5153,0.22012 -0.1647,0.2568 -0.3154,0.6931398 -0.4366,1.2450198 -0.1213,0.5519 -0.2128,1.21831 -0.2677,1.90237 -0.055,0.68405 -0.073,1.3838 -0.058,1.99811 0.015,0.6143 0.063,1.1408 0.1299,1.50398 0.067,0.36317 0.154,0.56103 0.2411,0.56587 0.087,0.005 0.1742,-0.1844 0.2425,-0.5393 0.068,-0.35493 0.1173,-0.87539 0.1337,-1.48527 0.017,-0.60992 10e-5,-1.30794 -0.053,-1.99276 -0.053,-0.68485 -0.1429,-1.35437 -0.2627,-1.91196 -0.1198,-0.55761 -0.2694,-1.0009898 -0.4334,-1.2667398 -0.164,-0.26574 -0.342,-0.35208 -0.5147,-0.24753 -0.1727,0.10461 -0.3395,0.40076 -0.4827,0.84473 -0.1432,0.4439898 -0.2623,1.0352798 -0.3466,1.6876398 -0.084,0.65235 -0.1335,1.36417 -0.1469,2.03229 -0.014,0.66814 0.01,1.29036 0.058,1.77702 0.049,0.48668 0.1232,0.83559 0.2066,0.99713 0.083,0.1616 0.1753,0.13414 0.2561,-0.0771 0.081,-0.21129 0.1499,-0.60689 0.1913,-1.12861 0.041,-0.52173 0.055,-1.16875 0.032,-1.8469 -0.023,-0.67817 -0.083,-1.38561 -0.1761,-2.02 -0.094,-0.63437 -0.2211,-1.19339 -0.3704,-1.5967198 -0.1493,-0.40332 -0.3201,-0.64889 -0.4938,-0.70209 -0.1738,-0.0533 -0.3502,0.0871 -0.5101,0.3998 -0.1598,0.31262 -0.3027,0.7974998 -0.4143,1.3836698 -0.1115,0.58617 -0.1915,1.27239 -0.2347,1.95907 -0.043,0.68665 -0.049,1.37166 -0.024,1.9561 0.025,0.58445 0.081,1.06601 0.1544,1.37571 0.073,0.30968 0.1625,0.44563 0.2492,0.38914 0.087,-0.0566 0.17,-0.30629 0.2318,-0.71228 0.062,-0.40598 0.1016,-0.96778 0.1075,-1.60343 0.01,-0.63564 -0.023,-1.3436 -0.087,-2.02122 -0.065,-0.67765 -0.1657,-1.32276 -0.2947,-1.84235 -0.129,-0.5195798 -0.2857,-0.9113998 -0.4537,-1.1195498 -0.168,-0.20816 -0.347,-0.231 -0.5174,-0.0663 -0.1704,0.16472 -0.3317,0.51758 -0.4669,1.0065798 -0.1353,0.48898 -0.2441,1.11338 -0.3171,1.78226 -0.013,0.12158 -0.025,0.24468 -0.036,0.36853"
+       id="path2077"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle2079"
+       cx="56.74527"
+       cy="12.338257"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g2085"
+       transform="translate(-269.57899,-184.88115)"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <circle
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         id="circle2081"
+         cx="279.05783"
+         cy="215.95868"
+         r="4.7247024"
+         inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\ACDC.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 281.69578,215.95869 c -0.19427,1.21852 -0.59053,2.21668 -1.31897,2.21668 -0.72845,0 -0.9888,-1.25557 -1.31898,-2.21668 -0.31088,-0.90496 -0.59052,-2.21669 -1.31897,-2.21669 -0.72844,0 -1.13256,1.04752 -1.31897,2.21669"
+         id="path2083"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscc"
+         inkscape:export-filename="C:\Users\Admin\Desktop\BACKUPn\Malvicino, M. R. (2020). Super apunte de Electricidad y Magnetismo\PNG\ACDC.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 34.887796,12.338263 h 7.273"
+       id="path2091"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 16.751896,12.327593 h -7.2731 v 14.02523"
+       id="path2093"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 43.781496,12.338263 h 7.273 l 10e-5,13.78024"
+       id="path2095"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.054496,36.033753 v 13.79372 h -34.3026"
+       id="path2097"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle2099"
+       cx="56.74527"
+       cy="49.827442"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 16.751896,49.827473 h -7.2731 v -14.02523"
+       id="path2101"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle2103"
+       cx="16.751862"
+       cy="12.327576"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle2105"
+       cx="16.751862"
+       cy="49.827442"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.054496,12.338263 h 5.6907"
+       id="path2107"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 51.054496,49.827463 h 5.6907"
+       id="path2109"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 16.751896,12.327593 h 5.5958"
+       id="path2111"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Math Symbols';-inkscape-font-specification:'Math Symbols';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="10.011627"
+       y="10.669067"
+       id="text2117"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2115"
+         x="10.011627"
+         y="10.669067"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers">in<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2113">A</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Math Symbols';-inkscape-font-specification:'Math Symbols';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="10.011627"
+       y="53.492115"
+       id="text2123"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2121"
+         x="10.011627"
+         y="53.492115"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers">in<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2119">B</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Math Symbols';-inkscape-font-specification:'Math Symbols';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="57.541779"
+       y="10.669067"
+       id="text2129"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2127"
+         x="57.541779"
+         y="10.669067"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers">out<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2125">A</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:'Math Symbols';-inkscape-font-specification:'Math Symbols';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="57.541779"
+       y="53.492115"
+       id="text2135"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Filter-BandPass.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan2133"
+         x="57.541779"
+         y="53.492115"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif';stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers">out<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2131">B</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.25044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="27.300009"
+       y="21.552961"
+       id="text1409"><tspan
+         sodipodi:role="line"
+         id="tspan1407"
+         style="stroke-width:0.264583"
+         x="27.300009"
+         y="21.552961">$L$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.25044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="41.005688"
+       y="21.552961"
+       id="text1832"><tspan
+         sodipodi:role="line"
+         id="tspan1830"
+         style="stroke-width:0.264583"
+         x="41.005688"
+         y="21.552961">$C$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.25044px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="41.005688"
+       y="32.727928"
+       id="text1938"><tspan
+         sodipodi:role="line"
+         id="tspan1936"
+         style="stroke-width:0.264583"
+         x="41.005688"
+         y="32.727928">$R$</tspan></text>
+  </g>
+</svg>

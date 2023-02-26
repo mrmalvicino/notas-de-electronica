@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90mm"
+   height="50mm"
+   viewBox="0 0 90 50"
+   version="1.1"
+   id="svg17592"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="transitorios-capacitor-graph-1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17594"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3416246"
+     inkscape:cx="196.40368"
+     inkscape:cy="135.28375"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs17589" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       inkscape:connector-curvature="0"
+       id="path7816"
+       d="M 12.7548,2.950259 V 47.049741"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path7818"
+       d="M 1.95864,40.828231 H 88.04136"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle1399-0-9"
+       cx="12.754806"
+       cy="13.060269"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle1399-0-9-3"
+       cx="27.099258"
+       cy="40.828228"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.6, 1.6;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 27.09927,40.828231 V 31.572245"
+       id="path8116"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8122"
+       d="M 27.09927,31.572245 V 22.316258"
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 27.09927,22.316258 V 13.060271"
+       id="path8124"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 12.75481,13.06027 27.09927,40.828231"
+       id="path8164"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 27.09927,13.084173 H 12.7548"
+       id="path8166"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 27.09927,22.316258 H 12.7548"
+       id="path8166-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 27.09927,31.572245 H 12.7548"
+       id="path8166-2-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 79.75291,39.391066 c 0,0 -29.96133,1.134032 -43.88683,-3.496847 -4.70211,-1.563671 -8.97886,-4.519542 -12.57482,-7.928941 -4.4155,-4.186426 -8.65487,-10.012289 -10.54402,-14.90064"
+       id="path8215"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caac"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle1399-0-9-3-9"
+       cx="41.443741"
+       cy="40.828228"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 41.44374,31.572245 H 27.09927"
+       id="path8166-2-1-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 41.44374,40.828232 V 31.572245"
+       id="path8116-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 41.44374,37.314653 H 27.09928"
+       id="path8166-2-1-7-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.2, 1.2;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 41.44374,34.383443 H 27.09927"
+       id="path8166-2-1-7-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle1399-0-9-3-9-1"
+       cx="27.099274"
+       cy="31.184689"
+       r="0.8018086"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 27.09927,31.184687 14.34447,9.643544"
+       id="path8351"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\ChargeDischargeI.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.08208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="3.8446217"
+       y="7.0269861"
+       id="text1938"><tspan
+         sodipodi:role="line"
+         id="tspan1936"
+         style="stroke-width:0.264583"
+         x="3.8446217"
+         y="7.0269861">$i_C(t)$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.08208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="3.6794477"
+       y="15.507066"
+       id="text2258"><tspan
+         sodipodi:role="line"
+         id="tspan2256"
+         style="stroke-width:0.264583"
+         x="3.6794477"
+         y="15.507066"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.59163344">$\frac{V_s}{R}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.08208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="24.780045"
+       y="46.008724"
+       id="text2510"><tspan
+         sodipodi:role="line"
+         id="tspan2508"
+         style="stroke-width:0.264583"
+         x="24.780045"
+         y="46.008724"
+         dy="0 0 0 0 0 0.59163344">$\tau$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.08208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="40.655045"
+       y="46.008724"
+       id="text2842"><tspan
+         sodipodi:role="line"
+         id="tspan2840"
+         style="stroke-width:0.264583"
+         x="40.655045"
+         y="46.008724"
+         dy="0 0 0 0 0 0 0.59163344">$2\tau$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.08208px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="82.562943"
+       y="37.990753"
+       id="text2842-2"><tspan
+         sodipodi:role="line"
+         id="tspan2840-2"
+         style="stroke-width:0.264583"
+         x="82.562943"
+         y="37.990753"
+         dy="0 0 0.59163344">$t$</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,1628 @@
+\documentclass[a5paper,12pt,twoside]{book}
+%\setlength{\headheight}{15pt} % Sirve para corregir un error asociado a fancyhdr
+
+\input{my-book-packages}
+\input{my-book-commands}
+
+% ENTORNOS DE NUMERACIÓN
+\newtheorem{defn}{{Definición}}[chapter]
+\newtheorem{prop}{{Propiedad}}[chapter]
+\newtheorem{example}{{Ejemplo}}[chapter]
+
+% ENTORNOS DE FORMATO
+\newenvironment{formatI}{\vspace{1ex}\par\small\sffamily} % Consignas de ejemplos
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\scriptsize \nouppercase\rightmark}
+\cfoot{\scriptsize \thepage}
+\pagenumbering{gobble}
+\renewcommand{\headrulewidth}{0pt}
+
+\frontmatter
+% \includepdf{cover}
+
+\begin{center}
+    \begin{Huge}
+        \textbf{Notas de electrónica}
+    \end{Huge}
+
+    \vspace{1cm}
+    \textbf{Primera edición}
+    \vspace{2cm}
+
+    \begin{Large}
+        Malvicino, Maximiliano R.
+        % \\ Apellido, Nombre de otros autores
+    \end{Large}
+\end{center}
+
+\clearpage
+\noindent
+\textbf{Prefacio}
+
+Resumen de contenidos de la materia. Cursadas 2020 1C y 2020 2C con el profesor Jorge Petrosino. La versión digital más reciente de este texto puede ser descargada gratuitamente de \url{https://bit.ly/malvicinoEyM}.
+
+\renewcommand{\spanishappendixname}{Anexo}
+\tableofcontents
+
+\mainmatter
+\pagenumbering{arabic}
+
+
+\chapter{Electricidad}
+
+
+% \section{Materiales conductores y aislantes}
+
+
+% \section{Carga por polarización e inducción}
+
+
+\section{Fuerza eléctrica}
+
+La fuerza eléctrica entre dos cargas puntuales está dada por la \emph{Ley de Coulomb} a continuación.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Ley de Coulomb}
+    \begin{equation*}
+        \Vec{F}_e = \cstcoulomb \, \frac{ q_0 \, q_1}{r^2} \, \versor{r}
+    \end{equation*}
+\end{mdframed}
+
+Donde $\cstcoulomb=8.99 \times 10^9\,\si{\newton\metre^2\per\coulomb^2}$ es la constante eléctrica de Coulomb.
+
+A partir de la constante de Coulomb se define la permitividad del vacío $\epsilon_0$ tal que:
+\begin{equation}
+    \epsilon_0 = \dfrac{1}{4 \pi \cstcoulomb} = 8.85 \times 10^{-12} \,\si{\coulomb^2\per\newton\metre^2}
+\end{equation}
+
+Según el modelo atómico, la materia está formada por moléculas que están compuestas en última instancia por átomos. Pero a su vez, los átomos están formados por distintas configuraciones de \emph{partículas subatómicas}, de ahí que haya distintos tipos de elementos. Cada elemento se clasifica en la tabla periódica según su número atómico, que es la cantidad de protones que tiene un átomo de dicho elemento. Un átomo tiene la misma cantidad de protones que de neutrones, pero no necesariamente la misma cantidad de electrones. Podemos identificar así el peso de un átomo de cierto elemento, conociendo la cantidad de partículas subatómicas, según el siguiente cuadro, donde además se observa la carga eléctrica de cada una.
+
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Partícula & Masa [\si{\kilo\gram}] & Carga [\si{\coulomb}]
+            \\ \hline \hline
+            Electrón & $9.1094 \times 10^{-31}$ & $-1.6022 \times 10^{-19}$
+            \\ \hline
+            Protón & $1.6726 \times 10^{-27}$ & $+1.6022 \times 10^{-19}$
+            \\ \hline
+            Neutrón & $1.6749 \times 10^{-27}$ & $0$
+            \\ \hline
+        \end{tabular}
+        \caption{Masa y carga de las partículas atómicas.}
+    \end{center}
+\end{table}
+
+La cantidad de protones (y neutrones) de un átomo permanece inalterada. Una transformación física que modificase la \emph{estructura atómica} implicaría un cambio en el núcleo del átomo haciendo que el elemento no sea el mismo. Estas transformaciones se conocen como fusión y fisión nuclear.
+
+En cambio, la cantidad de electrones de un átomo sí puede variar sin alterar la naturaleza del elemento. Si un átomo tiene la misma cantidad de protones que de electrones se lo llama neutro. De lo contrario, se lo llama ion, o se dice que está cargado eléctricamente.
+
+
+\section{Campo eléctrico}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Campo eléctrico de carga puntual}
+    \cusTe{Campo vectorial generado por un cuerpo con carga que indica la fuerza eléctrica que sufriría cierta carga $q_0$ en un punto del espacio.}
+    \begin{equation*}
+        \Vec{E} = \frac{\Vec{F}_e}{q_0}
+    \end{equation*}
+\end{mdframed}
+
+Según el principio de superposición, el campo eléctrico generado por $\nth$ cargas puntuales, va a estar dado por la suma de la contribución que cada carga genere:
+\begin{equation}
+    \Vec{E}= \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith^2} \, \versor{r}_\ith
+\end{equation}
+
+Ahora bien, el campo eléctrico generado por una carga contínua se define a partir del diferencial $\dif q$ que determina la distribución geométrica de la carga.
+
+Según esté la carga dispuesta en una, dos o tres dimensiones se tendrá una densidad de carga lineal, superficial o volumétrica respectivamente. Por lo tanto $\dif q$ será, en cada caso:
+\begin{align*}
+    \dif q &= \lambda \, \dif x
+    \\[1ex]
+    \dif q &= \sigma \, \dif A
+    \\[1ex]
+    \dif q &= \rho \, \dif V
+\end{align*}
+
+Y si la carga está distribuída uniformemente, la densidad de carga es igual a la carga total $Q$ sobre el largo, área o volumen del material:
+\begin{align*}
+    \lambda &= \frac{Q}{L}
+    \\[1ex]
+    \sigma &= \frac{Q}{A}
+    \\[1ex]
+    \rho &= \frac{Q}{V}
+\end{align*}
+
+Se consideran particiones que van a tener cierta carga $\Delta q_\ith$ y se las trata como puntuales. Sumando el aporte de cada $\Delta q$ se obtiene una aproximación del campo eléctrico debido a la carga total:
+\begin{equation*}
+    \Vec{E} \approx \cstcoulomb \sum_{\ith=1}^\nth \frac{\Delta q_\ith}{r_\ith^2} \, \versor{r}_\ith
+\end{equation*}
+
+Luego, tomar el límite cuando $\nth\to\infty$ en la ecuación anterior equivale a hacer infinito el número de particiones. De esta forma, el aporte de cada trozo de carga será $\Delta q_\ith = \dif q$ pudiendo definir:
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Campo eléctrico de carga contínua}
+    \begin{equation*}
+        \Vec{E} = \cstcoulomb \int \frac{\dif q}{r^2} \, \versor{r}
+    \end{equation*}
+\end{mdframed}
+
+Si bien la definición es siempre válida, la integral solo se puede computar en aquellos puntos que sea posible identificar:
+\begin{itemize}
+    \item Una simetría que permita escribir $\versor{r}$ como uno de los versores canónicos.
+    \item Una distancia $r$ tal que $\dif q$ varíe en una sola dimensión.
+\end{itemize}
+
+
+\section{Ley de Gauss}
+
+El flujo eléctrico ($\Phi$) de una carga eléctrica encerrada por una superficie ($S$) está dado por el campo eléctrico ($\Vec{E}$) según
+\begin{equation*}
+    \Phi = \iint_S \Vec{E} \cdot \dif \Vec{S} = \iint \Vec{E} \bb{\Vec{s}(u,v)} \versor{n} \, \dif S
+\end{equation*}
+
+La Ley de Gauss establece que el flujo no depende de la ubicación de la carga dentro de una superficie cerrada. Esto se debe a que el campo eléctrico es inversamente proporcional a la distancia mientras que el área es directamente proporcional. Luego, 
+\begin{equation*}
+    \Phi = E \, \oiint_S \dif S = E \, A
+\end{equation*}
+
+Así, podemos reducir cualquier caso de estudio a una superficie esférica con la carga ubicada en el centro:
+\begin{equation*}
+    \Phi = \frac{\cstcoulomb \, Q}{r^2} \, 4 \, \pi \, r^2 = 4 \, \pi \, \cstcoulomb \, Q
+\end{equation*}
+
+O bien, según la permitividad del vacío:
+\begin{equation*}
+    \Phi = \frac{Q}{\epsilon_0}
+\end{equation*}
+
+Si el campo eléctrico es de magnitud constante $(E)$ y de dirección normal a la superficie para todo punto de esta entonces se puede aplicar la Ley de Gauss para calcular la magnitud del Campo Eléctrico.
+
+
+\section{Equilibrio electrostático}
+
+Se dice que un material conductor esta en equilibrio electrostático cuando no tiene electrones en movimiento.
+Los conductores que cumplan esta condición, tienen las siguientes propiedades:
+
+\begin{itemize}
+\item El campo eléctrico es nulo en el interior del conductor, ya sea este hueco o sólido.
+
+\item Si es un conductor aislado con carga, está se acumula en la superficie.
+
+\item El campo es ortogonal a la superficie del conductor.
+
+\item La densidad de carga superficial es máxima donde la curvatura sea mínima.
+\end{itemize}
+
+
+\section{Potencial eléctrico}
+
+Si dos cargas son del mismo signo, el medio tiene que hacer trabajo para acercarlas, ganando el sistema energía potencial eléctrica. Si dos cargas son de signo opuesto, el medio tiene que hacer trabajo para alejarlas, de manera que el sistema gana energía potencial eléctrica. Así, se establece por convención que el trabajo es positivo cuando el sistema gana energía.
+\begin{equation*}
+    W \gtrless 0 \iff {\sub{E}{pot}}_F \gtrless {\sub{E}{pot}}_0
+\end{equation*}
+
+Según el Principio de conservación de la energía, se define la diferencia de energía potencial eléctrica $(\Delta \sub{E}{pot})$ como el trabajo de la fuerza eléctrica:
+\begin{align*}
+    \Delta \sub{E}{pot} &= - \sub{W}{con}
+    \\
+    &= - \int_C \sub{\Vec{F}}{ele} \cdot \dif \Vec{s}
+    \\
+    &= - q_0 \int_C \Vec{E} \cdot \dif \Vec{s}
+\end{align*}
+
+La diferencia de potencial eléctrico $(\Delta V)$ se define dividiendo por $q_0$ ambos miembros de la ecuación anterior.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+        \label{defn:potEle}
+    \end{defn}
+    \cusTi{Potencial eléctrico}
+    \begin{equation*}
+        \Delta V = \frac{\Delta \sub{E}{pot}}{q_0} = - \int_C \Vec{E} \cdot \dif \Vec{s}
+    \end{equation*}
+\end{mdframed}
+
+A partir de la definición anterior, se deduce el potencial eléctrico para una carga puntual:
+\begin{align*}
+    \Delta V &= - \int_C \frac{\cstcoulomb \, q}{r^2} \versor{r} \cdot \dif \Vec{s}
+    \\
+    &= - \int_C \frac{\cstcoulomb \, q}{r^2} \nnorm{\versor{r}} \, \nnorm{\dif \Vec{s}} \, \cos(\theta)
+    \\
+    &= - \int_{r_0}^{r_1} \frac{\cstcoulomb \, q}{r^2} \dif r
+    \\
+    &= \barrow{\frac{\cstcoulomb \, q}{r}}{r_0}{r_1}
+\end{align*}
+
+Pudiendo luego generalizar para $N$ cargas puntuales:
+\begin{equation}
+    \Delta V = \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith}
+\end{equation}
+
+Tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define el potencial en un punto del espacio dado por una carga contínua.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Potencial eléctrico de carga contínua}
+    \begin{equation*}
+        \Delta V = \cstcoulomb \int \frac{\dif q}{r}
+    \end{equation*}
+\end{mdframed}
+
+Para calcularlo, hay que considerar cómo es la geometría de la carga $\dif q$ distribuida en el espacio.
+
+Para un campo uniforme, se tiene
+\begin{equation*}
+    \Delta V = - E \int_{x_0}^{x_1} \dif x
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Potencial eléctrico en campo uniforme}
+    \begin{equation*}
+        \Delta V = - E \, \Delta x
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Relación entre campo y potencial}
+
+La diferencia de potencial eléctrico, es conocida como tensión eléctrica, voltaje, potencial eléctrico o simplemente potencial.
+
+De la definición \ref{defn:potEle} se deduce que el diferencial de potencial eléctrico es
+\begin{equation*}
+    \dif V = - \Vec{E} \, \dif \Vec{s}
+\end{equation*}
+
+Lo cual implica $\Vec{E} = - \grad V$ que en una dimensión es:
+\begin{equation*}
+    E(x) = - \frac{\dif}{\dif x} V(x)
+\end{equation*}
+
+Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye. Así mismo, como la gráfica de $V(r)$ es decreciente, tiene pendiente negativa si la distancia es $r>R$. La pendiente de $V(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{PotEleConductor.png}
+\end{center}
+
+El signo negativo se deduce por ser el campo eléctrico positivo si $r>R$ y negativo si $r<-R$ y la pendiente de $V(r)$ negativa y positiva respectivamente. Además, se puede observar que si la distancia es $-R<r<R$, el potencial eléctrico $V(r)$ es constante con lo cual el campo es nulo ya que es la derivada con respecto de la distancia.
+
+
+\section{Capacitancia}
+
+Un recipiente con un volumen $(V)$ mayor va a tener más capacidad de almacenar gas. Esto va a tener ciertas implicancias sobre la masa $(m)$ y la presión $(P)$.
+\begin{equation*}
+    V_1 > V_2 \Rightarrow
+    \left\{
+    \begin{aligned}
+        m_1 = m_2 & \Rightarrow P_1 < P_2
+        \\
+        P_1 = P_2 & \Rightarrow m_1 > m_2
+    \end{aligned}
+    \right.
+\end{equation*}
+
+Si se define la capacidad del recipiente como $C= \sfrac{m}{P}$, a partir de las implicaciones anteriores se puede concluir que el recipiente de mayor volumen es efectivamente el de mayor capacidad.
+\begin{gather*}
+    \left\{
+    \begin{aligned}
+        P_1 < P_2 & \Rightarrow \frac{m}{P_1} > \frac{m}{P_2} \Rightarrow C_1 > C_2
+        \\[1ex]
+        m_1 > m_2 & \Rightarrow \frac{m_1}{P} > \frac{m_2}{P} \Rightarrow C_1 > C_2
+    \end{aligned}
+    \right.
+    \\[1em]
+    C_1 > C_2 \Rightarrow V_1 > V_2
+\end{gather*}
+
+La capacitancia o capacidad eléctrica es la cantidad de carga $(q)$ por unidad de tensión $(\Delta V)$ que un capacitor o condensador puede almacenar.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Capacitancia}
+    \begin{equation*}
+        C = \frac{q}{\Delta V}
+    \end{equation*}
+\end{mdframed}
+
+Entre dos capas paralelas, el campo es uniforme. La capacidad es luego
+\begin{equation*}
+    C = \frac{q}{E \, \Delta x} = \frac{q}{\frac{\sigma}{\epsilon_0}\Delta x} = \frac{q}{\tfrac{q}{A \, \epsilon_0}\Delta x}
+\end{equation*}
+
+Obteniendo así
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Capacitancia de placas paralelas}
+    \begin{equation*}
+        C = \frac{\epsilon_0 A}{\Delta x}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Capacitancia de cilindros}
+    \begin{equation*}
+        C = \frac{l}{2 \, \cstcoulomb \ln{\bb{\dfrac{r_2}{r_1}}}}
+    \end{equation*}
+\end{mdframed}
+
+Para estudiar la capacidad de una esfera, se tiene:
+\begin{equation*}
+    C = \frac{q}{-\displaystyle\int_{r_1}^{r_2} \frac{\cstcoulomb \, q}{r^2} \dif r}
+\end{equation*}
+
+Tomando $r_2 \to \infty$ se tiene
+\begin{equation*}
+    C = \frac{r_1}{\cstcoulomb} = 4 \, \pi \, \epsilon_0 \, r_1
+\end{equation*}
+
+Obteniendo así
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Capacitancia de esferas}
+    \begin{equation*}
+        C = \frac{r_1 \, r_2}{\cstcoulomb \bb{r_2 - r_1}}
+    \end{equation*}
+\end{mdframed}
+
+Para calcular la energía almacenada en un capacitor se hace:
+\begin{gather*}
+    \frac{\dif W}{\dif q} = \frac{\dif q}{\dif q} \, \Delta V = \Delta V
+    \\
+    \dif W = \Delta V \, \dif q = \frac{q}{C} \, \dif q
+    \\
+    \int \dif W = \int \frac{q}{C} \, \dif q
+    \\
+    W = \barrow{\frac{q^2}{2C}}{0}{q_1}
+    \\
+    \sub{E}{pot} = \frac{q^2}{2C} = \frac{q \, \Delta V}{2}
+\end{gather*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Energía almacenada en un capacitor}
+    \begin{equation*}
+        \sub{E}{pot} = \frac{C \bb{\Delta V}^2}{2}
+    \end{equation*}
+\end{mdframed}
+
+Al reemplazar el potencial eléctrico $\Delta V = E \, \Delta x$ y la capacitancia $C = \tfrac{\epsilon_0 \, A}{\Delta x}$ en $\sub{E}{pot} = \tfrac{1}{2} \, \tfrac{\epsilon_0 \, A}{\Delta x} \bb{E \, \Delta x}^2$, donde $V_0 = A \, \Delta x$ es el volumen, se obtiene
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Energía almacenada en placas paralelas}
+    \begin{equation*}
+        \dfrac{\sub{E}{pot}}{V_o} = \frac{\epsilon_0 \, E^2}{2}
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Dieléctricos}
+
+Un dieléctrico es un material que no es conductor de la electricidad. En el vacío se tienen la constante de Coulomb $(\cstcoulomb)$ y la permitividad del vacío $(\epsilon_0)$ ya mencionadas. Según las propiedades de cada dieléctrico se puede definir una constante dieléctrica $k$ y una resistencia dieléctrica $\epsilon$ para cada material.
+
+El campo eléctrico máximo que se puede dar en un capacitor está dado por la resistencia dieléctrica. Si la magnitud del campo es mayor que esta, esto es, entonces el dieléctrico pasa a ser conductor. Por lo tanto, para un dieléctrico se cumple:
+\begin{equation*}
+    E < \epsilon
+\end{equation*}
+
+La capacitancia está definida para el vacío. Si entre los conductores de un capacitor en vez de vacío hay un material dieléctrico, la tensión va a estar dada por
+\begin{equation*}
+    \Delta V = \frac{\Delta V_0}{k}
+\end{equation*}
+
+Quedando la capacitancia:
+\begin{equation*}
+    C = k \, C_0
+\end{equation*}
+
+
+\chapter{Circuitos DC}
+
+
+\section{Definición de corriente}
+
+Alessandro Volta inventó la pila de corriente continua colocando un electrolito entre dos metales con diferente potencial de extracción.
+
+El potencial de extracción de un metal es la energía que se necesita hacer mediante un trabajo para que el metal seda un electrón. Al poner en contacto dos metales, como son conductores, los electrones quedan en libertad para fluir hacia el metal cuya energía sea menor, aunque ambos metales sean neutros. Por este motivo, ciertos metales en contacto quedan cargados, con una diferencia de potencial eléctrico proporcional a la diferencia de potencial de extraccion de los metales. Si se ponen los metales en contaco con un electrolito, los iones van a neutralizar los metales cargados. Al poner en contacto los metales nuevamente, estos se vuelven a cargar y se vuelve a dar el proceso químico de electrólisis que los neutraliza generando corriente contínua.
+
+La intensidad de corriente es la cantidad de cargas por segundo que pasa por un punto en un circuito:
+\begin{equation*}
+    I = \frac{q}{\Delta t}
+\end{equation*}
+
+
+\section{Ley de Ohm}
+
+Hay diferentes materiales conductores. Hipotéticamente se definen los conductores ideales, que no oponen resistencia alguna al flujo de corriente. Luego, están los buenos conductores, que ante una tensión practicamente no se oponen al paso de corriente, como el oro o el cobre. Por otro lado, están los malos conductores, que son materiales que conducen la electricidad pero con dificultad, haciendo que el flujo de corriente sea lento.
+
+Cuanto más largo sea un mal conductor, más resistencia opondrá al paso de corriente. Cuanto más ancho sea, las cargas tendrán más lugar para fluir:
+
+\begin{equation*}
+    \text{Resistencia} \equiv \frac{\text{Resistividad} \times \text{Distancia}}{\text{Area}}
+\end{equation*}
+
+Georg Simon Ohm demostró experimentalmente la proporción con la que, para distintos tipos de conductores, una misma tensión genera distintos flujos de corriente. Pero indistintamente del material y topología del conductor, para cada uno se verifica que la relación entre diferentes tensiones con las respectivas corrientes que se generan es constante:
+
+\begin{equation*}
+    R = \frac{V}{I}
+\end{equation*}
+
+Así, la Ley de Ohm establece que la tensión es directamente proporcional a la corriente, y definió el factor de proporcionalidad $R$ como Resistencia:
+
+\begin{equation}
+    V = R \cdot I
+\end{equation}
+
+
+\section{Combinación de capacitores}
+
+
+\subsection*{Capacitores en paralelo}
+
+Una configuración de capacitores en paralelo, equivale a aumentar el área total. A partir de esta noción, podemos intuir que la capacidad total va a aumentar mediante la suma de las capacidades individuales.
+\begin{gather*}
+    V = \norm{V_1} + \norm{V_2} \quad , \quad q = q_1 + q_2
+    \\
+    \sub{C}{par} = \frac{q_1 + q_2}{V}
+\end{gather*}
+
+\begin{equation*}
+    \sub{C}{par} = \sum_{\ith=1}^\nth C_\ith
+\end{equation*}
+
+
+\subsection*{Capacitores en serie}
+
+\begin{gather*}
+    q = \norm{q_1} = \norm{q_2} \quad , \quad V = V_1 + V_2
+    \\
+    \sub{C}{ser} = \frac{q}{V_1 + V_2}
+\end{gather*}
+
+\begin{equation*}
+    \frac{1}{\sub{C}{ser}} = \sum_{\ith=1}^\nth \frac{1}{C_\ith}
+\end{equation*}
+
+
+\section{Combinación de resistencias}
+
+
+\subsection*{Resistencias en serie}
+
+En un circuito formado por una fuente de tensión y dos resistores conectados en serie, la misma cantidad de cargas que genere la fuente va a pasar por cada resistor.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Rserie.png}
+\end{center}
+
+Por lo tanto, la corriente que pase por cada resistor es la misma que genera la fuente. Como la diferencia de voltaje abarca ambos resistores, la tensión de la fuente es la suma de la caida de tensión de los resistores.
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        V &= V_1 + V_2
+        \\
+        Q &= Q_1 = Q_2
+    \end{aligned}
+    \right.
+\end{equation*}
+
+Aplicando la Ley de Ohm a la fuente y luego a la tensión de cada resistor, se tiene:
+\begin{equation*}
+    \sub{R}{ser} = \frac{V \, \Delta t}{Q} = \frac{\bb{V_1 + V_2} \Delta t}{Q} = \frac{\bb{I \, R_1 + I \, R_2}}{I} = R_1 + R_2
+\end{equation*}
+
+Por lo tanto, para $\nth$ resistores, se tiene:
+\begin{equation*}
+    \sub{R}{ser} = \sum_{\ith=1}^\nth R_\ith
+\end{equation*}
+
+
+\subsection*{Resistencias en paralelo}
+
+En un circuito formado por una fuente de tensión y dos resistores conectados en paralelo, las cargas generadas por la fuente se van a dividir entre ambos resistores.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{Rparallel.png}
+\end{center}
+
+Por lo tanto, la corriente generada por la fuente va a ser la suma de la corriente que pase por cada resistor. La tensión generada, en cambio, es la misma para ambos resistores.
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        V &= V_1 = V_2
+        \\
+        Q &= Q_1 + Q_2
+    \end{aligned}
+    \right.
+\end{equation*}
+
+Aplicando la Ley de Ohm a la fuente y luego a la corriente de cada resistor, se tiene:
+\begin{align*}
+    \sub{R}{par} &= \frac{V \, \Delta t}{Q} = \frac{V \, \Delta t}{Q_1 + Q_2}
+    \\[1ex]
+    &= \frac{V}{I_1 + I_2} = \frac{V}{\dfrac{V}{R_1} + \dfrac{V}{R_2}}
+    \\[1ex]
+    &= \frac{1}{\dfrac{1}{R_1}+\dfrac{1}{R_2}} = \frac{R_1 \, R_2}{R_1 + R_2}
+\end{align*}
+
+Por extrapolación, para $\nth$ resistores, se tiene:
+\begin{equation}
+    \frac{1}{\sub{R}{par}} = \sum_{\ith=1}^\nth R_\ith
+\end{equation}
+
+
+\section{Leyes de Kirchhoff}
+
+Hay conexiones que no son ni en paralelo ni en serie, porque tienen puntos o nodos que comparten varias conexiones, pudiendo formar varias mallas que contengan distintos componentes.
+
+\begin{itemize}
+\item La ley de Kirchhoff de la Corriente dice que para cada nodo, la suma de las corrientes es nula, considerando la corriente entrante como positiva y saliente como negativa.
+
+\item La Ley de Kirchhoff de la Tensión dice que para cada malla, si esta se recorre en sentido horario la suma de las tensiones de los componentes que se encuentren es nula.
+\end{itemize}
+
+
+\section{Fuente de corriente}
+
+Una fuente de corriente impone cierta corriente a la rama en la que esté conectada:
+
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{I1.png}
+\end{center}
+
+Si se tiene un circuito con una fuente de corriente antes o después de una rama, va a haber cierta corriente a la entrada de la rama y la misma a la salida de esta:
+
+\begin{itemize}
+\item No es posible que en una misma rama haya dos fuentes de corriente de distinto valor, porque se estarían contradiciendo.
+
+\item No importa si los resistores que haya en la rama están en serie o en paralelo. La resistencia equivalente va a tener la corriente impuesta por la fuente.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{I2.png}
+\end{center}
+
+\item No importa si hay fuentes de tensión u otros elementos antes o después de la rama. Si entre el punto $b$ y la fuente de corriente hubiese, por ejemplo, una fuente de tensión esta no sería parte de la rama.
+\end{itemize}
+
+
+\section{Fuente ideal y fuente real}
+
+Las fuentes reales generan una tensión, pero al conectarlas con una resistencia de caraga, varian la tensión que generarian de no tener carga.
+
+
+\subsection*{Modelo de fuente de tensión real}
+
+Para simular el efecto de disminución del potencial que generaría conectar un resistor de carga $(R_L)$ a una fuente ideal $(V_F)$, se puede conectar un resistor en serie, llamado resistencia de fuente $(R_S)$. El modelo de fuente real $(V_S)$ es el conjunto de la fuente ideal y la resistencia de fuente.
+
+La resistencia de fuente va a depender del resistor de carga, ya que queremos que al conectarla, la fuente real tenga un valor que se aproxime al de la fuente ideal. Los esquemas se muestran a continuación:
+
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{FakeV.png}
+    \includegraphics[width=0.4\linewidth]{SourceV.png}
+\end{center}
+
+Nótese que la corriente $(I)$ no va a variar cuando se analiza el circuito para la fuente ideal con respecto del circuito para la fuente real, por tratarse de conexiones en serie:
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        V_F &= V_{R_S} + V_{R_L} = I \bb{R_S + R_L}
+        \\
+        V_S &= V_{R_L} = I \, R_L
+    \end{aligned}
+    \right.
+\end{equation*}
+
+Al comparar la tensión de salida $(V_S)$ con la tensión $(V_F)$ que tendría la fuente ideal, se pueden sacar conclusiones de cómo deberá ser $R_L$ con respecto de $R_S$, para que $V_S$ se aproxime a $V_F$.
+\begin{equation*}
+    \frac{V_S}{V_F} = \frac{I \, R_L}{I \bb{R_S + R_L}} = \frac{R_L}{R_S + R_L}
+\end{equation*}
+
+Por lo tanto, $V_S \to V_F$ cuando $R_S / R_L \to 0$. Entonces, para que el modelo de fuente real sea una buena aproximación, se tiene que cumplir que $R_L >> R_S$.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{VsRc.png}
+\end{center}
+
+
+\subsection*{Modelo $A$ de fuente de corriente}
+
+Una fuente de corriente es un elemento teórico que no existe en la realidad de manera natural. Pero como la tensión es proporcional a la corriente existen fuentes de tensión que funcionan como fuentes de corrientes, bajo ciertas consideraciones.
+
+En la situación anterior, la disminución de tensión en una fuente real va a ser proporcional a una disminución de corriente. Con este criterio, para simular una fuente de corriente real se puede usar el circuito anterior. Los esquemas se muestran a continuación:
+
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{FakeV.png}
+    \includegraphics[width=0.4\linewidth]{SourceI.png}
+\end{center}
+
+Nótese que, si bien se trata de conexiones en serie, estamos suponiendo que la corriente va a variar porque justamente cómo se comporta el modelo $I_S$ con y sin carga:
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        I_F &= \frac{V_F}{R_S}
+        \\[1ex]
+        I_S &= \frac{V_F}{R_S + R_L}
+    \end{aligned}
+    \right.
+\end{equation*}
+
+Con el fin de usar este circuito como fuente de corriente, al comparar la corriente de salida $(I_S)$ que entregaría la fuente con la que efectivamente pasa por la fuente ideal $(I_F)$, se tiene que:
+\begin{equation*}
+    \frac{I_S}{I_F} = \frac{R_S}{R_S + R_L}
+\end{equation*}
+
+Es decir, que $I_S \to I_F$ cuando $R_L/R_S \to 0$. Por lo tanto, para que el modelo de fuente de corriente real sea una buena aproximación, se tiene que cumplir que $R_L<<R_S$.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{IsRc.png}
+\end{center}
+
+
+\subsection*{Modelo $B$ de fuente de corriente}
+
+Otra forma de simular la disminución de corriente que generaría conectar un resistor de carga a una fuente ideal, es considerar una resistencia de fuente en paralelo a una fuente ideal.
+
+La notación con el tilde es simplemente para diferenciar los elementos de este modelo con los del anterior, que no tienen tilde.
+
+El esquema se muestra a continuación:
+
+\begin{center}
+    \includegraphics[width=0.4\linewidth]{FakeI.png}
+    \includegraphics[width=0.4\linewidth]{SourceI.png}
+\end{center}
+
+En este caso, ambos resistores tendrían la tensión $V_F$ de la fuente ideal. La corriente de salida $I_S'$ ahora incluiría el recorrido en paralelo, pero como se ve a continuación, se sigue cumpliendo que $R_L$ tiene que ser chica con respecto de $R_F$, ya que la corriente de salida $I_S'$ tiene que coincidir con la corriente $I_S$ de la fuente del modelo anterior:
+\begin{gather*}
+    \left\{
+    \begin{aligned}
+        I_F' &= \frac{V_F}{\frac{R_S \, R_L}{R_S + R_L}}
+        \\[1ex]
+        I_S' &= \frac{V_F}{R_L}
+    \end{aligned}
+    \right.
+    \\[1em]
+    V_F = \frac{I_F' \, R_S \, R_L}{R_S + R_L}
+    \\[1em]
+    I_S' = \frac{I_F' \, R_S}{R_S + R_L} = \frac{V_F}{R_S + R_L} = I_S
+\end{gather*}
+
+De esta manera, concluimos que teóricamente es posible reemplazar una fuente de corriente real con su resistencia de fuente en paralelo por una fuente de tensión real con su resistencia de fuente en serie.
+
+
+% \subsection*{Reemplazo de fuentes}
+
+
+\section{Divisores}
+
+\subsection*{Divisor de tensión}
+
+Al conectar $(\nth)$ resistores en serie a una fuente de tensión, se tiene lo que se conoce como divisor de tensión. Esta configuración permite vizualizar la caida de tensión de algún resistor mediante una fórmula.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{DividerV.png}
+\end{center}
+
+La corriente para cualquier elemento de un circuto en serie y perticulamente para la fuente de tensión está dada por:
+\begin{equation*}
+    I = \frac{V_S}{\sum_\ith^\nth R_\ith}
+\end{equation*}
+
+Entonces, la caida de tensión de cualquiera de los resistores está dada por:
+\begin{equation*}
+    V_{R_\ith} = I \, R_\ith = V_S \, \frac{R_\ith}{\sum_\ith^\nth R_\ith}
+\end{equation*}
+
+O bien, si $\nth=2$ se tiene:
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        V_{R_1} &= V_S \, \frac{R_1}{R_1 + R_2}
+        \\[1ex]
+        V_{R_2} &= V_S \, \frac{R_2}{R_1 + R_2}
+    \end{aligned}
+    \right.
+\end{equation*}
+
+
+\subsection*{Divisor de corriente}
+
+Al conectar $(\nth)$ resistores en paralelo a una fuente de corriente, se tiene lo que se conoce como divisor de corriente. Esta configuración permite vizualizar la corriente que pasa por algún resistor mediante una fórmula.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{DividerI.png}
+\end{center}
+
+La resistencia equivalente $(R_e)$ en paralelo es:
+\begin{equation*}
+    \sub{R}{eq} = \frac{1}{\sum_\ith^\nth \frac{1}{R_\ith}}
+\end{equation*}
+
+La tensión para cualquier elemento de un circuito en paralelo y particularmente para la fuente de corriente está dada por:
+\begin{equation*}
+    V_S = I_S \, \sub{R}{eq}
+\end{equation*}
+
+La corriente que pase por algún resistor es:
+\begin{equation*}
+    I_\ith = \frac{V_S}{R_\ith} = \frac{I_S \, \sub{R}{eq}}{R_\ith}
+\end{equation*}
+
+O bien, si $\nth=2$ se tiene:
+\begin{equation*}
+    \left\{
+    \begin{aligned}
+        I_1 &= I_S \frac{R_2}{R_1 + R_2}
+        \\
+        I_2 &= I_S \frac{R_1}{R_1 + R_2}
+    \end{aligned}
+    \right.
+\end{equation*}
+
+
+%\section{Ecuaciones de mallas}
+
+
+\section{Superposición}
+
+El método de superposición calcula la corriente $I_\kth$ que pasa por cada uno de los $\Kth$ resistores de un circuito con $\Nth$ fuentes, ya sean de tensión o de corriente.
+
+Primero, hay que plantear tantos circuitos como fuentes haya en el circuito original, pasivando $\Nth-1$ Fuentes en cada una de las $\Nth$ situaciones.
+
+Cada uno de los $\Nth$ circuitos planteados va a tener una sola fuente activa y el resto pasivada. En cada una de estas situaciones, se deja activa una fuente distinta.
+
+\begin{itemize}
+    \item Para pasivar una fuente de tensión, se la reemplaza por un cable:
+    \begin{equation*}
+        V_S = 0 \iff R_S \to 0
+    \end{equation*}
+
+    \item Para pasivar una fuente de corriente se la desconecta, y se deja esa rama del circuito abierta:
+    \begin{equation*}
+        I_S = 0 \iff R_S \to \infty
+    \end{equation*}
+\end{itemize}
+
+Para cada uno de los $\Kth$ resistores, se calcula la corriente $I_{\kth_\nth}$ que pasa en cada uno de los $\Nth$ circuitos. Sumando las $\Nth$ corrientes de los diferentes circuitos que pasan para cierto resistor, se obtiene la corriente neta que pasa por el resistor $\kth$-ésimo:
+\begin{equation*}
+    I_\kth = \sum_\nth^\Nth I_{\kth_\nth} = I_{\kth_3} + I_{\kth_2} + \dots + I_{\kth_\Nth}
+\end{equation*}
+
+Donde $I_{\kth_3} + I_{\kth_2} + \dots + I_{\kth_\Nth}$ son las corrientes de cada circuito $\nth$ que pasan por un mismo resistor $\kth$.
+
+
+\section{Equivalente de Thevenin}
+
+El teorema de Thevenin sirve para diseñar un circuito compuesto por una fuente $\sub{V}{Th}$ y una resistencia $\sub{R}{Th}$ que tengan un comportamiento equivalente al de un circuito original más intrincado.
+
+\begin{itemize}
+\item Para calcular $\sub{V}{Th}$ hay que sacar $R_L$ y calcular la tensión a circuito abierto.
+\item Para medir $\sub{V}{Th}$ hay que sacar $R_L$ y medir la tensión a circuito abierto.
+\item Para calcular $\sub{R}{Th}$ hay que sacar $R_L$, pasivar todas las fuentes del circuito original y calcular la resistencia equivalente.
+\item Para medir $\sub{R}{Th}$ hay que sacar $R_L$ y en su lugar colocar una resistencia variable $R_{POT}$ que genere una caida de tensión de $\sfrac{\sub{V}{Th}}{2}$. Al plantear el circuito de Thevenin, se tiene un divisor resistivo entre $\sub{R}{Th}$ y $R_{POT}$, a partir del cual se calcula $\sub{R}{Th}$.
+\end{itemize}
+
+
+\section{Potencia}
+
+La potencia es la velocidad a la que los componentes de un circuito realizan trabajo. Para un resistor, la potencia es la cantidad de energía eléctrica por segundo que puede disipar en modo de calor:
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Potencia}
+    \begin{equation*}
+        P = \frac{W}{\Delta t}
+    \end{equation*}
+\end{mdframed}
+
+Pudiendo definir el consumo de energía electrica en \si{\kilo\watt\hour} como $W = P \Delta t$.
+
+Por definición de potencial eléctrico $W = q \, V$, luego:
+\begin{equation*}
+    P = \frac{q \, V}{\Delta t}
+\end{equation*}
+
+Y aplicando la ley de Ohm, se obtienen las siguientes definiciones equivalentes entre si.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        P = I \, V = \frac{V^2}{R} = I^2 \, R
+    \end{equation*}
+\end{mdframed}
+
+Dado que $P = I \, V$ tanto para la resistencia interna $R_S$ de un modelo de fuente real como para la resistencia equivalente de Thevenin $\sub{R}{Th}$, la fuente del circuito equivalente va a transferirle la máxima potencia a la resistencia de carga $(R_L)$ cuando $R_L=\sub{R}{Th}$. Por ser un divisor resistivo de resistencias iguales, se tiene:
+\begin{gather*}
+    V_L = \frac{\sub{V}{Th}}{2}
+    \\
+    V_L^2 = \frac{\sub{V}{Th}^2}{4}
+\end{gather*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \sub{P}{max} = \frac{V_L^2}{\sub{R}{Th}} = \frac{\sub{V}{Th}^2}{4 \, \sub{R}{Th}}
+    \end{equation*}
+\end{mdframed}
+
+
+\chapter{Circuitos AC}
+
+
+\section{Suministro de electricidad}
+
+¿Porqué se usa AC en vez de DC?
+
+\begin{itemize}
+\item Para generar energía eléctrica a partir de energía mecánica se utiliza la inducción magnética. Es decir, que en principio la corriente obtenida es alterna, ya que se genera a partir de bobinas girando entorno a un iman.
+
+\item Por otro lado, es más fácil transformar la corriente y la tensión de la corriente alterna, lo cual la hace más facil de transportar. Esto se debe a que se pueden usar cables de menor sección si la tensión es mayor, ya que la corriente disminuye.
+
+\item Además, es más fácil convertir la corriente alterna en contínua que viceversa.
+\end{itemize}
+
+
+\subsection*{Sistemas de protección}
+
+\concept{Fusible:} Cuando la corriente es mayor a la que soporta, aumenta la temperatura y se corta.
+
+\concept{Llave térmica:} Dos metales de distinta dilatación térmica, al estar firmemente pegados, cuando la temperatura aumenta el que se dilate más va a obligar a que se doble el otro para que las caras que estén pegadas tengan la misma área. Al levantarse el conjunto de metales se corta el circuito como si de una llave abierta se tratase.
+
+\concept{Diyuntor:} Analiza la corriente en las ramas saliente y entrante del circuito. Si las corrientes son distintas, quiere decir que hay una fuga de electrones a tierra que no permite que la corriente complete el recorrido del circuito.
+
+\concept{Javalina:} Si hay un desperfecto en algún equipo eléctrico, puede que el chasis quede electrificado. Mientras esté aislado, el disyuntor no va a activarse porque no hay descarga. Pero si una persona toca el chasis, esta va a hacer de medio para descargar a tierra, y recién ahí el disyuntor va a cortar el circuito. Por esto, se instala un conductor clavado en el piso al que se conecta la tercer pata de los enchufes, a la cual van conectados los chasis de los equipos.
+
+
+\subsection*{Sistema trifásico}
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{TriphasicDiagram.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{TriphasicCircuit.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{TriphasicGraph.png}
+\end{center}
+
+
+\section{Transitorios}
+
+
+\subsection*{Transitorios R-C}
+
+Los circuitos R-C son aquellos formados solamente por resistencias y capacitores. La etapa en que un circuito R-C se estabiliza hasta tener una corriente contínua y constante se llama transitoria.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{ChargeDischarge1.png}
+\end{center}
+
+Ni bien se cierre el interruptor, el capacitor comienza a cargarce. Mientras no haya tanto amontonamiento de cargas, una placa del capacitor puede recibir electrones y la otra puede sederlos. Por esto, el circuito se comporta como si hubiese corriente contínua. Al principio, la corriente es máxima y luego va decayendo.
+
+Se obtiene así la ecuación diferencial
+\begin{equation*}
+    \frac{\dif}{\dif t} i_C(t) = - \frac{i_C(t)}{\tau}
+\end{equation*}
+
+Cuya solución es
+\begin{equation*}
+    i_C(t) = I_0 \, e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+Donde:
+\begin{equation*}
+    I_0 = \frac{V_S}{R}
+\end{equation*}
+
+\begin{center}
+    \includegraphics[width=0.75\linewidth]{ChargeDischargeI.png}
+\end{center}
+
+La tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
+\begin{equation*}
+    v_C(t) = V_S - v_R(t) = V_S - R \, i(t)
+\end{equation*}
+
+Obteniendo la expresión:
+\begin{equation*}
+v_C(t) = V_S - V_S \, e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+\begin{center}
+    \includegraphics[width=0.75\linewidth]{ChargeDischargeV.png}
+\end{center}
+
+De manera general, si el capacitor tiene una tensión inicial $(V_0)$, la expresión que modela la tensión es:
+
+\begin{equation*}
+    v_C(t) = V_F + \bb{V_0 - V_F} e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+Donde $V_F = V_S$ para la etapa de carga y $V_F = 0$ para la etapa de descarga.
+
+Si la resistencia $(R)$ o la capacidad $(C)$ son grandes, el tiempo $(\tau)$ de cargado del capacitor tiene que ser mayor. Cuando $t=5\tau$ el capacitor tiene el $99\%$ de la tensión de la fuente, por lo que se considera cargado. Cada $\tau$ segundos la corriente disminuye aproximadamente el $33\%$.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \begin{equation*}
+        \tau = R \, C
+    \end{equation*}
+\end{mdframed}
+
+Si el interruptor del circuito RC es doble, el capacitor está obligado a estar o bien cargandose conectado a la fuente o bien descargandose:
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{ChargeDischarge2.png}
+\end{center}
+
+La llave del interruptor cambia con una frecuencia constante. Si $\tau$ es lo suficientemente chico, dará tiempo al capacitor de cargarse y descargarse mucho antes que la llave se vuelva a cambiar, y el gráfico de la tensión tendrá forma cuadrada, de lo contrario triangular.
+
+\begin{center}
+    \includegraphics[width=\linewidth]{ChargeDischarge.png}
+\end{center}
+
+
+\subsection*{Transitorios R-L}
+
+Al contrario que en un circuito R-C, en la bobina de un circuito R-L, al principio la corriente es mínima y la tensión máxima. Con el tiempo el circuito evoluciona análogamente.
+\begin{equation*}
+    v_L(t) = L \, \frac{\dif}{\dif t} i(t)
+\end{equation*}
+
+La tensión en una bobina se comporta como la corriente en un capacitor. La función que modela la corriente es contínua, no así la tensión.
+\begin{equation*}
+    i_L(t) = I_F - \bb{I_F - I_0} e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+
+\section{Valor pico y RMS}
+
+Dado que la corriente alterna se genera alejando y acercando un imán a una bobina, la corriente producida no es constante.
+La intensidad fluctúa dependiendo de la distancia entre el imán y la bobina.
+La corriente alterna es menos ``eficiente'' que la corriente contínua.
+Una fuente AC que tenga cierta corriente máxima es menos \emph{eficaz} que una fuente DC con ese mismo valor de corriente contínua.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{PeakRMS.png}
+\end{center}
+
+Como la potencia de una fuente AC fluctúa, si bien por momentos tiene cierta potencia máxima o potencia pico, a lo largo del tiempo tiene en promedio la mitad de ese máximo. Esta potencia promedio se llama potencia eficaz o Potencia RMS.
+\begin{equation*}
+    \rms{P} = \frac{\peak{P}}{2}
+\end{equation*}
+
+La relación entre corriente pico y RMS o tensión pico y RMS no es tan directa, ya que la potencia es el producto de estas:
+\begin{equation*}
+    \rms{I} \, \rms{V} = \frac{\peak{I} \, \peak{V}}{2}
+\end{equation*}
+
+Las siglas RMS o Root Mean Square salen de aplicar la Ley de Ohm a la definición de potencia para despejar la tensión:
+\begin{equation*}
+    P = \frac{V^2}{R} \Rightarrow V = \sqrt{P \, R}
+\end{equation*}
+
+Por lo tanto, reemplazando esta expresión para la tensión en la ecuación anterior se tiene:
+\begin{gather*}
+    \rms{I} \sqrt{\rms{P} \, R} = \frac{\peak{I} \sqrt{\peak{P} \, R}}{2}
+    \\
+    \rms{I} \sqrt{\frac{\peak{P}}{2}} = \frac{\peak{I} \sqrt{\peak{P}}}{2}
+\end{gather*}
+
+Por lo que relación entre el valor pico y RMS es:
+\begin{equation*}
+    \rms{I} = \frac{\peak{I}}{\sqrt{2}}
+    \quad , \quad
+    \rms{V} = \frac{\peak{V}}{\sqrt{2}}
+\end{equation*}
+
+
+\section{Impedancia}
+
+Para los circuitos DC, se definió la resistencia $R$. En circuitos AC se define la impedancia como $Z$, que engloba la resistencia $R$ de los resistores, la reactancia $X_C$ de los capacitores y la inductancia $X_L$ de las bobinas, siendo estas dos últimas aquella oposición al paso de corriente que imponen los capacitores y las bobinas:
+\begin{equation}
+    Z = R + \iu \bb{X_L - X_C} = \frac{V}{I} \, e^{\iu \bb{\phi_v - \phi_i}}
+\end{equation}
+
+De manera que
+\begin{align*}
+    v &= V \, e^{\iu \phi_v} \in \setC
+    \\
+    i &= I \, e^{\iu \phi_i} \in \setC
+\end{align*}
+
+En un circuito AC compuesto por un resistor, el pico de tensión se da al mismo tiempo que el de corriente. Por lo tanto, la fase de la impedancia es nula.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \phi_{v_R} = \phi_{i_R} \Rightarrow Z = R = \frac{V_R}{I_R} \, e^{\iu \bb{\ang{0} - \ang{0}}}
+    \end{equation*}
+\end{mdframed}
+
+En un circuito AC compuesto por un capacitor, el pico de tensión se da después que el de corriente. Por lo tanto, la fase de la impedancia es $-\ang{90}$.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \phi_{v_C} = \ang{0} \enspace , \enspace \phi_{i_C} = \ang{90} \Rightarrow Z = X_C = \frac{V_C}{I_C} \, e^{\iu \bb{\ang{0} - \ang{90}}}
+    \end{equation*}
+\end{mdframed}
+
+En un circuito AC compuesto por un inductor, el pico de tensión se da antes que el de corriente. Por lo tanto, la fase de la impedancia es $+\ang{90}$.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \phi_{v_L} = \ang{90} \enspace , \enspace \phi_{i_L} = \ang{0} \Rightarrow Z = X_L = \frac{V_L}{I_L} \, e^{\iu \bb{\ang{90} - \ang{0}}}
+    \end{equation*}
+\end{mdframed}
+
+En un resistor no hay defasaje para los fasores de la tensión y la corriente, pero para un capacitor y un inductor se tiene, respectivamente:
+\begin{gather*}
+    C: \left\{
+    \begin{aligned}
+        \phi_{v_C} &= \phi_{i_C} - \ang{90}
+        \\
+        \phi_{i_C} &= \phi_{v_C} + \ang{90}
+    \end{aligned}
+    \right.
+    \\[1em]
+    L: \left\{
+    \begin{aligned}
+        \phi_{v_L} &= \phi_{i_L} + \ang{90}
+        \\
+        \phi_{i_L} &= \phi_{v_L} - \ang{90}
+    \end{aligned}
+    \right.
+\end{gather*}
+
+A continuación vemos esta variación de la tensión y la corriente en el tiempo, representada con fasores complejos.
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{Phase.png}
+\end{center}
+
+
+\subsection*{Corriente en un ``capacitor de agua''}
+
+Es posible dar una demostración gráfica de la situación anterior para el capacitor. Entiéndase el ``capacitor'' como un tanque de agua con capacidad para almacenar volumen de agua, que tiene una válvula que puede suministrar un flujo de agua. Conforme pasa el tiempo, se dan las siguientes etapas:
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{Tank.png}
+\end{center}
+
+Graficando las etapas de carga y descarga, si se toma un intervalo de tiempo infinitesimal, las gráficas discretas aproximan a funciones senoidales:
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{PhaseC.png}
+\end{center}
+
+La analogía infiere que, si la corriente es el flujo de agua que entra o sale, y la tensión es el volumen de agua que se acumula, entonces la corriente es la tasa de cambio de la tensión:
+\begin{equation*}
+    i_C(t) = C \, \frac{\dif}{\dif t} v_C(t)
+\end{equation*}
+
+De manera análoga, para un inductor se tiene:
+\begin{equation*}
+    v_L(t) = L \, \frac{\dif}{\dif t} i_L(t)
+\end{equation*}
+
+
+\section{Circuitos AC en serie}
+
+
+\subsection*{Circuito R-C}
+
+\begin{equation*}
+    \sub{Z}{eq} = Z_R + Z_C
+\end{equation*}
+
+Donde:
+\begin{align*}
+    \norm{\sub{Z}{eq}} &= \sqrt{R^2 + X_C^2}
+    \\
+    \phi_{\sub{Z}{eq}} &= \arctan{\bb{\dfrac{-X_C}{R}}}
+\end{align*}
+
+\begin{align*}
+    i &= \frac{v_S}{\sub{Z}{eq}}
+    \\
+    &= \frac{\norm{v_S}}{\norm{\sub{Z}{eq}}} \, e^{\iu \bb{\ang{0} - \phi_{\sub{Z}{eq}}}}
+\end{align*}
+
+Donde:
+\begin{align*}
+    \norm{i} &= \frac{\norm{v_S}}{\norm{\sub{Z}{eq}}}
+    \\
+    \phi_i &= - \phi_{\sub{Z}{eq}}
+\end{align*}
+
+\begin{align*}
+    v_C &= i \, Z_C
+    \\
+    &= \frac{\norm{V_S} \, X_C}{\norm{\sub{Z}{eq}}} \, e^{\iu \phi_{v_C}}
+\end{align*}
+
+Donde:
+\begin{align*}
+    \norm{v_C} &= \frac{\norm{V_S} \, X_C}{\sqrt{R^2 + X_C^2}}
+    \\
+    \phi_{v_C} &= \phi_i - \ang{90} = - \arctan{\bb{\dfrac{-X_C}{R} }} - \ang{90}
+\end{align*}
+
+
+% \subsection*{Circuito L-C}
+
+
+\section{Filtros}
+
+Al aumentar la frecuencia de la corriente en un circuito R-C, el capacitor tiene menos tiempo de cargado por ciclo. Por más que la intensidad de corriente sea la misma, la tensión máxima va a ser menor.
+
+\begin{equation*}
+    Z_C = X_C \, e^{\iu \phi_{ZC}}
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Reactancia}
+    \begin{equation*}
+        X_C = \frac{1}{\omega \, C}
+    \end{equation*}
+\end{mdframed}
+
+\begin{equation*}
+    Z_L = X_L \, e^{\iu \phi_{ZL}}
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Inductancia}
+    \begin{equation*}
+        X_L = \omega \, L
+    \end{equation*}
+\end{mdframed}
+
+Un filtro es un divisor de tensión que tiene una rama \emph{en serie} y otra \emph{en paralelo} o \emph{en derivación}. En cada rama puede tener uno o más componentes, que pueden ser resistores, capacitores o inductores dependiendo la aplicación:
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Filter.png}
+\end{center}
+
+La frecuencia de corte o frecuencia de cruce $f_c$ es el aquella para la que ambas ramas tienen igual impedancia.
+
+El siguiente gráfico muestra las curvas de impedancia de un resistor $(R)$, un capacitor $(C)$ y una bobina $(B)$ para diferentes frecuencias:
+
+\begin{center}
+    \includegraphics[width=0.6\linewidth]{Filter-fc.png}
+\end{center}
+
+
+\subsection*{Filtros R-C}
+
+El siguiente es un filtro R-C pasa altos. Invirtiendo la disposición de los componentes, se tiene un filtro R-C pasa bajos.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Filter-HighPass.png}
+\end{center}
+
+La frecuencia central es aquella que verifica $R = X_C$ ye está dada por:
+\begin{equation*}
+    f_c = \frac{1}{2 \, \pi \, C \, R}
+\end{equation*}
+
+La tensión, por ser un circuito AC en serie, está dada por:
+\begin{gather*}
+    \norm{v_C} = \frac{V_S}{2 \, \pi \, f \, C \sqrt{R^2 + \bb{\dfrac{1}{2 \, \pi \, f \, C}}^2}}
+    \\[1ex]
+    \phi_{v_C} = - \arctan{\bb{\dfrac{-1}{2 \, \pi \, f \, C \, R}}} - \ang{90}
+\end{gather*}
+
+
+\subsection*{Filtros R-L}
+
+El siguiente es un filtro R-L pasa bajos. Invirtiendo la disposición de los componentes, se tiene un filtro R-L pasa altos.
+\begin{equation*}
+    R = X_L \Rightarrow f_c = \frac{R}{2 \, \pi \, L}
+\end{equation*}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Filter-BassPass.png}
+\end{center}
+
+
+\subsection*{Filtros L-C}
+
+El siguiente es un filtro L-C pasa bajos. Invirtiendo la disposición de los componentes, se tiene un filtro L-C pasa altos.
+\begin{equation*}
+    X_C = X_L \Rightarrow f_c = \dfrac{1}{2 \, \pi \, \sqrt{L \, C}}
+\end{equation*}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Filter-BassPassLC.png}
+\end{center}
+
+
+\subsection*{Filtro pasa banda}
+
+El siguiente es un filtro pasa banda. Invirtiendo la disposición de los componentes, se tiene un filtro rechaza banda.
+\begin{align*}
+    \norm{Z_R} &= \norm{Z_C + Z_L}
+    \\
+    R &= \norm{\iu \, \omega \, L - \iu \, \frac{1}{\omega \, C}}
+    \\
+    &= \omega \, L - \frac{1}{\omega \, C}
+    \\
+    &= 2 \, \pi \, f_c \, L - \frac{1}{2 \, \pi \, f_c \, C}
+\end{align*}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Filter-BandPass.png}
+\end{center}
+
+La pendiente es proporcional a la resistencia:
+\begin{equation*}
+    Q = \frac{f_c}{\Delta f} \propto R
+\end{equation*}
+
+
+\section{Transformadores}
+
+El transformador sirve para aumentar o disminuir la tensión y la corriente de una fuente AC.
+
+Está formado por dos bobinas, a lo largo de las cuales hay un material que permite el flujo magnético. Cuando circula corriente por una de las bobinas, se genera un campo magnético que es detectado por la segunda bobina, y genera un campo independiente del anterior. Este va a generar una corriente análoga a la de entrada, pero cuya tensión $(V)$ e intensidad $(I)$ va a depender de la cantidad de vueltas que ambas bobinas tengan.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{Transformer.png}
+\end{center}
+
+La función del transformador es, como se mencionó anteriormente, modificar la tensión, lo cual va a afectar la corriente. Por la ley del transformador ideal, lo que permanece constante es la potencia:
+\begin{equation*}
+    V_0 \, I_0 = V_1 \, I_1
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Lámpara EUR-USA}
+    \begin{formatI}
+        Con frecuencia se suelen usar transformadores para conectar un dispositivo que esté diseñado para ser usado con la tensión que se usa en el país de procedencia del dispositivo. En Argentina y Europa en general, se utiliza $\SI{220}{\volt}$ y en Estados Unidos $\SI{110}{\volt}$. Verificar que una lámpara de $\SI{55}{\watt}$ de Argentina no va a ser igual que una lámpara de $\SI{55}{\watt}$ de Estados unidos, pero ambas van alumbrar con la misma potencia.
+    \end{formatI}
+    
+    Planteando $P = V \, I$ para cada país, se tiene:
+    \begin{align*}
+        \SI{55}{\watt} = \SI{220}{\volt} \times \sub{I}{Arg} & \Rightarrow \sub{I}{Arg} = \SI{0.25}{\ampere}
+        \\
+        \SI{55}{\watt} = \SI{110}{\volt} \, \sub{I}{USA} & \Rightarrow \sub{I}{USA} = \SI{0.5}{\ampere}
+    \end{align*}
+    
+    En conclusión, la lámpara de $55 watts$ argentina va a proporcionar una resistencia de $880\Omega$ mientras que la de Estados Unidos $220\Omega$.
+    \begin{equation*}
+        \sub{R}{Arg} = \SI{880}{\ohm} \neq \sub{R}{USA} = \SI{220}{\ohm}
+    \end{equation*}
+    
+    Es decir, que si se conecta una lámpara argentina en la red de Estados Unidos va a alumbrar menos que si se conecta en Argentina, y si se conecta una lámpara de Estados Unidos en Argentina sin transformador se quema.
+\end{mdframed}
+
+
+\section{Fuente AC/DC}
+
+Supongamos que se tiene un tanque al que, con una frecuencia constante, por momentos se le agrega agua y por momentos se le quita. A partir de esa situación, se quiere instalar una canilla por la que salga una corriente de agua constante. En principio se necesita que el llenado de agua solo sea entrante, evitando que se descargue. Y además, se necesita que haya cierta acumulación de agua en el tanque para que, si abro la canilla más de lo que la entrada está aportando, no baje la presión de manera sustancial. Para convertir una fuente de AC en DC, el procedimiento es similar a la analogía anterior.
+
+\begin{itemize}
+    \item \concept{Fuente AC:} suministra de elergía eléctrica el dispositivo.
+    \item \concept{Transformador:} adapta la tensión que entrega la red. En el caso de argentina la entrada del transformador sería de $\SI{220}{\volt}$ y la salida depende del equipo en cuestión.
+    \item \concept{Etapa de rectificación:} hace que la corriente tenga solo un sentido. Suelen usarse diodos.
+    \item \concept{Etapa de filtrado:} obtiene una acumulación de cargas para que las cargas que salgan no superen a las que entren cortando el flujo de corriente. Suelen usarse capacitores.
+    \item \concept{Resistencia:} carga equivalente al dispositivo que estamos conectando a la fuente.
+\end{itemize}
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{ACDC.png}
+\end{center}
+
+\concept{Puente de diodos}
+
+Para hacer la etapa de rectificación más eficiente, se necesitaría aprovechar cuando la corriente cambia de sentido. Es decir, en vez de solo dejar pasar la corriente cuando es positiva, de alguna forma ``cambiar los extremos de los cables'' cuando la fuente alterna cambie de polaridad de manera que la polaridad resultante siempre sea la misma.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Diode1.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Diode2.png}
+\end{center}
+
+Claro está que realizar este cambio manualmente es imposible. Pero la siguiente configuración, llamada Puente de Diodos cumple la función de hacer la corriente siempre positiva.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Diode3.png}
+\end{center}
+
+
+\chapter{Magnetismo}
+
+
+\section{Fuerza magnética}
+
+La fuerza magnética $\Vec{F}_B$ se ejerce sobre una carga eléctrica $q$ positiva con velocidad $\Vec{v}$ inmersa en un campo magnético $\Vec{B}$ como se muestra a continuación.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{BvF.png}
+\end{center}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Fuerza magnética}
+    \begin{equation*}
+        \Vec{F}_B = q \, \Vec{v} \times \Vec{B}
+    \end{equation*}
+\end{mdframed}
+
+Donde
+\begin{equation*}
+    \nnorm{\Vec{F}_B} = q \, v \, B \sin\bb{\theta}
+\end{equation*}
+
+Observar que la velocidad $\Vec{v} = \tfrac{\Delta \Vec{s}}{\Delta t}$ está dada por el flujo de corriente $I = \tfrac{q}{\Delta t}$.
+
+La fuerza ($\Vec{B}$) producida por un campo magnético sobre un conductor, si este fuese un cable estirado, de largo $L = \nnorm{\Delta \Vec{s}}$ y con corriente $I$ está dada por:
+\begin{equation*}
+    \Vec{F}_B = I \, \Delta \Vec{s} \times \Vec{B}
+\end{equation*}
+
+Donde
+\begin{equation*}
+    \nnorm{\Vec{F}_B} = I \, L \, B
+\end{equation*}
+
+Para conductores con geometrías diferentes, el diferencial de fuerza magnética es $d \Vec{F}_B = I d\Vec{s} \times \Vec{B}$ por lo que la fuerza es
+\begin{equation*}
+    \Vec{F}_B = I \int_a^b \dif \Vec{s} \times \Vec{B}
+\end{equation*}
+
+Un movimiento circular uniforme está dado por
+\begin{gather*}
+    \sum F = F_B = m \, a_c
+    \\
+    q \, v \, B = \frac{m \, v^2}{R}
+\end{gather*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{MCU dado por campo magnético}
+    \begin{equation*}
+        v = \frac{q \, B \, R}{m}
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Potencial de Hall}
+
+Una corriente $I$ circula por un conductor de grosor $L$ y ancho $D$ está inmerso en un campo magnético $B$. Dado que los electrones con velocidad $\Vec{v}$ se ven afectados por la fuerza magnética $\Vec{F}_B$ del campo, estos van a tender a acumularse en el extremo a lo largo del conductor. Como el otro extremo queda con un exceso de cargas positivas, se genera un potencial eléctrico $\Delta V$ que ejerce una fuerza eléctrica $\Vec{F}_E$ sobre los electrones.
+
+\begin{center}
+    \includegraphics[width=\linewidth]{Hall.png}
+\end{center}
+
+Este potencial $\Delta V = E \, D$ va a incrementar hasta que ambas fuerzas queden en equilibrio:
+\begin{gather*}
+    \sum F = 0 = \sub{F}{ele} - F_B
+    \\
+    q \, E = qvB
+    \\
+    v \, B = \frac{\Delta V}{D}
+\end{gather*}
+
+Por lo tanto, el potencial de Hall está dado por:
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Potencial de Hall}
+    \begin{equation*}
+        \Delta V = v \, B \, D = \frac{R_H \, I \, B}{L}
+    \end{equation*}
+\end{mdframed}
+
+
+\section{Campo magnético}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Ley de Biot-Savart}
+    \begin{equation*}
+        \Vec{B} = \frac{\mu_0 \, I}{4 \, \pi} \int \frac{\dif \Vec{s} \times \versor{r}}{r^2}
+    \end{equation*}
+\end{mdframed}
+
+Donde $\mu_0 = 4 \, \pi \times 10^{-7} \, \si{\henry\per\metre}$ es la permeabilidad del espacio libre.
+
+La circulación del campo magnético no es el trabajo porque no existen ``partículas con carga magnética'' que puedan recorrer las lineas de flujo. Aún así, es posible calcular la integral curvilínea para inferir el campo magnético a partir de la corriente $I$ y la longitud $L$ de la curva, según la ley de Ampere:
+\begin{gather*}
+    \oint \Vec{B} \cdot \dif \Vec{s} = \mu_0 \, \sub{I}{in}
+    \\
+    B = \frac{\mu_0 \, \sub{I}{in}}{L}
+\end{gather*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Campo magnético en cable}
+    \begin{align*}
+        B &= \frac{\mu_0 \, I \, r}{2 \, \pi \, R^2} \text{ si } r < R
+        \\
+        B &= \frac{\mu_0 \, I}{2 \, \pi \, r} \text{ si } R \leq r
+    \end{align*}
+\end{mdframed}
+
+Donde $R$ es el radio del cable.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Campo magnético en bobina}
+    \begin{equation*}
+        B = \frac{\mu_0 \, N \, I}{L}
+    \end{equation*}
+\end{mdframed}
+
+Donde $N$ es la cantidad de vueltas de la bobina.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Fuerza entre conductores paralelos}
+    \begin{equation*}
+        \dfrac{F_B}{L}=\frac{\mu_0 \, I_1 \, I_2}{2 \, \pi \, r}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Flujo magnético}
+    \begin{equation*}
+        \int \Vec{B} \cdot \dif \Vec{S} = B \, A \cos\bb{\theta}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    El flujo sobre una superficie cerrada es nulo.
+    \begin{equation*}
+        \oint \Vec{B} \cdot \dif \Vec{S} = 0
+    \end{equation*}
+\end{mdframed}
+
+
+\section*{Ley de Faraday}
+
+La FEM $\varepsilon$ inducida por un campo magnético $\Vec{B}$ en una bobina es proporcional a la velocidad con la cual el flujo magnético $\Phi_B$ pasa por la bobina.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Ley de Faraday}
+    \begin{equation*}
+        \varepsilon = - N \, \frac{\dif}{\dif t} \Phi_B
+    \end{equation*}
+\end{mdframed}
+
+Donde $N$ es la cantidad de vueltas del inductor si es una bobina o $N=1$ si es un cable.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Corriente inducida}
+    \begin{equation*}
+        I = \frac{\varepsilon}{R}
+    \end{equation*}
+\end{mdframed}
+
+Para una FEM por $\Vec{B}$ variable con $A$ constante:
+\begin{equation*}
+    \varepsilon = - N \, \frac{\Delta \bb{B \, A}}{\Delta t}
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \varepsilon = - N \, A \, \frac{\Delta B}{\Delta t}
+    \end{equation*}
+\end{mdframed}
+
+Para una FEM por riel $A$ variable con $\Vec{B}$ constante:
+\begin{equation*}
+    \varepsilon = - B \, \frac{\dif A}{\dif t} = - B \, L \, \frac{\dif x}{\dif t}
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \varepsilon = - B \, L \, v
+    \end{equation*}
+\end{mdframed}
+
+Para una FEM por pivot $r$ variable con $\Vec{B}$ constante:
+\begin{equation*}
+    \varepsilon = \int B \, v \, \dif r = B \, \omega \int_0^L r \, \dif r
+\end{equation*}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \begin{equation*}
+        \varepsilon = \frac{B \, \omega \, L^2}{2}
+    \end{equation*}
+\end{mdframed}
+
+Una FEM puede ser entendida como una tensión o potencial eléctrico. Por lo tanto, hay un campo eléctrico $\Vec{E}$ involucrado, pero a diferencia de un campo tradicional, este campo inducido no es conservativo, ya que:
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Campo eléctrico inducido}
+    \begin{equation*}
+        \varepsilon = \oint \Vec{E} \cdot \dif \Vec{s}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Campo eléctrico en bobina circular}
+    \begin{equation*}
+        E = - \frac{R}{2} \, \frac{\dif B}{\dif t}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{prop}
+    \end{prop}
+    \cusTi{Campo eléctrico en selenoide}
+    \begin{equation*}
+        E = \frac{\mu_0 \, N \, I_M \, \omega \, R^2}{2 \, r}
+    \end{equation*}
+\end{mdframed}
+
+
+\end{document}
