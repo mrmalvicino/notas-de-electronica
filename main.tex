@@ -55,31 +55,7 @@ La versión digital más reciente de este texto puede ser descargada gratuitamen
 \chapter{Electricidad}
 
 
-% \section{Materiales conductores y aislantes}
-
-
-% \section{Carga por polarización e inducción}
-
-
-\section{Fuerza eléctrica}
-
-La fuerza eléctrica entre dos cargas puntuales está dada por la \emph{Ley de Coulomb} a continuación.
-
-\begin{mdframed}[style=MyFrame1]
-    \begin{defn}
-    \end{defn}
-    \cusTi{Ley de Coulomb}
-    \begin{equation*}
-        \Vec{F}_e = \cstcoulomb \, \frac{ q_0 \, q_1}{r^2} \, \versor{r}
-    \end{equation*}
-\end{mdframed}
-
-Donde $\cstcoulomb=8.99 \times 10^9\,\si{\newton\metre^2\per\coulomb^2}$ es la constante eléctrica de Coulomb.
-
-A partir de la constante de Coulomb se define la permitividad del vacío $\epsilon_0$ tal que:
-\begin{equation}
-    \epsilon_0 = \dfrac{1}{4 \pi \cstcoulomb} = 8.85 \times 10^{-12} \,\si{\coulomb^2\per\newton\metre^2}
-\end{equation}
+\section{Cargas eléctricas}
 
 Según el modelo atómico, la materia está formada por moléculas que están compuestas en última instancia por átomos. Pero a su vez, los átomos están formados por distintas configuraciones de \emph{partículas subatómicas}, de ahí que haya distintos tipos de elementos. Cada elemento se clasifica en la tabla periódica según su número atómico, que es la cantidad de protones que tiene un átomo de dicho elemento. Un átomo tiene la misma cantidad de protones que de neutrones, pero no necesariamente la misma cantidad de electrones. Podemos identificar así el peso de un átomo de cierto elemento, conociendo la cantidad de partículas subatómicas, según el siguiente cuadro, donde además se observa la carga eléctrica de cada una.
 
@@ -103,6 +79,52 @@ Según el modelo atómico, la materia está formada por moléculas que están co
 La cantidad de protones (y neutrones) de un átomo permanece inalterada. Una transformación física que modificase la \emph{estructura atómica} implicaría un cambio en el núcleo del átomo haciendo que el elemento no sea el mismo. Estas transformaciones se conocen como fusión y fisión nuclear.
 
 En cambio, la cantidad de electrones de un átomo sí puede variar sin alterar la naturaleza del elemento. Si un átomo tiene la misma cantidad de protones que de electrones se lo llama neutro. De lo contrario, se lo llama ion, o se dice que está cargado eléctricamente.
+
+\begin{itemize}
+    \item \concept{Carga por conducción}
+    
+    \begin{itemize}
+        \item El vidrio pierde electrones al ser frotado con seda.
+        \item La goma gana electrones al ser frotada con la piel.
+        \item Se dice de el vidrio queda cargado positivamente por tener más protones que electrones.
+        \item Se dice que la goma queda cargada negativamente por tener más electrones que protones.
+    \end{itemize}
+
+    \item \concept{Carga por inducción}
+    
+    \begin{itemize}
+        \item Se acerca un objeto cargado a uno neutro que está conectado a tierra.
+        \item Las cargas son empujadas y se ``fugan'' por la conexión a tierra.
+        \item Se corta la conexión a tierra y se aleja el objeto cargado.
+        \item El objeto, antes neutro, perdió las cargas empujadas quedando cargado.
+    \end{itemize}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-conduc-induc.pdf_tex}
+    \end{center}
+\end{itemize}
+
+
+\section{Fuerza eléctrica}
+
+La fuerza eléctrica entre dos cargas puntuales está dada por la \emph{Ley de Coulomb} a continuación.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Ley de Coulomb}
+    \begin{equation*}
+        \Vec{F}_e = \cstcoulomb \, \frac{ q_0 \, q_1}{r^2} \, \versor{r}
+    \end{equation*}
+\end{mdframed}
+
+Donde $\cstcoulomb=8.99 \times 10^9\,\si{\newton\metre^2\per\coulomb^2}$ es la constante eléctrica de Coulomb.
+
+A partir de la constante de Coulomb se define la permitividad del vacío $\epsilon_0$ tal que:
+\begin{equation}
+    \epsilon_0 = \dfrac{1}{4 \pi \cstcoulomb} = 8.85 \times 10^{-12} \,\si{\coulomb^2\per\newton\metre^2}
+\end{equation}
 
 
 \section{Campo eléctrico}
@@ -163,6 +185,125 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
     \item Una simetría que permita escribir $\versor{r}$ como uno de los versores canónicos.
     \item Una distancia $r$ tal que $\dif q$ varíe en una sola dimensión.
 \end{itemize}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Campo eléctrico en barra}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una barra aislante con densidad de carga lineal uniforme. Suponer que la barra tiene grosor nulo.
+    \end{formatI}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-barra.pdf_tex}
+    \end{center}
+
+    Observar que $r$ varía linealmente a medida que se recorre la barra.
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \int_{d}^{d+l} \frac{\lambda \, \dif x}{x^2} \bb{- \iVer}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Campo eléctrico en anillo}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un anillo aislante con densidad de carga lineal uniforme. Suponer que el anillo tiene grosor nulo.
+    \end{formatI}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-anillo.pdf_tex}
+    \end{center}
+
+    Dado que $r$ no varía,
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \, \frac{\versor{r}}{r^2} \int \dif q
+    \end{equation*}
+    
+    Donde:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            & \int \dif q = Q
+            \\
+            & r = \sqrt{D^2 + R_0^2}
+            \\
+            & \versor{r} = \nnorm{\versor{r}} \sqb{\cos(\theta) \, \iVer + \sin(\theta) \, \jVer}
+        \end{aligned}
+        \right.
+    \end{equation*}
+
+    Además, por geometría y simetría:
+    \begin{equation*}
+        \cos(\theta) = \frac{D}{r} \implies \versor{r} = \frac{D}{r} \, \iVer
+    \end{equation*}
+
+    Obteniendo
+    \begin{equation*}
+        \vec{E} = \frac{\cstcoulomb \, D \, Q}{\bb{D^2 + R_0^2}^{\frac{3}{2}}} \, \iVer
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Campo eléctrico en disco}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un disco aislante con densidad de carga superficial uniforme.
+    \end{formatI}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-disco.pdf_tex}
+    \end{center}
+
+    Observar que $r$ varía axialmente a medida que se recorre el disco.
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \iint \frac{\sigma \, \dif A}{r^2} \, \versor{r}
+    \end{equation*}
+
+    Al hacer un cambio de variables a coordenadas polares:
+    \begin{gather*}
+        \fx[T]{R,\phi} = (x,y) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
+        \\
+        \det \bb{\fx[J]{T}} = \cos(\phi) \, R \cos(\phi) - \sin(\phi) \bb{-R \sin(\phi)}
+        \\
+        \det \bb{\fx[J]{T}} = R \implies
+        \\
+        \dif A = R \, \dif \phi \, \dif R
+    \end{gather*}
+
+    Se puede reescribir la integral de campo eléctrico como sigue:
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \iint \frac{\sigma \, R \, \dif \phi \, \dif R}{r^2} \, \versor{r}
+    \end{equation*}
+
+    Donde:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            & r = \sqrt{D^2 + R^2}
+            \\
+            & \versor{r} = \nnorm{\versor{r}} \sqb{\cos(\theta) \, \iVer + \sin(\theta) \, \jVer}
+        \end{aligned}
+        \right.
+    \end{equation*}
+
+    Además, por geometría y simetría:
+    \begin{equation*}
+        \cos(\theta) = \frac{D}{r} \implies \versor{r} = \frac{D}{r} \, \iVer
+    \end{equation*}
+    
+    Reemplazando $\versor{r}$ y $r$ nuevamente se obtiene:
+    \begin{align*}
+        \vec{E} &= \cstcoulomb \, \sigma \, D \iint \frac{R \, \dif \phi \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
+        \\[1ex]
+        &= \cstcoulomb \, \sigma \, D \int_0^{2\pi} \dif \phi \, \int_0^{R_0} \frac{R \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
+    \end{align*}
+\end{mdframed}
 
 
 \section{Ley de Gauss}

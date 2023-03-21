@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="170mm"
+   height="40mm"
+   viewBox="0 0 170 40"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="elec-conduc-induc.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0116647"
+     inkscape:cx="260.4618"
+     inkscape:cy="62.767835"
+     inkscape:window-width="1920"
+     inkscape:window-height="953"
+     inkscape:window-x="1512"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2763"
+       transform="translate(2.0198715)">
+      <circle
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1406"
+         cx="88.27179"
+         cy="20"
+         r="16.607323" />
+      <path
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 104.87912,19.999999 h 9.16056 v 9.160566"
+         id="path1408" />
+      <path
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 109.1605,29.160565 h 9.75837"
+         id="path1410" />
+      <path
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499998;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 111.26938,31.070703 h 5.79285"
+         id="path1412" />
+      <path
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499998;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 112.87378,32.980843 h 2.33181"
+         id="path1414" />
+      <g
+         id="g1642"
+         transform="translate(-13.560205,-14.717854)">
+        <circle
+           style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="circle1552"
+           cx="33.040329"
+           cy="34.717854"
+           r="16.607323" />
+        <path
+           style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 49.647652,34.717853 h 9.160565 v 9.160566"
+           id="path1554" />
+        <path
+           style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 53.929033,43.878419 h 9.758368"
+           id="path1556" />
+        <path
+           style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499998;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 56.037908,45.788557 h 5.792857"
+           id="path1558" />
+        <path
+           style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.499998;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 57.642308,47.698697 h 2.331817"
+           id="path1560" />
+        <g
+           id="g1568"
+           transform="translate(-15.164383,-37.633562)">
+          <circle
+             style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1562"
+             cx="42.349316"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 40.947155,62.876676 h 2.80432"
+             id="path1564"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 42.349315,61.474506 v 2.80433"
+             id="path1566"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+        <g
+           id="g1576"
+           transform="translate(-11.835617,-27.277397)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1570"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1574"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1572" />
+          </g>
+        </g>
+        <g
+           id="g1584"
+           transform="translate(-1.1095889,-35.044521)">
+          <circle
+             style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1578"
+             cx="42.349316"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 40.947155,62.876676 h 2.80432"
+             id="path1580"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 42.349315,61.474506 v 2.80433"
+             id="path1582"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+        <g
+           id="g1592"
+           transform="translate(-16.273972,-21.636988)">
+          <circle
+             style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1586"
+             cx="42.349316"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 40.947155,62.876676 h 2.80432"
+             id="path1588"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 42.349315,61.474506 v 2.80433"
+             id="path1590"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+        <g
+           id="g1600"
+           transform="translate(-20.712328,-40.037672)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1594"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1598"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1596" />
+          </g>
+        </g>
+        <g
+           id="g1608"
+           transform="translate(-15.164383,-19.140411)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1602"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1606"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1604" />
+          </g>
+        </g>
+        <g
+           id="g1616"
+           transform="translate(-33.565068,-28.849316)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1610"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1614"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1612" />
+          </g>
+        </g>
+        <g
+           id="g1624"
+           transform="translate(-6.1952046,-24.87329)">
+          <circle
+             style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1618"
+             cx="42.349316"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 40.947155,62.876676 h 2.80432"
+             id="path1620"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 42.349315,61.474506 v 2.80433"
+             id="path1622"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+        <g
+           id="g1632"
+           transform="translate(-24.318495,-31.438356)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1626"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1630"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1628" />
+          </g>
+        </g>
+        <g
+           id="g1640"
+           transform="translate(-9.801369,-17.291097)">
+          <circle
+             style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1634"
+             cx="42.349316"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 40.947155,62.876676 h 2.80432"
+             id="path1636"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 42.349315,61.474506 v 2.80433"
+             id="path1638"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+      </g>
+      <circle
+         style="fill:none;fill-opacity:0.6;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1644"
+         cx="146.48013"
+         cy="20"
+         r="16.607323" />
+      <g
+         id="g1660"
+         transform="translate(97.09853,-51.566818)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1654"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1656"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1658"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1676"
+         transform="translate(112.72252,-48.847011)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1670"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1672"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1674"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1684"
+         transform="translate(104.09645,-43.023924)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1678"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1680"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1682"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1692"
+         transform="translate(92.727482,-54.755526)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1686"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1690"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1688" />
+        </g>
+      </g>
+      <g
+         id="g1700"
+         transform="translate(96.0524,-34.119798)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1694"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1698"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1696" />
+        </g>
+      </g>
+      <g
+         id="g1708"
+         transform="translate(79.743976,-42.390273)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1702"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1706"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1704" />
+        </g>
+      </g>
+      <g
+         id="g1716"
+         transform="translate(115.61365,-40.506509)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1710"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1712"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1714"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1732"
+         transform="translate(100.50005,-33.316614)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1726"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1728"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1730"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1916"
+         transform="translate(38.890193,-51.566818)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1910"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1912"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1914"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1924"
+         transform="translate(54.514177,-48.847011)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1918"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1920"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1922"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1932"
+         transform="translate(45.888113,-43.023924)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1926"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1928"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1930"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1940"
+         transform="translate(34.519145,-54.755526)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1934"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1938"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1936" />
+        </g>
+      </g>
+      <g
+         id="g1948"
+         transform="translate(37.844063,-34.119798)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1942"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1946"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1944" />
+        </g>
+      </g>
+      <g
+         id="g1956"
+         transform="translate(21.535639,-42.390273)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1950"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1954"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1952" />
+        </g>
+      </g>
+      <g
+         id="g1964"
+         transform="translate(57.405307,-40.506509)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1958"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1960"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1962"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1972"
+         transform="translate(42.291713,-33.316614)">
+        <circle
+           style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1966"
+           cx="42.349316"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 40.947155,62.876676 h 2.80432"
+           id="path1968"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 42.349315,61.474506 v 2.80433"
+           id="path1970"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+      </g>
+      <g
+         id="g1980"
+         transform="translate(57.983106,-37.754869)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1974"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1978"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1976" />
+        </g>
+      </g>
+      <g
+         id="g1988"
+         transform="translate(53.402833,-42.876692)">
+        <circle
+           style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+           id="circle1982"
+           cx="56.056576"
+           cy="62.876713"
+           r="2.6016405"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300" />
+        <g
+           id="g1986"
+           transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+           style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+           inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+           inkscape:export-xdpi="300"
+           inkscape:export-ydpi="300">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m -30.378972,307.3541 h 3.522234"
+             id="path1984" />
+        </g>
+      </g>
+      <g
+         id="g2320"
+         transform="translate(5.2916663)">
+        <g
+           id="g1956-2"
+           transform="translate(3.7519214,-49.150891)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1950-3"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1954-7"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1952-1" />
+          </g>
+        </g>
+        <g
+           id="g1956-8"
+           transform="translate(3.7519214,-38.821712)">
+          <circle
+             style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+             id="circle1950-9"
+             cx="56.056576"
+             cy="62.876713"
+             r="2.6016405"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <g
+             id="g1954-3"
+             transform="matrix(0.7961784,0,0,0.79617845,78.841482,-181.83202)"
+             style="stroke:#000000;stroke-width:1.256;stroke-opacity:1"
+             inkscape:export-filename="C:\Backup\Academic\My Notes\Super Apunte EyM\PNG\Hall.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300">
+            <path
+               style="fill:none;stroke:#000000;stroke-width:0.5024;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m -30.378972,307.3541 h 3.522234"
+               id="path1952-7" />
+          </g>
+        </g>
+        <g
+           id="g2235"
+           transform="matrix(1.0799465,0,0,1.0749697,-4.6802528,-1.8876702)"
+           style="stroke-width:0.928113">
+          <path
+             style="fill:none;stroke:#000000;stroke-width:0.464056;stroke-linecap:round;stroke-linejoin:round"
+             d="M 62.676944,6.1007341 V 32.558159 c 0,0.867826 -1.326213,1.571339 -2.96218,1.571339 -1.635968,0 -2.962181,-0.703512 -2.962181,-1.571339 V 6.1004202"
+             id="ellipse2170" />
+          <ellipse
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.464056;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             id="path2105"
+             cx="59.714764"
+             cy="6.0998263"
+             rx="2.9621809"
+             ry="1.5713387" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
