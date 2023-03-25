@@ -67,5 +67,6 @@
     \put(0.6,0.28553763){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\theta$\end{tabular}}}}%
     \put(0.8,0.21){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{x}_0$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{elec-disco.pdf}}%
+    \put(0.5,0.4){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$r$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

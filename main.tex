@@ -1,7 +1,7 @@
 \documentclass[a5paper,12pt,twoside]{book}
 
-\input{my-book-packages}
-\input{my-book-commands}
+\input{book-packages}
+\input{book-commands}
 
 % ENTORNOS DE NUMERACIÓN
 \newtheorem{defn}{{Definición}}[chapter]
@@ -267,7 +267,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 
     Al hacer un cambio de variables a coordenadas polares:
     \begin{gather*}
-        \fx[T]{R,\phi} = (x,y) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
+        \fx[T]{R,\phi} = (y,z) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
         \\
         \det \bb{\fx[J]{T}} = \cos(\phi) \, R \cos(\phi) - \sin(\phi) \bb{-R \sin(\phi)}
         \\
@@ -302,6 +302,168 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
         \vec{E} &= \cstcoulomb \, \sigma \, D \iint \frac{R \, \dif \phi \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
         \\[1ex]
         &= \cstcoulomb \, \sigma \, D \int_0^{2\pi} \dif \phi \, \int_0^{R_0} \frac{R \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
+        \\[1ex]
+        &= 2 \, \pi \, \cstcoulomb \, \sigma \, D \int_0^{R_0} \frac{R \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
+    \end{align*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Campo eléctrico en cilindro}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un cilindro aislante con densidad de carga superficial uniforme. Considerar el caso en que el cilindro es hueco y el caso en que es sólido.
+    \end{formatI}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-cilindro.pdf_tex}
+    \end{center}
+
+    El campo eléctrico para una carga contínua es
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \int \frac{\dif q}{r^2} \, \versor{r}
+    \end{equation*}
+
+    \concept{Caso de cilindro hueco (sin tapas):}
+
+    El diferencial de carga está dado por
+    \begin{equation*}
+        \dif q = \sigma \, \dif A
+        = \sigma \, \dif s \, \dif x
+        = \sigma \, R_0 \, \dif \phi \, \dif x
+    \end{equation*}
+
+    Por simetría axial el versor director es
+    \begin{equation*}
+        \versor{r} = \cos(\theta) \, \iVer
+        = \frac{L+D-x}{r} \, \iVer
+    \end{equation*}
+
+    Y la distancia $r$ es
+    \begin{equation*}
+        r = \sqrt{R_0^2 + \bb{L+D-x}^2}
+    \end{equation*}
+
+    Con lo cual, la integral de campo eléctrico queda
+    \begin{align*}
+        \vec{E} &= \cstcoulomb \iint \frac{\sigma \, R_0 \, \dif \phi \, \dif x}{r^2} \, \frac{L+D-x}{r} \, \iVer
+        \\[1em]
+        &= \cstcoulomb \, \sigma \, R_0 \iint \frac{L+D-x}{r^3} \dif \phi \, \dif x \, \iVer
+        \\[1em]
+        &= 2 \, \pi \, \cstcoulomb \, \sigma \, R_0 \int_0^L \frac{L+D-x}{\sqb{R_0^2 + \bb{L+D-x}^2}^{\frac{3}{2}}} \dif x \, \iVer
+    \end{align*}
+
+    \concept{Caso de cilindro sólido:}
+
+    El diferencial de carga está dado por
+    \begin{equation*}
+        \dif q = \rho \, \dif V
+        = \rho \, \pi \, R_0^2 \, \dif x
+    \end{equation*}
+
+    Por simetría axial el versor director es
+    \begin{equation*}
+        \versor{r} = \cos(\theta) \, \iVer
+        = \frac{L+D-x}{r} \, \iVer
+    \end{equation*}
+
+    Y la distancia $r$ es
+    \begin{equation*}
+        r = \sqrt{R_0^2 + \bb{L+D-x}^2}
+    \end{equation*}
+
+    Con lo cual, la integral de campo eléctrico queda
+    \begin{align*}
+        \vec{E} &= \cstcoulomb \int \frac{\rho \, \pi \, R_0^2 \, \dif x}{r^2} \, \frac{L+D-x}{r} \, \iVer
+        \\[1em]
+        &= \pi \, \cstcoulomb \, \rho \, R_0^2 \int \frac{L+D-x}{r^3} \dif x \, \iVer
+        \\[1em]
+        &= \pi \, \cstcoulomb \, \rho \, R_0^2 \int_0^L \frac{L+D-x}{\sqb{R_0^2 + \bb{L+D-x}^2}^{\frac{3}{2}}} \dif x \, \iVer
+    \end{align*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Campo eléctrico en cono}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un cono aislante con densidad de carga superficial uniforme. Considerar el caso en que el cono es hueco y el caso en que es sólido.
+    \end{formatI}
+
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-cono.pdf_tex}
+    \end{center}
+
+    El campo eléctrico para una carga contínua es
+    \begin{equation*}
+        \vec{E} = \cstcoulomb \int \frac{\dif q}{r^2} \, \versor{r}
+    \end{equation*}
+
+    \concept{Caso de cono hueco (sin tapa):}
+
+    El diferencial de carga está dado por
+    \begin{equation*}
+        \dif q = \sigma \, \dif A
+        = \sigma \, \dif s \, \dif x
+        = \sigma \, \fx[R]{x} \, \dif \phi \, \dif x
+    \end{equation*}
+
+    Por simetría axial el versor director es
+    \begin{equation*}
+        \versor{r} = \cos(\theta) \, \iVer
+        = \frac{D-x}{r} \, \iVer
+    \end{equation*}
+
+    Y la distancia $r$ es
+    \begin{equation*}
+        r = \sqrt{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2}
+    \end{equation*}
+
+    Al tratarse de la pendiente de la recta del cono en corte $y=0$, el radio varía según
+    \begin{equation*}
+        \fx[R]{x} = \frac{R_0}{L} \, x
+    \end{equation*}
+
+    Con lo cual, la integral de campo eléctrico queda
+    \begin{align*}
+        \vec{E} &= \cstcoulomb \iint \frac{\sigma \, \fx[R]{x} \, \dif \phi \, \dif x}{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2} \, \frac{D-x}{r} \, \iVer
+        \\[1em]
+        &= \cstcoulomb \, \sigma \, \frac{R_0}{L} \iint \frac{x \bb{D-x}}{\sqb{\bb{D-x}^2 + \bb{\frac{R_0}{L} \, x}^2}^{\frac{3}{2}}} \, \dif \phi \, \dif x \, \iVer
+        \\[1em]
+        &= 2 \, \pi \, \cstcoulomb \, \sigma \, \frac{R_0}{L} \int_0^L \frac{x \bb{D-x}}{\sqb{\bb{D-x}^2 + \bb{\frac{R_0}{L} \, x}^2}^{\frac{3}{2}}} \, \dif x \, \iVer
+    \end{align*}
+
+    \concept{Caso de cono sólido:}
+
+    \begin{equation*}
+        \dif q = \rho \, \dif V = \rho \, \pi \, \sqb{\fx[R]{x}}^2 \, \dif x
+    \end{equation*}
+
+    Por simetría axial el versor director es
+    \begin{equation*}
+        \versor{r} = \cos(\theta) \, \iVer
+        = \frac{D-x}{r} \, \iVer
+    \end{equation*}
+
+    Y la distancia $r$ es
+    \begin{equation*}
+        r = \sqrt{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2}
+    \end{equation*}
+
+    Al tratarse de la pendiente de la recta del cono en corte $y=0$, el radio varía según
+    \begin{equation*}
+        \fx[R]{x} = \frac{R_0}{L} \, x
+    \end{equation*}
+
+    Con lo cual, la integral de campo eléctrico queda
+    \begin{align*}
+        \vec{E} &= \cstcoulomb \int \frac{\rho \, \pi \, \sqb{\fx[R]{x}}^2 \, \dif x}{r^2} \, \frac{D-x}{r} \, \iVer
+        \\[1em]
+        &= \pi \, \cstcoulomb \, \rho \int \frac{\sqb{\fx[R]{x}}^2 \bb{D-x}}{r^3} \, \dif x \, \iVer
+        \\[1em]
+        &= \pi \, \cstcoulomb \, \rho \bb{\frac{R_0}{L}}^2 \int_0^L \frac{x^2 \bb{D-x}}{\sqb{\bb{D-x}^2 + \bb{\frac{R_0}{L} \, x}^2}^{\frac{3}{2}}} \, \dif x \, \iVer
     \end{align*}
 \end{mdframed}
 
@@ -313,7 +475,7 @@ El flujo eléctrico ($\Phi$) de una carga eléctrica encerrada por una superfici
     \Phi = \iint_S \Vec{E} \cdot \dif \Vec{S} = \iint \Vec{E} \bb{\Vec{s}(u,v)} \versor{n} \, \dif S
 \end{equation*}
 
-La Ley de Gauss establece que el flujo no depende de la ubicación de la carga dentro de una superficie cerrada. Esto se debe a que el campo eléctrico es inversamente proporcional a la distancia mientras que el área es directamente proporcional. Luego, 
+La Ley de Gauss establece que el flujo no depende de la ubicación de la carga dentro de una superficie cerrada. Esto se debe a que el campo eléctrico es inversamente proporcional a la distancia mientras que el área es directamente proporcional. Luego,
 \begin{equation*}
     \Phi = E \, \oiint_S \dif S = E \, A
 \end{equation*}

@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.2.2 (b0a84865, 2022-12-01), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'elec-anillo.pdf' (pdf, eps, ps)
+%% Accompanies image file 'elec-cilindro.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{481.88976378bp}%
+    \setlength{\unitlength}{510.23622047bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,21 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.52941176)%
+  \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{elec-anillo.pdf}}%
-    \put(0.20074725,0.4923248){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$y$\end{tabular}}}}%
-    \put(0.97716486,0.27758064){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$x$\end{tabular}}}}%
-    \put(0.52660756,0.03575422){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$D$\end{tabular}}}}%
-    \put(0.03,0.33880413){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$R_0$\end{tabular}}}}%
-    \put(0.9,0.28684591){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{E}$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{elec-anillo.pdf}}%
-    \put(0.25,0.22){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{0}$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{elec-anillo.pdf}}%
-    \put(0.55,0.28){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\theta$\end{tabular}}}}%
-    \put(0.8,0.22){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{x}_0$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{elec-anillo.pdf}}%
-    \put(0.48,0.37){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$r$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{elec-cilindro.pdf}}%
+    \put(0.46018172,0.06423573){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$L$\end{tabular}}}}%
+    \put(0.96919691,0.27742483){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$x$\end{tabular}}}}%
+    \put(0.17,0.43696193){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$z$\end{tabular}}}}%
+    \put(0.06022941,0.14713264){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$y$\end{tabular}}}}%
+    \put(0.81925243,0.4224751){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$D$\end{tabular}}}}%
+    \put(0.8,0.35){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$r$\end{tabular}}}}%
+    \put(0.66,0.31810767){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$R_0$\end{tabular}}}}%
+    \put(0.81,0.27){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$\theta$\end{tabular}}}}%
+    \put(0.2119443,0.31151621){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$\phi$\end{tabular}}}}%
+    \put(0.88203388,0.22){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$\vec{x}_0$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
