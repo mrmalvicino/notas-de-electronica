@@ -265,7 +265,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
         \vec{E} = \cstcoulomb \iint \frac{\sigma \, \dif A}{r^2} \, \versor{r}
     \end{equation*}
 
-    Al hacer un cambio de variables a coordenadas polares:
+    Cambiando a coordenadas polares:
     \begin{gather*}
         \fx[T]{R,\phi} = (y,z) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
         \\
@@ -309,12 +309,53 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
+        \label{eg:elec-placa}
+    \end{example}
+    \cusTi{Campo eléctrico en placa infinita}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una placa infinita aislante con densidad de carga superficial uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/elec-placa.pdf_tex}
+    \end{center}
+    Una placa infinita es equivalente a un disco infinito.
+    Es posible hacer el mismo razonamiento para el disco y hacer tender el radio a infinito.
+    Considerando $R_0 \to \infty$ en el resultado obtenido anteriormente:
+    \begin{equation*}
+        \vec{E} = 2 \, \pi \, \cstcoulomb \, \sigma \, D \int_0^\infty \frac{R \, \dif R}{\bb{D^2 + R^2}^{\frac{3}{2}}} \, \iVer
+    \end{equation*}
+    Sea $u = D^2 + R^2$ tal que si $R \to \infty \implies u \to \infty$ y
+    \begin{equation*}
+        \frac{\dif u}{\dif R} = 2 \, R \implies \dif R = \frac{\dif u}{2 \, R}
+    \end{equation*}
+
+    De manera que la integral de campo es
+    \begin{align*}
+        \vec{E} &= \pi \, \cstcoulomb \, \sigma \, D \int_0^\infty \frac{\dif u}{u^{\frac{3}{2}}} \, \iVer
+        \\[1ex]
+        &= \pi \, \cstcoulomb \, \sigma \, D \, \barrow{\frac{1}{-\frac{1}{2} \sqrt{u}}}{u=0}{u=\infty}
+        \\[1ex]
+        &= 2 \, \pi \, \cstcoulomb \, \sigma \, D \, \barrow{\frac{1}{\sqrt{D^2 + R^2}}}{R=\infty}{R=0}
+        \\
+        &= 2 \, \pi \, \cstcoulomb \, \sigma
+        \\
+        &= \frac{\sigma}{2 \, \epsilon_0}
+    \end{align*}
+
+    Observar que el resultado es independiente de $D$.
+    Esto implica que la dirección y magnitud del campo es constante para todo $\vec{x}$.
+    
+    Este resultado se verificará mediante otro método en el ejemplo \ref{eg:gauss-placa}.
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
     \end{example}
     \cusTi{Campo eléctrico en cilindro}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un cilindro aislante con densidad de carga superficial uniforme. Considerar el caso en que el cilindro es hueco y el caso en que es sólido.
     \end{formatI}
-
     \begin{center}
         \def\svgwidth{\linewidth}
         \input{./images/elec-cilindro.pdf_tex}
@@ -475,33 +516,136 @@ El flujo eléctrico ($\Phi$) de una carga eléctrica encerrada por una superfici
     \Phi = \iint_S \Vec{E} \cdot \dif \Vec{S} = \iint \Vec{E} \bb{\Vec{s}(u,v)} \versor{n} \, \dif S
 \end{equation*}
 
-La Ley de Gauss establece que el flujo no depende de la ubicación de la carga dentro de una superficie cerrada. Esto se debe a que el campo eléctrico es inversamente proporcional a la distancia mientras que el área es directamente proporcional. Luego,
+La Ley de Gauss establece que el flujo no depende de la ubicación de la carga dentro de una superficie cerrada. Esto se debe a que el campo eléctrico es inversamente proporcional a la distancia mientras que el área es directamente proporcional.
+Así, podemos reducir cualquier caso de estudio a una superficie esférica con la carga ubicada en el centro:
+\begin{equation*}
+    \Phi = E \, A = \frac{\cstcoulomb \, \sub{q}{in}}{r^2} \, 4 \, \pi \, r^2 = 4 \, \pi \, \cstcoulomb \, \sub{q}{in} = \frac{\sub{q}{in}}{\epsilon_0}
+\end{equation*}
+
+Si el campo eléctrico tiene magnitud $E$ constante y dirección normal a una superficie de área $A$ entonces se puede calcular la magnitud del campo en un punto de la superficie.
 \begin{equation*}
     \Phi = E \, \oiint_S \dif S = E \, A
 \end{equation*}
 
-Así, podemos reducir cualquier caso de estudio a una superficie esférica con la carga ubicada en el centro:
-\begin{equation*}
-    \Phi = \frac{\cstcoulomb \, Q}{r^2} \, 4 \, \pi \, r^2 = 4 \, \pi \, \cstcoulomb \, Q
-\end{equation*}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Simetría cilíndrica}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una barra infinita aislante con densidad de carga lineal uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{0.6\linewidth}
+        \input{./images/gauss-barra.pdf_tex}
+    \end{center}
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            \Phi &= E \, A_2 = E \, 2 \, \pi \, r \, L
+            \\
+            \Phi &= \frac{\sub{q}{in}}{\epsilon_0} = \frac{\lambda \, L}{\epsilon_0}
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Luego:
+    \begin{equation*}
+        E = \frac{\lambda}{2 \, \pi r \, \epsilon_0}
+    \end{equation*}
+\end{mdframed}
 
-O bien, según la permitividad del vacío:
-\begin{equation*}
-    \Phi = \frac{Q}{\epsilon_0}
-\end{equation*}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+        \label{eg:gauss-placa}
+    \end{example}
+    \cusTi{Simetría bilateral}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una placa infinita aislante con densidad de carga superficial uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/gauss-placa.pdf_tex}
+    \end{center}
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            \Phi &= E \, \sub{A}{tot} = E \bb{A_1+A_2} = 2 \, E \, A
+            \\
+            \Phi &= \frac{\sub{q}{in}}{\epsilon_0} = \frac{\sigma \, A}{\epsilon_0}
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Luego:
+    \begin{equation*}
+        E = \frac{\sigma}{2 \, \epsilon_0}
+    \end{equation*}
+    Obteniendo el mismo resultado que en el ejemplo \ref{eg:elec-placa} independientemente de $D$.
+\end{mdframed}
 
-Si el campo eléctrico es de magnitud constante $(E)$ y de dirección normal a la superficie para todo punto de esta entonces se puede aplicar la Ley de Gauss para calcular la magnitud del Campo Eléctrico.
-
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Simetría esférica}
+    \begin{formatI}
+        Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una esfera aislante de radio $R$ que tiene una densidad de carga volumétrica uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{0.7\linewidth}
+        \input{./images/gauss-esfera.pdf_tex}
+    \end{center}
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            \Phi &= E \, A = E \, 4 \pi \, r^2
+            \\
+            \Phi &= \frac{\sub{q}{in}}{\epsilon_0}
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Luego:
+    \begin{equation*}
+        E = \frac{\sub{q}{in}}{4 \, \pi \, \epsilon_0 \, r^2}
+    \end{equation*}
+    Según el volumen de carga encerrado $V$ por la superficie gaussiana, se van a obtener distintos valores para la magnitud del campo.
+    La carga encerrada depende del radio $r$, ya que está dada por
+    \begin{equation*}
+        \fx[\sub{q}{in}]{r} = \rho \, \fx[V]{r}
+    \end{equation*}
+    Pero el volumen encerrado no puede ser mayor que $\fx[V]{R}$ pudiendo distinguir dos casos:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            r<R & \implies q_1 = \rho \, \fx[V]{r} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, r^3}{3} = \frac{Q \, r^3}{R^3}
+            \\
+            r>R & \implies q_2 = \rho \, \fx[V]{R} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, R^3}{3} = Q
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Obteniendo las siguientes expresiones para el campo eléctrico al reemplazar $q_1$ o $q_2$:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            E &= \frac{Q \, r}{4 \, \pi \, \epsilon_0 \, R^3} \quad r<R
+            \\[1ex]
+            E &= \frac{Q}{4 \, \pi \, \epsilon_0 \, r^2} \quad r>R
+        \end{aligned}
+        \right.
+    \end{equation*}
+    \begin{center}
+        \def\svgwidth{0.7\linewidth}
+        \input{./images/gauss-esfera-2.pdf_tex}
+    \end{center}
+\end{mdframed}
 
 \section{Equilibrio electrostático}
 
 Se dice que un material conductor esta en equilibrio electrostático cuando no tiene electrones en movimiento.
+Es decir, un conductor por el que no pasa corriente.
 Los conductores que cumplan esta condición, tienen las siguientes propiedades:
 
 \begin{itemize}
 \item El campo eléctrico es nulo en el interior del conductor, ya sea este hueco o sólido.
 
-\item Si es un conductor aislado con carga, está se acumula en la superficie.
+\item Si es un conductor con carga, está se acumula en la superficie.
 
 \item El campo es ortogonal a la superficie del conductor.
 
