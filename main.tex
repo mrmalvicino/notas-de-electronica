@@ -621,25 +621,26 @@ Si el campo eléctrico tiene magnitud $E$ constante y dirección normal a una su
         \right.
     \end{equation*}
     Obteniendo las siguientes expresiones para el campo eléctrico al reemplazar $q_1$ o $q_2$:
-    \begin{equation*}
-        \left\{
-        \begin{aligned}
-            E &= \frac{Q \, r}{4 \, \pi \, \epsilon_0 \, R^3} \quad r<R
-            \\[1ex]
-            E &= \frac{Q}{4 \, \pi \, \epsilon_0 \, r^2} \quad r>R
-        \end{aligned}
-        \right.
-    \end{equation*}
+        \begin{equation}
+            r<R \implies E = \frac{Q \, r}{4 \, \pi \, \epsilon_0 \, R^3}
+            \label{eqn:esferaInt}
+        \end{equation}
+        \begin{equation}
+            r>R \implies E = \frac{Q}{4 \, \pi \, \epsilon_0 \, r^2}
+            \label{eqn:esferaExt}
+        \end{equation}
     \begin{center}
         \def\svgwidth{0.7\linewidth}
         \input{./images/gauss-esfera-2.pdf_tex}
     \end{center}
 \end{mdframed}
 
+
 \section{Equilibrio electrostático}
 
-Se dice que un material conductor esta en equilibrio electrostático cuando no tiene electrones en movimiento.
-Es decir, un conductor por el que no pasa corriente.
+Se dice que un conductor esta en equilibrio electrostático cuando no tiene electrones en movimiento.
+
+En otras palabras, se trata de un conductor por el que no pasa corriente.
 Los conductores que cumplan esta condición, tienen las siguientes propiedades:
 
 \begin{itemize}
@@ -652,15 +653,44 @@ Los conductores que cumplan esta condición, tienen las siguientes propiedades:
 \item La densidad de carga superficial es máxima donde la curvatura sea mínima.
 \end{itemize}
 
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \begin{formatI}
+        Se tiene una esfera aislante de radio $r_0$ con carga $q_1 = Q$ que se encuenta en el centro de un cascarón conductor de ancho $\Delta r = r_2 - r_1$ que tiene $q_2 = -2\,Q$ de carga.
+        Se quiere calcular el campo eléctrico en todo el espacio en función de la distancia al centro de la esfera.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{0.7\linewidth}
+        \input{./images/eq-electrostatico.pdf_tex}
+    \end{center}
+    \begin{itemize}
+        \item Para $r<r_0$ el cascarón no afecta, por lo que el campo está dado según la ecuación \ref{eqn:esferaInt}.
+        \item Para $r_0<r<r_1$ el cascarón no afecta, por lo que el campo está dado según la ecuación \ref{eqn:esferaExt}.
+        \item Para $r_1<r<r_2$ el campo eléctrico es nulo por tratarse del interior de un conductor.
+        \item Para $r_2<r$ el campo es $E = \frac{-Q}{4 \, \pi \, \epsilon_0 \, r^2}$ dado que la carga neta que encierra una superficie gaussiana es $\sub{q}{in} = q_1 + q_2 = -Q$.
+    \end{itemize}
+\end{mdframed}
+
 
 \section{Potencial eléctrico}
 
 Si dos cargas son del mismo signo, el medio tiene que hacer trabajo para acercarlas, ganando el sistema energía potencial eléctrica. Si dos cargas son de signo opuesto, el medio tiene que hacer trabajo para alejarlas, de manera que el sistema gana energía potencial eléctrica. Así, se establece por convención que el trabajo es positivo cuando el sistema gana energía.
 \begin{equation*}
-    W \gtrless 0 \iff {\sub{E}{pot}}_F \gtrless {\sub{E}{pot}}_0
+    W \gtrless 0 \iff {\sub{E}{pot}}_F \gtrless {\sub{E}{pot}}_0 \iff \Delta \sub{E}{pot} \gtrless 0
 \end{equation*}
 
-Según el Principio de conservación de la energía, se define la diferencia de energía potencial eléctrica $(\Delta \sub{E}{pot})$ como el trabajo de la fuerza eléctrica:
+Se tiene una carga $q_1 > 0$ fija en un punto.
+Se coloca una segunda carga $q_2 < 0$ a una distancia infinitamente grande
+En principio $q_2$ no se vería afectada por el campo eléctrico de $q_1$, ya que en el infinito sería nulo.
+Ahora bien, si se la perturba de la posición inicial, partiría con cierta velocidad inicial para acelerarse en dirección hacia $q_1$.
+La fuerza causante de esta aceleración sería la fuerza eléctrica ejercida por $q_1$.
+
+No obstante, se aplica sobre $q_2$ una fuerza externa de igual magnitud y sentido contrario a la fuerza eléctrica.
+Así, $q_2$ se mueve a velocidad constante en dirección hacia $q_1$ tal que $\Delta \sub{E}{cin} = 0$.
+
+El trabajo de la fuerza externa cuantifica la energía que tiene $q_2$ por estar en presencia del campo producido por $q_1$, energía que potencialmente podría convertirse en energía cinética si no hubiese fuerza externa.
+Pero el trabajo de la fuerza externa (no conservativa) es igual a menos el trabajo de la fuerza eléctrica (conservativa). Esto es, para $q_2=q_0$:
 \begin{align*}
     \Delta \sub{E}{pot} &= - \sub{W}{con}
     \\
@@ -669,7 +699,10 @@ Según el Principio de conservación de la energía, se define la diferencia de 
     &= - q_0 \int_C \Vec{E} \cdot \dif \Vec{s}
 \end{align*}
 
-La diferencia de potencial eléctrico $(\Delta V)$ se define dividiendo por $q_0$ ambos miembros de la ecuación anterior.
+Dado que $q_0 < 0$ y $-\sub{W}{con} = \sub{W}{no con} < 0$ es posible mantener el menos en la ecuación y trabajar con valores absolutos ya que los negativos se cancelan entre sí.
+Es decir, si se hubiese tratado de una carga de prueba positiva el trabajo de la fuerza externa para llevar $q_2$ en dirección hacia $q_1$ hubiese sido positivo.
+
+Finalmente, se define la diferencia de potencial eléctrico $(\Delta v)$ dividiendo por $q_0$ ambos miembros.
 
 \begin{mdframed}[style=MyFrame1]
     \begin{defn}
@@ -677,13 +710,13 @@ La diferencia de potencial eléctrico $(\Delta V)$ se define dividiendo por $q_0
     \end{defn}
     \cusTi{Potencial eléctrico}
     \begin{equation*}
-        \Delta V = \frac{\Delta \sub{E}{pot}}{q_0} = - \int_C \Vec{E} \cdot \dif \Vec{s}
+        \Delta v = - \int_C \Vec{E} \cdot \dif \Vec{s}
     \end{equation*}
 \end{mdframed}
 
 A partir de la definición anterior, se deduce el potencial eléctrico para una carga puntual:
 \begin{align*}
-    \Delta V &= - \int_C \frac{\cstcoulomb \, q}{r^2} \versor{r} \cdot \dif \Vec{s}
+    \Delta v &= - \int_C \frac{\cstcoulomb \, q}{r^2} \versor{r} \cdot \dif \Vec{s}
     \\
     &= - \int_C \frac{\cstcoulomb \, q}{r^2} \nnorm{\versor{r}} \, \nnorm{\dif \Vec{s}} \, \cos(\theta)
     \\
@@ -694,35 +727,30 @@ A partir de la definición anterior, se deduce el potencial eléctrico para una 
 
 Pudiendo luego generalizar para $N$ cargas puntuales:
 \begin{equation}
-    \Delta V = \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith}
+    \Delta v = \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith}
 \end{equation}
 
-Tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define el potencial en un punto del espacio dado por una carga contínua.
+Y tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define el potencial en un punto del espacio dado por una carga contínua.
 
 \begin{mdframed}[style=MyFrame1]
     \begin{defn}
     \end{defn}
     \cusTi{Potencial eléctrico de carga contínua}
     \begin{equation*}
-        \Delta V = \cstcoulomb \int \frac{\dif q}{r}
+        \Delta v = \cstcoulomb \int \frac{\dif q}{r}
     \end{equation*}
 \end{mdframed}
-
-Para calcularlo, hay que considerar cómo es la geometría de la carga $\dif q$ distribuida en el espacio.
 
 Para un campo uniforme, se tiene
 \begin{equation*}
     \Delta V = - E \int_{x_0}^{x_1} \dif x
 \end{equation*}
 
-\begin{mdframed}[style=MyFrame1]
-    \begin{prop}
-    \end{prop}
-    \cusTi{Potencial eléctrico en campo uniforme}
-    \begin{equation*}
-        \Delta V = - E \, \Delta x
-    \end{equation*}
-\end{mdframed}
+
+\begin{equation*}
+    \Delta V = - E \, \Delta x
+\end{equation*}
+
 
 
 \section{Relación entre campo y potencial}
@@ -731,15 +759,17 @@ La diferencia de potencial eléctrico, es conocida como tensión eléctrica, vol
 
 De la definición \ref{defn:potEle} se deduce que el diferencial de potencial eléctrico es
 \begin{equation*}
-    \dif V = - \Vec{E} \, \dif \Vec{s}
+    \dif v = - \Vec{E} \, \dif \Vec{s}
 \end{equation*}
 
-Lo cual implica $\Vec{E} = - \grad V$ que en una dimensión es:
+Lo cual implica $\Vec{E} = - \grad v$ que en una dimensión es:
 \begin{equation*}
-    E(x) = - \frac{\dif}{\dif x} V(x)
+    E(x) = - \frac{\dif}{\dif x} v(x)
 \end{equation*}
 
-Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye. Así mismo, como la gráfica de $V(r)$ es decreciente, tiene pendiente negativa si la distancia es $r>R$. La pendiente de $V(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
+Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye.
+La gráfica de $v(r)$ es decreciente, y siempre tiene pendiente negativa.
+La pendiente de $v(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
 
 \begin{center}
     \def\svgwidth{0.8\linewidth}
