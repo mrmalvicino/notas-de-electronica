@@ -55,7 +55,7 @@ La versión digital más reciente de este texto puede ser descargada gratuitamen
 \chapter{Electricidad}
 
 
-\section{Cargas eléctricas}
+\section{Fuerza eléctrica}
 
 Según el modelo atómico, la materia está formada por moléculas que están compuestas en última instancia por átomos. Pero a su vez, los átomos están formados por distintas configuraciones de \emph{partículas subatómicas}, de ahí que haya distintos tipos de elementos. Cada elemento se clasifica en la tabla periódica según su número atómico, que es la cantidad de protones que tiene un átomo de dicho elemento. Un átomo tiene la misma cantidad de protones que de neutrones, pero no necesariamente la misma cantidad de electrones. Podemos identificar así el peso de un átomo de cierto elemento, conociendo la cantidad de partículas subatómicas, según el siguiente cuadro, donde además se observa la carga eléctrica de cada una.
 
@@ -79,6 +79,28 @@ Según el modelo atómico, la materia está formada por moléculas que están co
 La cantidad de protones (y neutrones) de un átomo permanece inalterada. Una transformación física que modificase la \emph{estructura atómica} implicaría un cambio en el núcleo del átomo haciendo que el elemento no sea el mismo. Estas transformaciones se conocen como fusión y fisión nuclear.
 
 En cambio, la cantidad de electrones de un átomo sí puede variar sin alterar la naturaleza del elemento. Si un átomo tiene la misma cantidad de protones que de electrones se lo llama neutro. De lo contrario, se lo llama ion, o se dice que está cargado eléctricamente.
+
+\concept{Aislantes (o dieléctricos) y conductores:}
+
+Un dieléctrico es un material que no es conductor de la electricidad.
+Para el vacío, se definen la constante de Coulomb $(\cstcoulomb)$ y la permitividad del vacío $(\epsilon_0)$.
+\begin{gather*}
+    \cstcoulomb=8.99 \times 10^9\,\si{\newton\metre^2\per\coulomb^2}
+    \\
+    \epsilon_0 = \dfrac{1}{4 \pi \cstcoulomb} = 8.85 \times 10^{-12} \,\si{\coulomb^2\per\newton\metre^2}
+\end{gather*}
+
+Según las propiedades de cada dieléctrico se puede definir una constante dieléctrica $k$ y una resistencia dieléctrica $\epsilon$ para cada material en función del paso de corriente que permitan.
+
+En un conductor, en cambio, los electrones de los átomos que lo componen pueden moverse por los orbitales externos de cada átomo, permitiendo el paso de cargas o corriente.
+
+Tanto los aislantes como los conductores pueden tener carga, pero en el caso de un aislante tener carga esta se puede localizar en algunos de los átomos que lo componen, mientras que otros de sus átomos pueden tener carga menor o netra.
+
+\concept{Polarización:}
+
+Los electrones de un objeto conductor se reacomodan internamente ante la presencia de una carga que se encuentre en su cercanía sin estar en contacto.
+Esto genera que, mientras el objeto externo cargado esté presente, una mitad del conductor originalmente neutro queda con carga negativa y la otra con carga positiva, ambas equivalentes a la carga externa presente.
+Si el objeto externo con carga se quita, los electrones del conductor se reacomodan para devolverle su carga neutra, ya que las cargas polarizadas son del signo contrario y se atraen entre sí.
 
 \begin{itemize}
     \item \concept{Carga por conducción}
@@ -105,9 +127,7 @@ En cambio, la cantidad de electrones de un átomo sí puede variar sin alterar l
     \end{center}
 \end{itemize}
 
-
-\section{Fuerza eléctrica}
-
+Los objetos cargados se repelen o atraen entre sí por acción de una fuerza.
 La fuerza eléctrica entre dos cargas puntuales está dada por la \emph{Ley de Coulomb} a continuación.
 
 \begin{mdframed}[style=MyFrame1]
@@ -118,13 +138,6 @@ La fuerza eléctrica entre dos cargas puntuales está dada por la \emph{Ley de C
         \Vec{F}_e = \cstcoulomb \, \frac{ q_0 \, q_1}{r^2} \, \versor{r}
     \end{equation*}
 \end{mdframed}
-
-Donde $\cstcoulomb=8.99 \times 10^9\,\si{\newton\metre^2\per\coulomb^2}$ es la constante eléctrica de Coulomb.
-
-A partir de la constante de Coulomb se define la permitividad del vacío $\epsilon_0$ tal que:
-\begin{equation}
-    \epsilon_0 = \dfrac{1}{4 \pi \cstcoulomb} = 8.85 \times 10^{-12} \,\si{\coulomb^2\per\newton\metre^2}
-\end{equation}
 
 
 \section{Campo eléctrico}
@@ -189,7 +202,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
-    \cusTi{Campo eléctrico en barra}
+    \cusTi{Campo eléctrico de una barra}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una barra aislante con densidad de carga lineal uniforme. Suponer que la barra tiene grosor nulo.
     \end{formatI}
@@ -208,7 +221,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
-    \cusTi{Campo eléctrico en anillo}
+    \cusTi{Campo eléctrico de un anillo}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un anillo aislante con densidad de carga lineal uniforme. Suponer que el anillo tiene grosor nulo.
     \end{formatI}
@@ -250,7 +263,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
-    \cusTi{Campo eléctrico en disco}
+    \cusTi{Campo eléctrico de un disco}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un disco aislante con densidad de carga superficial uniforme.
     \end{formatI}
@@ -311,7 +324,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
     \begin{example}
         \label{eg:elec-placa}
     \end{example}
-    \cusTi{Campo eléctrico en placa infinita}
+    \cusTi{Campo eléctrico de una placa infinita}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por una placa infinita aislante con densidad de carga superficial uniforme.
     \end{formatI}
@@ -352,7 +365,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
-    \cusTi{Campo eléctrico en cilindro}
+    \cusTi{Campo eléctrico de un cilindro}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un cilindro aislante con densidad de carga superficial uniforme. Considerar el caso en que el cilindro es hueco y el caso en que es sólido.
     \end{formatI}
@@ -427,7 +440,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
-    \cusTi{Campo eléctrico en cono}
+    \cusTi{Campo eléctrico de un cono}
     \begin{formatI}
         Calcular el campo eléctrico en el punto $\vec{x}_0$ generado por un cono aislante con densidad de carga superficial uniforme. Considerar el caso en que el cono es hueco y el caso en que es sólido.
     \end{formatI}
@@ -636,7 +649,7 @@ Si el campo eléctrico tiene magnitud $E$ constante y dirección normal a una su
 \end{mdframed}
 
 
-\section{Equilibrio electrostático}
+\subsection{Equilibrio electrostático}
 
 Se dice que un conductor esta en equilibrio electrostático cuando no tiene electrones en movimiento.
 
@@ -710,13 +723,13 @@ Finalmente, se define la diferencia de potencial eléctrico $(\Delta v)$ dividie
     \end{defn}
     \cusTi{Potencial eléctrico}
     \begin{equation*}
-        \Delta v = - \int_C \Vec{E} \cdot \dif \Vec{s}
+        \Delta \V = - \int_C \vec{E} \cdot \dif \vec{s}
     \end{equation*}
 \end{mdframed}
 
 A partir de la definición anterior, se deduce el potencial eléctrico para una carga puntual:
 \begin{align*}
-    \Delta v &= - \int_C \frac{\cstcoulomb \, q}{r^2} \versor{r} \cdot \dif \Vec{s}
+    \Delta \V &= - \int_C \frac{\cstcoulomb \, q}{r^2} \versor{r} \cdot \dif \Vec{s}
     \\
     &= - \int_C \frac{\cstcoulomb \, q}{r^2} \nnorm{\versor{r}} \, \nnorm{\dif \Vec{s}} \, \cos(\theta)
     \\
@@ -727,7 +740,7 @@ A partir de la definición anterior, se deduce el potencial eléctrico para una 
 
 Pudiendo luego generalizar para $N$ cargas puntuales:
 \begin{equation}
-    \Delta v = \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith}
+    \Delta \V = \cstcoulomb \sum_{\ith=1}^\nth \frac{q_\ith}{r_\ith}
 \end{equation}
 
 Y tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define el potencial en un punto del espacio dado por una carga contínua.
@@ -737,46 +750,166 @@ Y tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define 
     \end{defn}
     \cusTi{Potencial eléctrico de carga contínua}
     \begin{equation*}
-        \Delta v = \cstcoulomb \int \frac{\dif q}{r}
+        \Delta \V = \cstcoulomb \int \frac{\dif q}{r}
     \end{equation*}
 \end{mdframed}
 
-Para un campo uniforme, se tiene
-\begin{equation*}
-    \Delta V = - E \int_{x_0}^{x_1} \dif x
-\end{equation*}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Potencial en campo uniforme}
+    \begin{align*}
+        \Delta \V &= - E \int_{x_0}^{x_1} \dif x
+        \\
+        &= - E \, \Delta x
+    \end{align*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Potencial de un dipolo}
+    \begin{formatI}
+        Calcular el potencial eléctrico en los puntos $\vec{x}_1$ y $\vec{x}_2$ que es generado por un dipolo de cargas puntuales $q_1=-q_2=Q$.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{0.7\linewidth}
+        \input{./images/pot-dipolo.pdf_tex}
+    \end{center}
+    En el punto $\vec{x}_1$ el potencial es:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \bb{\frac{q_1}{\sqrt{R^2 + y_0^2}} + \frac{q_2}{\sqrt{R^2 + y_0^2}}} = 0
+    \end{equation*}
+
+    En el punto $\vec{x}_2$ el potencial es:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \bb{\frac{q_1}{x_0 + R} + \frac{q_2}{x_0 - R}}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Potencial de una barra}
+    \begin{formatI}
+        Calcular el potencial eléctrico en el punto $\vec{x}_0$ generado por una barra con densidad de carga lineal uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/pot-barra.pdf_tex}
+    \end{center}
+    Para una distribución contínua, el potencial es el aporte de cada diferencial de carga:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \int \frac{\dif q}{r}
+    \end{equation*}
+    Donde:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            \dif q &= \lambda \, \dif x
+            \\
+            r &= \sqrt{x^2+H^2}
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Luego:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \, \lambda \int_D^{D+L} \frac{1}{\sqrt{x^2+H^2}} \, \dif x
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Potencial de un anillo}
+    \begin{formatI}
+        Calcular el potencial eléctrico en el punto $\vec{x}_0$ generado por un anillo aislante con carga $Q$ uniformemente distribuída.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/pot-anillo.pdf_tex}
+    \end{center}
+    Para una distribución contínua, el potencial es el aporte de cada diferencial de carga:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \int \frac{\dif q}{r}
+    \end{equation*}
+    Donde:
+    \begin{equation*}
+        r = \sqrt{D^2 + R_0^2}
+    \end{equation*}
+    Luego:
+    \begin{equation*}
+        \Delta \V = \frac{\cstcoulomb}{\sqrt{D^2 + R_0^2}} \int \dif q = \frac{\cstcoulomb \, Q}{\sqrt{D^2 + R_0^2}}
+    \end{equation*}
+\end{mdframed}
+
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Potencial de un disco}
+    \begin{formatI}
+        Calcular el potencial eléctrico en el punto $\vec{x}_0$ generado por un disco con densidad de carga superficial uniforme.
+    \end{formatI}
+    \begin{center}
+        \def\svgwidth{\linewidth}
+        \input{./images/pot-disco.pdf_tex}
+    \end{center}
+    Para una distribución contínua, el potencial es el aporte de cada diferencial de carga:
+    \begin{equation*}
+        \Delta \V = \cstcoulomb \int \frac{\dif q}{r}
+    \end{equation*}
+    Donde:
+    \begin{equation*}
+        \left\{
+        \begin{aligned}
+            \dif q &= \sigma \, \dif y \, \dif z = \sigma \, R \, \dif R \, \dif \phi
+            \\
+            r &= \sqrt{D^2+R^2}
+        \end{aligned}
+        \right.
+    \end{equation*}
+    Luego:
+    \begin{align*}
+        \Delta \V &= \cstcoulomb \, \sigma \, \int_0^{2\pi} \dif \phi \int_0^{R_0} \frac{R}{\sqrt{D^2+R^2}} \, \dif R
+        \\[1ex]
+        &= 2 \, \pi \, \cstcoulomb \, \sigma \bb{\sqrt{R_0^2 + D^2} - D}
+    \end{align*}
+\end{mdframed}
 
 
-\begin{equation*}
-    \Delta V = - E \, \Delta x
-\end{equation*}
+\subsection{Generador Van de Graaff}
+
+\begin{center}
+    \def\svgwidth{0.8\linewidth}
+    \input{./images/pot-van-de-graaff.pdf_tex}
+\end{center}
 
 
-
-\section{Relación entre campo y potencial}
+\subsection{Relación entre campo y potencial}
 
 La diferencia de potencial eléctrico, es conocida como tensión eléctrica, voltaje, potencial eléctrico o simplemente potencial.
 
 De la definición \ref{defn:potEle} se deduce que el diferencial de potencial eléctrico es
 \begin{equation*}
-    \dif v = - \Vec{E} \, \dif \Vec{s}
+    \dif \V = - \Vec{E} \, \dif \Vec{s}
 \end{equation*}
 
 Lo cual implica $\Vec{E} = - \grad v$ que en una dimensión es:
 \begin{equation*}
-    E(x) = - \frac{\dif}{\dif x} v(x)
+    E(x) = - \frac{\dif}{\dif x} \V(x)
 \end{equation*}
 
 Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye.
-La gráfica de $v(r)$ es decreciente, y siempre tiene pendiente negativa.
-La pendiente de $v(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
+La gráfica de $\V(r)$ es decreciente, y siempre tiene pendiente negativa.
+La pendiente de $\V(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
 
 \begin{center}
     \def\svgwidth{0.8\linewidth}
     \input{./images/pot-ele-esfera-cond.pdf_tex}
 \end{center}
 
-El signo negativo se deduce por ser el campo eléctrico positivo si $r>R$ y negativo si $r<-R$ y la pendiente de $V(r)$ negativa y positiva respectivamente. Además, se puede observar que si la distancia es $-R<r<R$, el potencial eléctrico $V(r)$ es constante con lo cual el campo es nulo ya que es la derivada con respecto de la distancia.
+El signo negativo se deduce por ser el campo eléctrico positivo si $r > R$ y negativo si $r < -R$ y la pendiente de $\V(r)$ negativa y positiva respectivamente.
+Además, se puede observar que si la distancia es $-R < r < R$, el potencial eléctrico $\V(r)$ es constante con lo cual el campo es nulo ya que es la derivada con respecto de la distancia.
 
 
 \section{Capacitancia}
@@ -895,11 +1028,6 @@ Al reemplazar el potencial eléctrico $\Delta V = E \, \Delta x$ y la capacitanc
         \dfrac{\sub{E}{pot}}{V_o} = \frac{\epsilon_0 \, E^2}{2}
     \end{equation*}
 \end{mdframed}
-
-
-\section{Dieléctricos}
-
-Un dieléctrico es un material que no es conductor de la electricidad. En el vacío se tienen la constante de Coulomb $(\cstcoulomb)$ y la permitividad del vacío $(\epsilon_0)$ ya mencionadas. Según las propiedades de cada dieléctrico se puede definir una constante dieléctrica $k$ y una resistencia dieléctrica $\epsilon$ para cada material.
 
 El campo eléctrico máximo que se puede dar en un capacitor está dado por la resistencia dieléctrica. Si la magnitud del campo es mayor que esta, esto es, entonces el dieléctrico pasa a ser conductor. Por lo tanto, para un dieléctrico se cumple:
 \begin{equation*}
