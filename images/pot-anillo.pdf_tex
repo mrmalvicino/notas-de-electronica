@@ -56,12 +56,12 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{pot-anillo.pdf}}%
     \put(0.20074725,0.4923248){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$y$\end{tabular}}}}%
     \put(0.97716486,0.27758064){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$x$\end{tabular}}}}%
-    \put(0.52660756,0.03575422){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$D$\end{tabular}}}}%
-    \put(0.04,0.33){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$R_0$\end{tabular}}}}%
+    \put(0.52660756,0.09113761){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$D$\end{tabular}}}}%
+    \put(0.08,0.33){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$R_0$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{pot-anillo.pdf}}%
-    \put(0.25,0.22){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{0}$\end{tabular}}}}%
+    \put(0.2,0.21){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{0}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{pot-anillo.pdf}}%
-    \put(0.8,0.22){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{x}_0$\end{tabular}}}}%
+    \put(0.8,0.21){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}$\vec{x}_0$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{pot-anillo.pdf}}%
   \end{picture}%
 \endgroup%
