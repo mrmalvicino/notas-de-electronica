@@ -747,6 +747,7 @@ Y tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define 
 
 \begin{mdframed}[style=MyFrame1]
     \begin{defn}
+        \label{defn:potCargaCont}
     \end{defn}
     \cusTi{Potencial eléctrico de carga contínua}
     \begin{equation*}
@@ -754,10 +755,17 @@ Y tomando el límite cuando $\nth\to\infty$ en la ecuación anterior, se define 
     \end{equation*}
 \end{mdframed}
 
+La definición \ref{defn:potEle} está dada para cargas puntuales.
+No confundir la integral involucrada con la integral de la definición \ref{defn:potCargaCont}.
+La primera implica una integral de tipo 2 para el trabajo, mientras que la segunda es una integral de Riemann para sumar el aporte de infinitas cargas puntuales.
+
 \begin{mdframed}[style=MyFrame2]
     \begin{example}
     \end{example}
     \cusTi{Potencial en campo uniforme}
+    \cusTe{Se quiere calcular el potencial eléctrico o bien entre dos placas paralelas con carga opuesta o bien para una única placa infinita con cierta carga.}
+    Partiendo de la definición \ref{defn:potEle} se calcula el potencial.
+    Esto es, la energía cinética que ganaría una carga de prueba en ir desde una placa hacia la otra, o en recorrer cierta distancia $\Delta x$ por la fuerza eléctrica ejercida por una placa infinita.
     \begin{align*}
         \Delta \V &= - E \int_{x_0}^{x_1} \dif x
         \\
@@ -946,53 +954,59 @@ La capacitancia o capacidad eléctrica es la cantidad de carga $(q)$ por unidad 
     \end{defn}
     \cusTi{Capacitancia}
     \begin{equation*}
-        C = \frac{q}{\Delta V}
+        C = \frac{q}{\Delta \V}
     \end{equation*}
 \end{mdframed}
 
-Entre dos capas paralelas, el campo es uniforme. La capacidad es luego
-\begin{equation*}
-    C = \frac{q}{E \, \Delta x} = \frac{q}{\frac{\sigma}{\epsilon_0}\Delta x} = \frac{q}{\tfrac{q}{A \, \epsilon_0}\Delta x}
-\end{equation*}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Capacitor de placas}
+    \begin{formatI}
+        Capacitancia que generan dos placas paralelas, considerando que el campo eléctrico entre ellas es uniforme.
+    \end{formatI}
+    La capacidad está dada por
+    \begin{equation*}
+        C = \frac{q}{E \, \Delta x} = \frac{q}{\frac{\sigma}{\epsilon_0}\Delta x} = \frac{q}{\tfrac{q}{A \, \epsilon_0}\Delta x}
+    \end{equation*}
 
-Obteniendo así
-
-\begin{mdframed}[style=MyFrame1]
-    \begin{prop}
-    \end{prop}
-    \cusTi{Capacitancia de placas paralelas}
+    Obteniendo así
     \begin{equation*}
         C = \frac{\epsilon_0 A}{\Delta x}
     \end{equation*}
 \end{mdframed}
 
-\begin{mdframed}[style=MyFrame1]
-    \begin{prop}
-    \end{prop}
-    \cusTi{Capacitancia de cilindros}
-    \begin{equation*}
-        C = \frac{l}{2 \, \cstcoulomb \ln{\bb{\dfrac{r_2}{r_1}}}}
-    \end{equation*}
-\end{mdframed}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
+    \cusTi{Capacitor esférico}
+    \begin{formatI}
+        Capacitancia que generan o bien dos esferas concéntricas, o bien una única esfera como un caso particular en la que la externa tiene radio infinito.
+    \end{formatI}
+    El potencial eléctrico entre las esferas (en valor absoluto) está dado por:
+    \begin{align*}
+        \Delta \V &= \int_C \vec{E} \cdot \dif \vec{s}
+        \\[1ex]
+        &= \int_{r_1}^{r_2} \frac{\cstcoulomb \, q}{r^2} \dif r
+        \\
+        &= \cstcoulomb \, q \bb{\frac{1}{r_1} - \frac{1}{r_2}}
+    \end{align*}
 
-Para estudiar la capacidad de una esfera, se tiene:
-\begin{equation*}
-    C = \frac{q}{-\displaystyle\int_{r_1}^{r_2} \frac{\cstcoulomb \, q}{r^2} \dif r}
-\end{equation*}
+    Así:
+    \begin{align*}
+        C &= \frac{q}{\Delta \V}
+        \\
+        &= \frac{1}{\cstcoulomb \bb{\frac{1}{r_1} - \frac{1}{r_2}}}
+    \end{align*}
 
-Tomando $r_2 \to \infty$ se tiene
-\begin{equation*}
-    C = \frac{r_1}{\cstcoulomb} = 4 \, \pi \, \epsilon_0 \, r_1
-\end{equation*}
-
-Obteniendo así
-
-\begin{mdframed}[style=MyFrame1]
-    \begin{prop}
-    \end{prop}
-    \cusTi{Capacitancia de esferas}
+    Obteniendo, para dos esferas concéntricas
     \begin{equation*}
         C = \frac{r_1 \, r_2}{\cstcoulomb \bb{r_2 - r_1}}
+    \end{equation*}
+
+    O bien, si $r_2 \to \infty$, se tiene para una única esfera
+    \begin{equation*}
+        C = \frac{r_1}{\cstcoulomb} = 4 \, \pi \, \epsilon_0 \, r_1
     \end{equation*}
 \end{mdframed}
 
@@ -1018,14 +1032,26 @@ Para calcular la energía almacenada en un capacitor se hace:
     \end{equation*}
 \end{mdframed}
 
-Al reemplazar el potencial eléctrico $\Delta V = E \, \Delta x$ y la capacitancia $C = \tfrac{\epsilon_0 \, A}{\Delta x}$ en $\sub{E}{pot} = \tfrac{1}{2} \, \tfrac{\epsilon_0 \, A}{\Delta x} \bb{E \, \Delta x}^2$, donde $V_0 = A \, \Delta x$ es el volumen, se obtiene
-
-\begin{mdframed}[style=MyFrame1]
-    \begin{prop}
-    \end{prop}
+\begin{mdframed}[style=MyFrame2]
+    \begin{example}
+    \end{example}
     \cusTi{Energía almacenada en placas paralelas}
+
+    El potencial eléctrico es
     \begin{equation*}
-        \dfrac{\sub{E}{pot}}{V_o} = \frac{\epsilon_0 \, E^2}{2}
+        \Delta V = E \, \Delta x
+    \end{equation*}
+    y la capacitancia
+    \begin{equation*}
+        C = \tfrac{\epsilon_0 \, A}{\Delta x}
+    \end{equation*}
+    obteniendo
+    \begin{equation*}
+        \sub{E}{pot} = \tfrac{1}{2} \, \tfrac{\epsilon_0 \, A}{\Delta x} \bb{E \, \Delta x}^2
+    \end{equation*}
+    y si $V_0 = A \, \Delta x$ es el volumen se tiene
+    \begin{equation*}
+        \frac{\sub{E}{pot}}{V_0} = \frac{\epsilon_0 \, E^2}{2}
     \end{equation*}
 \end{mdframed}
 
@@ -1226,7 +1252,7 @@ Si se tiene un circuito con una fuente de corriente antes o después de una rama
 
 \section{Fuente ideal y fuente real}
 
-Las fuentes reales generan una tensión, pero al conectarlas con una resistencia de caraga, varian la tensión que generarian de no tener carga.
+Las fuentes reales generan una tensión, pero al conectarlas con una resistencia de carga, varian la tensión que generarian de no tener carga.
 
 
 \subsection*{Modelo de fuente de tensión real}
