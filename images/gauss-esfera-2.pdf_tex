@@ -54,7 +54,7 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{gauss-esfera-2.pdf}}%
-    \put(0.58671036,0.02704407){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
-    \put(0.93948822,0.02704407){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0.58671036,0.02){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0.93948822,0.02){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
