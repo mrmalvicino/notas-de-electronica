@@ -1791,12 +1791,51 @@ La frecuencia central es aquella que verifica $R = X_C$ y está dada por:
     f_c = \frac{1}{2 \, \pi \, C \, R}
 \end{equation*}
 
-La tensión, por ser un circuito AC en serie, está dada por:
-\begin{gather*}
-    V_C = \frac{V_S}{2 \, \pi \, f \, C \sqrt{R^2 + \bb{\dfrac{1}{2 \, \pi \, f \, C}}^2}}
+
+\subsection{Función de transferencia}
+
+La función de transferencia es
+\begin{equation*}
+    H = \frac{\sub{\voltage}{out}}{\sub{\voltage}{in}}
+    = \frac{\iu \, R}{\iu \, \sub{Z}{eq}}
+    = \frac{R}{R - \iu \, X_C}
+\end{equation*}
+
+o bien
+\begin{equation*}
+    H = \frac{1}{1 - \iu \, \tfrac{1}{\omega \, R \, C}}
+\end{equation*}
+
+La frecuencia de resonancia verifica $Z_R = Z_C$ o bien $R = \frac{1}{\omega_0 \, C}$, quedando la frecuencia de cruce
+\begin{equation*}
+    \omega_0 = \frac{1}{R \, C}
+\end{equation*}
+
+Y la función de transferencia
+\begin{equation*}
+    H = \frac{1}{1 - \iu \, \tfrac{\omega_0}{\omega}} = \frac{1}{\sqrt{1 +  \bb{\tfrac{\omega_0}{\omega}}^2}} \, e^{\iu \artan \bb{\tfrac{\omega_0}{\omega}}}
+\end{equation*}
+
+De manera que si $\omega = \omega_0$ el circuito está en resonancia y
+\begin{equation*}
+    \norm{H} = \frac{1}{\sqrt{2}} = \frac{\sub{V}{out}}{\sub{V}{in}} \approx 0.707
+\end{equation*}
+
+Que en decibeles es
+\begin{align*}
+    L_H &= 20 \, \log \bb{\frac{\sub{V}{out}}{\sub{V}{in}}}
     \\[1ex]
-    \phi_{\voltage_C} = - \arctan{\bb{\dfrac{-1}{2 \, \pi \, f \, C \, R}}} - \ang{90}
-\end{gather*}
+    &= -20 \, \log \sqrt{1 + \bb{\frac{\omega_0}{\omega}}^2}
+    \\[1ex]
+    &= -10 \, \log \sqb{1 + \bb{\frac{\omega_0}{\omega}}^2}
+\end{align*}
+
+Ahora bien, es posible hacer una aproximación que tenga una caída de $6 \, \si{\deci \bel}$ por octava, sabiendo que la atenuación real en la frecuencia de resonancia va a ser de $3 \, \si{\deci \bel}$.
+
+Esto es, considerando $f << f_0$ se tiene que $1 << \bb{\tfrac{\omega_0}{\omega}}^2$ y se obtendría para la función de transferencia
+\begin{equation*}
+    L_H \approx 20 \, \log \bb{\frac{\omega}{\omega_0}}
+\end{equation*}
 
 
 \subsection{Filtros R-L}
