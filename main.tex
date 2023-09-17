@@ -1513,20 +1513,15 @@ Inicialmente, el capacitor comienza a cargarce.
 Mientras no haya tanto amontonamiento de cargas, una placa del capacitor puede recibir electrones y la otra puede sederlos.
 Por esto, el circuito se comporta como si hubiese corriente contínua.
 Al principio, la corriente es máxima y luego va decayendo.
-
-Se obtiene así la ecuación diferencial
+Mientras que la tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
+Este comportamiento es representado por la siguiente ecuación diferencial.
 \begin{equation*}
-    \frac{\dif}{\dif t} \current_C(t) = - \frac{\current_C(t)}{\tau}
+    \current_C(t) = C \, \frac{\dif}{\dif t} \voltage_C(t)
 \end{equation*}
 
-Cuya solución es
+Cuya solución es para la corriente
 \begin{equation*}
-    \current_C(t) = I_0 \, e^{-\tfrac{t}{\tau}}
-\end{equation*}
-
-Donde:
-\begin{equation*}
-    I_0 = \frac{V_S}{R}
+    \current_C(t) = \frac{V_S}{R} \, e^{-\tfrac{t}{\tau}}
 \end{equation*}
 
 \begin{center}
@@ -1534,12 +1529,12 @@ Donde:
     \input{./images/transitorios-capacitor-graph-1.pdf_tex}
 \end{center}
 
-La tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
+Por ley de Kirchhoff la tensión es
 \begin{equation*}
     \voltage_C(t) = V_S - \voltage_R(t) = V_S - R \, \current(t)
 \end{equation*}
 
-Obteniendo la expresión:
+Y ya que $\current(t) = \current_C(t)$ se obtiene
 \begin{equation*}
     \voltage_C(t) = V_S - V_S \, e^{-\tfrac{t}{\tau}}
 \end{equation*}
@@ -1579,15 +1574,30 @@ Si $\tau$ es lo suficientemente chico, dará tiempo al capacitor de cargarse y d
 
 \section{Transitorios R-L}
 
-Al contrario que en un circuito R-C, en la bobina de un circuito R-L, al principio la corriente es mínima y la tensión máxima. Con el tiempo el circuito evoluciona análogamente.
+Al contrario que en un circuito R-C, en la bobina de un circuito R-L, al principio la corriente es mínima y la tensión máxima.
 \begin{equation*}
-    \voltage_L(t) = L \, \frac{\dif}{\dif t} \current(t)
+    \voltage_L(t) = L \, \frac{\dif}{\dif t} \current_L(t)
 \end{equation*}
 
-La tensión en una bobina se comporta como la corriente en un capacitor. La función que modela la corriente es contínua, no así la tensión.
+La corriente en una bobina se comporta como la tensión en un capacitor:
 \begin{equation*}
     \current_L(t) = I_1 - \bb{I_1 - I_0} e^{-\tfrac{t}{\tau}}
 \end{equation*}
+
+Y la tensión como la corriente:
+\begin{equation*}
+    \voltage_L(t) = V_S \, e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+Quedando la constante de tiempo definida como sigue.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \begin{equation*}
+        \tau = \frac{L}{R}
+    \end{equation*}
+\end{mdframed}
 
 
 \chapter{Circuitos AC}
@@ -1754,6 +1764,10 @@ Donde:
     \\
     \phi_{\voltage_C} &= \phi_\current + \phi_{\impedance_C} = - \arctan{\bb{\dfrac{-X_C}{R} }} - \ang{90}
 \end{align*}
+
+
+\
+
 
 
 \section{Filtros}
