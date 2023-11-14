@@ -281,11 +281,11 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 
     Cambiando a coordenadas polares:
     \begin{gather*}
-        \fx[T]{R,\phi} = (y,z) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
+        \fx{T}{R,\phi} = (y,z) = \sqb{R \cos(\phi) &,& R \sin(\phi)}
         \\
-        \det \bb{\fx[J]{T}} = \cos(\phi) \, R \cos(\phi) - \sin(\phi) \bb{-R \sin(\phi)}
+        \det \bb{\fx{J}{T}} = \cos(\phi) \, R \cos(\phi) - \sin(\phi) \bb{-R \sin(\phi)}
         \\
-        \det \bb{\fx[J]{T}} = R \implies
+        \det \bb{\fx{J}{T}} = R \implies
         \\
         \dif A = R \, \dif \phi \, \dif R
     \end{gather*}
@@ -462,7 +462,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
     \begin{equation*}
         \dif q = \sigma \, \dif A
         = \sigma \, \dif s \, \dif x
-        = \sigma \, \fx[R]{x} \, \dif \phi \, \dif x
+        = \sigma \, \fx{R}{x} \, \dif \phi \, \dif x
     \end{equation*}
 
     Por simetría axial el versor director es
@@ -473,17 +473,17 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 
     Y la distancia $r$ es
     \begin{equation*}
-        r = \sqrt{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2}
+        r = \sqrt{\bb{D-x}^2 + \sqb{\fx{R}{x}}^2}
     \end{equation*}
 
     Al tratarse de la pendiente de la recta del cono en corte $y=0$, el radio varía según
     \begin{equation*}
-        \fx[R]{x} = \frac{R_0}{L} \, x
+        \fx{R}{x} = \frac{R_0}{L} \, x
     \end{equation*}
 
     Con lo cual, la integral de campo eléctrico queda
     \begin{align*}
-        \vec{E} &= \cstcoulomb \iint \frac{\sigma \, \fx[R]{x} \, \dif \phi \, \dif x}{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2} \, \frac{D-x}{r} \, \iVer
+        \vec{E} &= \cstcoulomb \iint \frac{\sigma \, \fx{R}{x} \, \dif \phi \, \dif x}{\bb{D-x}^2 + \sqb{\fx{R}{x}}^2} \, \frac{D-x}{r} \, \iVer
         \\[1em]
         &= \cstcoulomb \, \sigma \, \frac{R_0}{L} \iint \frac{x \bb{D-x}}{\sqb{\bb{D-x}^2 + \bb{\frac{R_0}{L} \, x}^2}^{\frac{3}{2}}} \, \dif \phi \, \dif x \, \iVer
         \\[1em]
@@ -493,7 +493,7 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
     \concept{Caso de cono sólido:}
 
     \begin{equation*}
-        \dif q = \rho \, \dif V = \rho \, \pi \, \sqb{\fx[R]{x}}^2 \, \dif x
+        \dif q = \rho \, \dif V = \rho \, \pi \, \sqb{\fx{R}{x}}^2 \, \dif x
     \end{equation*}
 
     Por simetría axial el versor director es
@@ -504,19 +504,19 @@ Si bien la definición es siempre válida, la integral solo se puede computar en
 
     Y la distancia $r$ es
     \begin{equation*}
-        r = \sqrt{\bb{D-x}^2 + \sqb{\fx[R]{x}}^2}
+        r = \sqrt{\bb{D-x}^2 + \sqb{\fx{R}{x}}^2}
     \end{equation*}
 
     Al tratarse de la pendiente de la recta del cono en corte $y=0$, el radio varía según
     \begin{equation*}
-        \fx[R]{x} = \frac{R_0}{L} \, x
+        \fx{R}{x} = \frac{R_0}{L} \, x
     \end{equation*}
 
     Con lo cual, la integral de campo eléctrico queda
     \begin{align*}
-        \vec{E} &= \cstcoulomb \int \frac{\rho \, \pi \, \sqb{\fx[R]{x}}^2 \, \dif x}{r^2} \, \frac{D-x}{r} \, \iVer
+        \vec{E} &= \cstcoulomb \int \frac{\rho \, \pi \, \sqb{\fx{R}{x}}^2 \, \dif x}{r^2} \, \frac{D-x}{r} \, \iVer
         \\[1em]
-        &= \pi \, \cstcoulomb \, \rho \int \frac{\sqb{\fx[R]{x}}^2 \bb{D-x}}{r^3} \, \dif x \, \iVer
+        &= \pi \, \cstcoulomb \, \rho \int \frac{\sqb{\fx{R}{x}}^2 \bb{D-x}}{r^3} \, \dif x \, \iVer
         \\[1em]
         &= \pi \, \cstcoulomb \, \rho \bb{\frac{R_0}{L}}^2 \int_0^L \frac{x^2 \bb{D-x}}{\sqb{\bb{D-x}^2 + \bb{\frac{R_0}{L} \, x}^2}^{\frac{3}{2}}} \, \dif x \, \iVer
     \end{align*}
@@ -622,15 +622,15 @@ Si el campo eléctrico tiene magnitud $E$ constante y dirección normal a una su
     Según el volumen de carga encerrado $V$ por la superficie gaussiana, se van a obtener distintos valores para la magnitud del campo.
     La carga encerrada depende del radio $r$, ya que está dada por
     \begin{equation*}
-        \fx[\sub{q}{in}]{r} = \rho \, \fx[V]{r}
+        \fx{\sub{q}{in}}{r} = \rho \, \fx{V}{r}
     \end{equation*}
-    Pero el volumen encerrado no puede ser mayor que $\fx[V]{R}$ pudiendo distinguir dos casos:
+    Pero el volumen encerrado no puede ser mayor que $\fx{V}{R}$ pudiendo distinguir dos casos:
     \begin{equation*}
         \left\{
         \begin{aligned}
-            r<R & \implies q_1 = \rho \, \fx[V]{r} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, r^3}{3} = \frac{Q \, r^3}{R^3}
+            r<R & \implies q_1 = \rho \, \fx{V}{r} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, r^3}{3} = \frac{Q \, r^3}{R^3}
             \\
-            r>R & \implies q_2 = \rho \, \fx[V]{R} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, R^3}{3} = Q
+            r>R & \implies q_2 = \rho \, \fx{V}{R} = \frac{Q}{\frac{4 \, \pi \, R^3}{3}} \, \frac{4 \, \pi \, R^3}{3} = Q
         \end{aligned}
         \right.
     \end{equation*}
@@ -1467,6 +1467,17 @@ Por definición de potencial eléctrico $W = q \, V$, luego:
     P = \frac{q \, V}{\Delta t}
 \end{equation*}
 
+Observar en la ecuación anterior que cargas $q$ por unidad de tiempo $\Delta t$ es intensidad de corriente, quedando la potencia definida como sigue.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Potencia}
+    \begin{equation*}
+        P = I \, V
+    \end{equation*}
+\end{mdframed}
+
 Y aplicando la ley de Ohm, se obtienen las siguientes definiciones equivalentes entre si.
 
 \begin{mdframed}[style=MyFrame1]
@@ -1514,20 +1525,15 @@ Inicialmente, el capacitor comienza a cargarce.
 Mientras no haya tanto amontonamiento de cargas, una placa del capacitor puede recibir electrones y la otra puede sederlos.
 Por esto, el circuito se comporta como si hubiese corriente contínua.
 Al principio, la corriente es máxima y luego va decayendo.
-
-Se obtiene así la ecuación diferencial
+Mientras que la tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
+Este comportamiento es representado por la siguiente ecuación diferencial.
 \begin{equation*}
-    \frac{\dif}{\dif t} \current_C(t) = - \frac{\current_C(t)}{\tau}
+    \current_C(t) = C \, \frac{\dif}{\dif t} \voltage_C(t)
 \end{equation*}
 
-Cuya solución es
+Cuya solución es para la corriente
 \begin{equation*}
-    \current_C(t) = I_0 \, e^{-\tfrac{t}{\tau}}
-\end{equation*}
-
-Donde:
-\begin{equation*}
-    I_0 = \frac{V_S}{R}
+    \current_C(t) = \frac{V_S}{R} \, e^{-\tfrac{t}{\tau}}
 \end{equation*}
 
 \begin{center}
@@ -1535,12 +1541,12 @@ Donde:
     \input{./images/transitorios-capacitor-graph-1.pdf_tex}
 \end{center}
 
-La tensión en el capacitor va a ir creciendo conforme pase el tiempo, hasta igualar la tensión en fuente.
+Por ley de Kirchhoff la tensión es
 \begin{equation*}
     \voltage_C(t) = V_S - \voltage_R(t) = V_S - R \, \current(t)
 \end{equation*}
 
-Obteniendo la expresión:
+Y ya que $\current(t) = \current_C(t)$ se obtiene
 \begin{equation*}
     \voltage_C(t) = V_S - V_S \, e^{-\tfrac{t}{\tau}}
 \end{equation*}
@@ -1580,15 +1586,30 @@ Si $\tau$ es lo suficientemente chico, dará tiempo al capacitor de cargarse y d
 
 \section{Transitorios R-L}
 
-Al contrario que en un circuito R-C, en la bobina de un circuito R-L, al principio la corriente es mínima y la tensión máxima. Con el tiempo el circuito evoluciona análogamente.
+Al contrario que en un circuito R-C, en la bobina de un circuito R-L, al principio la corriente es mínima y la tensión máxima.
 \begin{equation*}
-    \voltage_L(t) = L \, \frac{\dif}{\dif t} \current(t)
+    \voltage_L(t) = L \, \frac{\dif}{\dif t} \current_L(t)
 \end{equation*}
 
-La tensión en una bobina se comporta como la corriente en un capacitor. La función que modela la corriente es contínua, no así la tensión.
+La corriente en una bobina se comporta como la tensión en un capacitor:
 \begin{equation*}
     \current_L(t) = I_1 - \bb{I_1 - I_0} e^{-\tfrac{t}{\tau}}
 \end{equation*}
+
+Y la tensión como la corriente:
+\begin{equation*}
+    \voltage_L(t) = V_S \, e^{-\tfrac{t}{\tau}}
+\end{equation*}
+
+Quedando la constante de tiempo definida como sigue.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \begin{equation*}
+        \tau = \frac{L}{R}
+    \end{equation*}
+\end{mdframed}
 
 
 \chapter{Circuitos AC}
@@ -1754,6 +1775,27 @@ Donde:
     V_C &= \frac{V_s \, X_C}{\sqrt{R^2 + X_C^2}}
     \\
     \phi_{\voltage_C} &= \phi_\current + \phi_{\impedance_C} = - \arctan{\bb{\dfrac{-X_C}{R} }} - \ang{90}
+\end{align*}
+
+
+\section{Potencia}
+
+La potencia en AC es similar a la definida para DC. La diferencia es que en alterna, la tensión y la corriente son funciones del tiempo. De manera que la potencia también lo es.
+
+\begin{mdframed}[style=MyFrame1]
+    \begin{defn}
+    \end{defn}
+    \cusTi{Potencia en AC}
+    \begin{equation*}
+        \fx{p}{t} = \fx{\current}{t} \, \fx{\voltage}{t}
+    \end{equation*}
+\end{mdframed}
+
+La tensión y la corriente son ondas senoidales de igual frecuencia, pero que pueden estár defasadas entre sí. Sea $\varphi$ el defasaje entre $\fx{\current}{t}$ y $\fx{\voltage}{t}$ podemos expresar la potencia como
+\begin{align*}
+    \fx{p}{t} &= I \, \sin (\omega \, t) \, V \, \sin (\omega \, t + \varphi)
+    \\[1ex]
+    &= V \, I \, \cos (\varphi) \sqb{1 - \cos(2 \, \omega \, t)} + V \, I \, \sin (\varphi) \sin (2 \, \omega \, t)
 \end{align*}
 
 
