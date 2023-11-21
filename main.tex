@@ -689,7 +689,9 @@ Los conductores que cumplan esta condición, tienen las siguientes propiedades:
 
 \section{Potencial eléctrico}
 
-Si dos cargas son del mismo signo, el medio tiene que hacer trabajo para acercarlas, ganando el sistema energía potencial eléctrica. Si dos cargas son de signo opuesto, el medio tiene que hacer trabajo para alejarlas, de manera que el sistema gana energía potencial eléctrica. Así, se establece por convención que el trabajo es positivo cuando el sistema gana energía.
+Si dos cargas son del mismo signo, el medio tiene que hacer trabajo para acercarlas, ganando el sistema energía potencial eléctrica.
+Si dos cargas son de signo opuesto, el sistema gana energía potencial cuando estas son alejadas, ya que el medio tiene que hacer trabajo para alejarlas.
+Así, se establece por convención que el trabajo es positivo cuando el sistema gana energía.
 \begin{equation*}
     W \gtrless 0 \iff {\sub{E}{pot}}_F \gtrless {\sub{E}{pot}}_0 \iff \Delta \sub{E}{pot} \gtrless 0
 \end{equation*}
@@ -704,7 +706,8 @@ No obstante, se aplica sobre $q_2$ una fuerza externa de igual magnitud y sentid
 Así, $q_2$ se mueve a velocidad constante en dirección hacia $q_1$ tal que $\Delta \sub{E}{cin} = 0$.
 
 El trabajo de la fuerza externa cuantifica la energía que tiene $q_2$ por estar en presencia del campo producido por $q_1$, energía que potencialmente podría convertirse en energía cinética si no hubiese fuerza externa.
-Pero el trabajo de la fuerza externa (no conservativa) es igual a menos el trabajo de la fuerza eléctrica (conservativa). Esto es, para $q_2=q_0$:
+Pero el trabajo de la fuerza externa (no conservativa) es igual a menos el trabajo de la fuerza eléctrica (conservativa).
+Esto es, renombrando a $q_2$ como $q_0$:
 \begin{align*}
     \Delta \sub{E}{pot} &= - \sub{W}{con}
     \\
@@ -714,7 +717,7 @@ Pero el trabajo de la fuerza externa (no conservativa) es igual a menos el traba
 \end{align*}
 
 Dado que $q_0 < 0$ y $-\sub{W}{con} = \sub{W}{no con} < 0$ es posible mantener el menos en la ecuación y trabajar con valores absolutos ya que los negativos se cancelan entre sí.
-Es decir, si se hubiese tratado de una carga de prueba positiva el trabajo de la fuerza externa para llevar $q_2$ en dirección hacia $q_1$ hubiese sido positivo.
+Es decir, si se hubiese tratado de una carga de prueba positiva, el trabajo de la fuerza externa para llevar $q_2$ en dirección hacia $q_1$ hubiese sido positivo también.
 
 Finalmente, se define la diferencia de potencial eléctrico $(\Delta v)$ dividiendo por $q_0$ ambos miembros.
 
@@ -908,7 +911,7 @@ Lo cual implica $\Vec{E} = - \grad \voltage$ que en una dimensión es:
     E(x) = - \frac{\dif}{\dif x} \voltage(x)
 \end{equation*}
 
-Como se ve en la siguiente imagen, a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye.
+La siguiente imagen representa una esfera conductora con carga positiva. Se observa que a medida que aumenta la distancia $(r)$, el campo $(E)$ disminuye.
 La gráfica de $\voltage(r)$ es decreciente, y siempre tiene pendiente negativa.
 La pendiente de $\voltage(r)$ es la derivada con respecto a la distancia que, por definición, es el campo eléctrico.
 
@@ -1232,7 +1235,8 @@ Las fuentes reales generan una tensión, pero al conectarlas con una resistencia
 
 \subsection{Modelo de fuente de tensión real}
 
-Para simular el efecto de disminución del potencial que generaría conectar un resistor de carga $(R_L)$ a una fuente ideal $(V_F)$, se puede conectar un resistor en serie, llamado resistencia de fuente $(R_S)$. El modelo de fuente real $(V_S)$ es el conjunto de la fuente ideal y la resistencia de fuente.
+Para simular el efecto de disminución del potencial que generaría conectar un resistor de carga $(R_L)$ a una fuente ideal $(V_F)$, se puede incluir un resistor en serie, llamado resistencia de fuente $(R_S)$.
+El modelo de fuente real $(V_S)$ es el conjunto de la fuente ideal y la resistencia de fuente.
 
 La resistencia de fuente va a depender del resistor de carga, ya que queremos que al conectarla, la fuente real tenga un valor que se aproxime al de la fuente ideal. Los esquemas se muestran a continuación:
 
@@ -1290,7 +1294,7 @@ Los esquemas se muestran a continuación:
     \end{center}
 \end{multicols}
 
-Nótese que, si bien se trata de conexiones en serie, estamos suponiendo que la corriente va a variar porque justamente cómo se comporta el modelo $I_S$ con y sin carga:
+Nótese que, si bien se trata de conexiones en serie, estamos suponiendo que la corriente va a variar justamente por cómo se comporta el modelo $I_S$ con y sin carga:
 \begin{equation*}
     \left\{
     \begin{aligned}
@@ -1333,17 +1337,20 @@ El esquema se muestra a continuación:
     \end{center}
 \end{multicols}
 
-En este caso, ambos resistores tendrían la tensión $V_F$ de la fuente ideal. La corriente de salida $I_S'$ ahora incluiría el recorrido en paralelo, pero como se ve a continuación, se sigue cumpliendo que $R_L$ tiene que ser chica con respecto de $R_F$, ya que la corriente de salida $I_S'$ tiene que coincidir con la corriente $I_S$ de la fuente del modelo anterior:
+En este caso, ambos resistores tendrían la tensión $V_F$ de la fuente ideal.
+La corriente de salida $I_S'$ ahora incluiría el recorrido en paralelo.
+Pero como se ve a continuación, se sigue cumpliendo que $R_L$ tiene que ser chica con respecto de $R_F$.
+La corriente de salida $I_S'$ coincide con la corriente $I_S$ de la fuente del modelo anterior:
 \begin{gather*}
     \left\{
     \begin{aligned}
-        I_F' &= \frac{V_F}{\frac{R_S \, R_L}{R_S + R_L}}
+        I_F' &= \frac{V_F'}{\frac{R_S \, R_L}{R_S + R_L}}
         \\[1ex]
-        I_S' &= \frac{V_F}{R_L}
+        I_S' &= \frac{V_F'}{R_L}
     \end{aligned}
     \right.
     \\[1em]
-    V_F = \frac{I_F' \, R_S \, R_L}{R_S + R_L}
+    V_F' = \frac{I_F' \, R_S \, R_L}{R_S + R_L}
     \\[1em]
     I_S' = \frac{I_F' \, R_S}{R_S + R_L} = \frac{V_F}{R_S + R_L} = I_S
 \end{gather*}
